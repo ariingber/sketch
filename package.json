@@ -1,17 +1,22 @@
 {
-  "name": "sketch",
+  "name": "movie_haus",
   "version": "1.0.0",
-  "description": "None",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "author": "Ari Ingber",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "express": "^4.9.8"
+    "body-parser": "^1.15.0",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "morgan": "^1.7.0",
+    "path": "^0.12.7",
+    "pg-promise": "^3.2.6",
+    "request": "^2.69.0"
   },
-  "engines": {
-    "node": "5.8.0"
-  }
+  "devDependencies": {},
+  "description": ""
 }
