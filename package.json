@@ -2,10 +2,10 @@
   "name": "sketch",
   "version": "1.0.0",
   "description": "None",
-  "main": "init.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node init.js"
+    "start": "node server.js"
   },
   "author": "Ari Ingber",
   "license": "MIT",
