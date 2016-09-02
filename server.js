@@ -1,5 +1,5 @@
 var express = require('express');
-// var logger = require('morgan');
+var logger = require('morgan');
 // var pgp = require('pg-promise');
 var path = require('path');
 // var request = require('request');
@@ -21,7 +21,7 @@ var server = app.listen(port);
 app.use(express.static(path.join(__dirname, './public/')));
 
 // log
-// app.use(logger('dev'));
+app.use(logger('dev'));
 
 /*Views*/
 app.set('views', './views');
@@ -32,4 +32,8 @@ app.set('view engine', 'ejs');
 app.get('/', function(req, res){
   console.log('Hey Ari, server is running on port 3000')
   res.render('./pages/index')
+})
+
+app.get('/products', function(req, res){
+  res.render('./pages/products')
 })
