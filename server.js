@@ -49,3 +49,7 @@ app.get('/press', function(req, res){
 app.get('/resources', function(req, res){
   res.render('./pages/resources')
 })
+
+app.get('/contact', function(req, res){
+  res.render('./pages/contact')
+})
