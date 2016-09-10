@@ -37,3 +37,11 @@ app.get('/', function(req, res){
 app.get('/products', function(req, res){
   res.render('./pages/products')
 })
+
+app.get('/about', function(req, res){
+  res.render('./pages/about')
+})
+
+app.get('/press', function(req, res){
+  res.render('./pages/press')
+})
