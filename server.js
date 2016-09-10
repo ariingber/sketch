@@ -45,3 +45,7 @@ app.get('/about', function(req, res){
 app.get('/press', function(req, res){
   res.render('./pages/press')
 })
+
+app.get('/resources', function(req, res){
+  res.render('./pages/resources')
+})

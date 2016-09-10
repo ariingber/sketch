@@ -7629,11 +7629,13 @@ input[type=range]:focus::-ms-fill-upper {
   background-color: #4CAF50;
 }
 
+/*heig to importa*/
+/*heig from 400 to 200*/
 .carousel {
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 200px !important;
   -webkit-perspective: 500px;
           perspective: 500px;
   -webkit-transform-style: preserve-3d;
@@ -7701,20 +7703,23 @@ input[type=range]:focus::-ms-fill-upper {
   margin: 0;
 }
 
+/*margi edited*/
+/*bc from rgba(255, 255, 255, 0.5) to #428bca*/
 .carousel .indicators .indicator-item {
   display: inline-block;
   position: relative;
   cursor: pointer;
   height: 8px;
   width: 8px;
-  margin: 24px 4px;
-  background-color: rgba(255, 255, 255, 0.5);
+  margin: 24px 5px;
+  background-color: #428bca;
   transition: background-color .3s;
   border-radius: 50%;
 }
 
+/*bc from #fff to #df696e*/
 .carousel .indicators .indicator-item.active {
-  background-color: #fff;
+  background-color: #df696e;
 }
 
 /* ==========================================================================
