@@ -3,4 +3,5 @@ $(document).ready(function(){
     $('.materialboxed').materialbox();
     $('ul.tabs').tabs();
     $('.carousel.carousel-slider').carousel({full_width: true});
+    $('.modal-trigger').leanModal();
   });

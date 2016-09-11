@@ -31,25 +31,33 @@ app.set('view engine', 'ejs');
 // Landing Page
 app.get('/', function(req, res){
   console.log('Hey Ari, server is running on port 3000')
-  res.render('./pages/index')
+  res.render('./pages/patient/index')
 })
 
 app.get('/products', function(req, res){
-  res.render('./pages/products')
+  res.render('./pages/patient/products')
 })
 
 app.get('/about', function(req, res){
-  res.render('./pages/about')
+  res.render('./pages/patient/about')
 })
 
 app.get('/press', function(req, res){
-  res.render('./pages/press')
+  res.render('./pages/patient/press')
 })
 
 app.get('/resources', function(req, res){
-  res.render('./pages/resources')
+  res.render('./pages/patient/resources')
 })
 
 app.get('/contact', function(req, res){
-  res.render('./pages/contact')
+  res.render('./pages/patient/contact')
+})
+
+app.get('/health_care', function(req, res){
+  res.render('./pages/client/health_care')
+})
+
+app.get('/help', function(req, res){
+  res.render('./pages/client/help')
 })
