@@ -4,4 +4,5 @@ $(document).ready(function(){
     $('ul.tabs').tabs();
     $('.carousel.carousel-slider').carousel({full_width: true});
     $('.modal-trigger').leanModal();
+    $('.scrollspy').scrollSpy();
   });
