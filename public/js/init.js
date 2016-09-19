@@ -4,7 +4,7 @@ $(document).ready(function(){
     $('ul.tabs').tabs();
     $('.modal-trigger').leanModal();
     $('.scrollspy').scrollSpy();
-    $('.slider').slider({full_width: true, indicators:false });
+    $('.slider').slider({full_width: true, indicators: false, height: 200 });
     $( "#quote_slider_left_chev" ).click(function() {
       $('#quote_slider').slider('prev');
     });
