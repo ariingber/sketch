@@ -2,48 +2,69 @@
 <html lang="en">
 <%- include ../partials/head %>
 <body>
-  <%- include ../partials/nav %>
-  <br>
-  <br>
-  <br>
-  <br>
-  <div class="container">
-    <div class="center row">
-      <div class="col s12">
-        <div class="col s2">
-        </div>
-        <div class="col s8">
-          <h4 >Get to know Sheero Palace.</h4>
-          <p class="flow-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit nunc a facilisis erat, sed aliquet felis.
-          </p>
-        </div>
-        <div class="col s2">
-        </div>
-      </div><br>
-          <!-- Modal Video Trigger -->
-     <a class="waves-effect waves-light btn modal-trigger" href="#videomodal">Watch Video</a>
+<div class="blue darken-4 white-text">
+<%- include ../partials/nav %>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+      <div class="center row">
+        <div class="col s12">
+          <div class="col s2">
+          </div>
+          <div class="col s8">
+            <h5 class="black-text" >Get to know Sheero Palace.</h5>
+            <div class="col s1">
+            </div>
+              <p class="flow-text" style="font-size:15px;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit nunc a facilisis erat, sed aliquet felis.
+              </p>
 
-     <!-- Modal Structure -->
-     <div id="videomodal" class="modal">
-       <div class="modal-content">
-         <video class="responsive-video" controls>
-          <source src="images/samplemovie.mp4" type="video/mp4">
-        </video>
+
+            <br>
+          </div>
+          <div class="col s2">
+          </div>
+        </div><br>
+            <!-- Modal Video Trigger -->
+       <a class="waves-effect waves-light modal-trigger" href="#videomodal"><i class="fa fa-play-circle-o medium" aria-hidden="true"></i></a>
+
+
+       <div class="container">
+         <div class="center row">
+           <div class="col s12">
+             <div class="col s4">
+             </div>
+             <div class="col s4">
+               <p class="flow-text" style="font-size:15px;">
+                 Watch Our Video.
+               </p>
+             </div>
+             <div class="col s4">
+             </div>
+           </div>
+         </div>
        </div>
-     </div>
-      <br>
-      <br>
-      <br>
-      <br>
-      <a href="#what_is_CoHero"><h5>What is Sheero Palace?</h5></a>
-      <i class="small material-icons">play_for_work</i>
-    </div>
-</div>
-<!-- GREY LINE -->
 
-<div class="grey lighten-2" style="width:100%; height:2px;"></div>
-<div></div>
+
+       <!-- Modal Structure -->
+       <div id="videomodal" class="modal">
+         <div class="modal-content">
+           <video class="responsive-video" controls>
+            <source src="images/samplemovie.mp4" type="video/mp4">
+          </video>
+         </div>
+       </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="#what_is_CoHero"><h6>What is Sheero Palace?</h6></a>
+        <i class="fa fa-arrow-circle-o-down small" aria-hidden="true"></i>
+      </div>
+      <br>
+    </div>
 </div>
 
 
@@ -70,21 +91,21 @@
     <div class="col s12 m4">
       <div class="icon-block">
         <h2 class="center light-blue-text"><i class="material-icons">code</i></h2>
-        <h5 class="center">Recycle</h5>
+        <h5 class="center">Track</h5>
         <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit nunc a facilisis erat, sed aliquet felis.</p>
       </div>
     </div>
     <div class="col s12 m4">
       <div class="icon-block">
         <h2 class="center light-blue-text"><i class="material-icons">done</i></h2>
-        <h5 class="center">Get It Done</h5>
+        <h5 class="center">Engage</h5>
         <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit nunc a facilisis erat, sed aliquet felis.</p>
       </div>
     </div>
     <div class="col s12 m4">
       <div class="icon-block">
         <h2 class="center light-blue-text"><i class="material-icons">thumb_up</i></h2>
-        <h5 class="center">Collaborate</h5>
+        <h5 class="center">Connect</h5>
 
         <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit nunc a facilisis erat, sed aliquet felis.</p>
       </div>
@@ -203,6 +224,64 @@
 </div>
 <br>
 
+
+<div class="container">
+  <div class="center row">
+    <div  class="col s12 center">
+      <div class="col s3 left">
+        <br>
+        <br>
+        <br>
+        <i id="quote_slider_left_chev" class="fa fa-chevron-left" aria-hidden="true"></i>
+      </div>
+      <div class="col s6 center">
+        <h4 class="blue-text">Hear What People Say.</h4>
+        <div class="slider" id="quote_slider">
+          <ul class="slides white">
+            <li>
+              <div>
+                <h5 class="light black-text">This is super excelent and great.</h5>
+                <br>
+                <h6 class="light black-text">- Mr. Cooper</h6>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h5 class="light black-text">Love Love Love it.</h5>
+                <br>
+                <h6 class="light black-text">- Peeko</h6>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h5 class="light black-text">Keep it up.</h5>
+                <br>
+                <h6 class="light black-text">- Mr. Laundry</h6>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h5 class="light black-text">Yum.</h5>
+                <br>
+                <h6 class="light black-text">- Sugar</h6>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col s3 right">
+        <br>
+        <br>
+        <br>
+        <i id="quote_slider_right_chev" class="fa fa-chevron-right" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<br>
+
 <div class="container">
   <div class="center row">
     <a class="waves-effect waves-light btn-large">Learn More</a>
@@ -273,6 +352,7 @@
 </div>
 
 <div class="grey lighten-2" style="width:100%; height:2px;"></div>
+
 <br>
 <div class="container">
   <div class="center row">
@@ -282,13 +362,11 @@
 
 <%- include ../partials/try_our_products %>
 
+
+
 <br>
 <%- include ../partials/footer %>
 
-  <!-- make sure this does not need to be a partial -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script type="text/javascript" src="js/init.js"></script>
-
+<%- include ../partials/bottom_of_body %>
 </body>
 </html>
