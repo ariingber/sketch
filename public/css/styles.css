@@ -1,8 +1,18 @@
 nav ul li a {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'open-sans-light', sans-serif;
   font-size: 14px;
 }
 
 body {
-  font-family: 'Muli', sans-serif;
+  font-family: 'century-gothic', sans-serif;
+}
+
+@font-face {
+    font-family: "century-gothic";
+    src: url("../fonts/century-gothic/Gothic.TTF");
+}
+
+@font-face {
+    font-family: "open-sans-light";
+    src: url("../fonts/open-sans/OpenSans-Light.ttf");
 }
