@@ -1,11 +1,9 @@
 var express = require('express');
 var logger = require('morgan');
-// var pgp = require('pg-promise');
 var path = require('path');
-// var request = require('request');
-// var bodyParser = require('body-parser');
-
-
+var request = require('request');
+var bodyParser = require('body-parser');
+var $ = require('jquery');
 
 
 /* app setting */
@@ -14,8 +12,8 @@ var app = express();
 var server = app.listen(port);
 
 // parse incoming forms
-// app.use(bodyParser.urlencoded({ extended: false }));
-// app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 // static route to public
 app.use(express.static(path.join(__dirname, './public/')));

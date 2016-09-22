@@ -1,28 +1,32 @@
 <div class="container">
   <div class="row">
-     <form class="col s12">
+    <form action="https://formspree.io/ari@coherohealth.com"
+        method="POST" enctype="multipart/form-data" class="col s12">
+      <input type="hidden" name="_next" value="/products" />
+      <h5 class="center">Try our products</h5>
        <div class="row">
          <div class="input-field col s12">
-           <input id="first_name" type="text" class="validate">
+           <input id="first_name" type="text" name="first_name" class="validate">
             <label for="first_name">First Name</label>
          </div>
        </div>
        <div class="row">
          <div class="input-field col s12">
-           <input id="last_name" type="text" class="validate">
+           <input id="last_name" type="text" name="last_name" class="validate">
            <label for="last_name">Last Name</label>
          </div>
        </div>
        <div class="row">
          <div class="input-field col m3 s12">
-           <input id="age" type="text" class="validate">
+           <input id="age" type="text" type="number" class="validate">
            <label for="age">Age</label>
          </div>
        </div>
        <div class="row">
          <div class="input-field col m3 s12">
-            <select class="browser-default">
-              <option value="">Choose your option</option>
+           <p>Diagnosis</p>
+            <select class="browser-default" name="Diagnosis" id="diagnosis">
+              <option value="">Select One</option>
               <option value="1">Option 1</option>
               <option value="2">Option 2</option>
               <option value="3">Option 3</option>
@@ -31,8 +35,9 @@
         </div>
         <div class="row">
           <div class="input-field col m3 s12">
-             <select class="browser-default">
-               <option value="">Choose your option</option>
+             <p>Phone Type</p>
+             <select class="browser-default" name="Phone Type" id="phonetype">
+               <option value="">Select One</option>
                <option value="1">Option 1</option>
                <option value="2">Option 2</option>
                <option value="3">Option 3</option>
@@ -41,13 +46,32 @@
          </div>
          <div class="row">
             <div class="input-field col s12">
-              <textarea placeholder="Message" id="textarea1" class="materialize-textarea" length="120"></textarea>
-              <label for="textarea1">Additional Comments</label>
+              <textarea placeholder="Message" name="Message" type="text" id="textarea1" class="materialize-textarea" length="120"></textarea>
+              <label for="textarea1"></label>
             </div>
           </div>
-          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-            <i class="material-icons right">send</i>
+          <button class="btn waves-effect waves-light" type="submit">Send Message
           </button>
      </form>
    </div>
 </div>
+
+
+
+<!--
+  <div class="input-field col s12">
+
+  </div>
+  <div class="input-field col s12">
+    <input id="email" type="email" class="validate" name="email">
+    <label for="email">Email</label>
+  </div>
+  <div class="input-field col s12">
+    <input id="Message" type="text" name="Message">
+    <label for="message">Message</label>
+  </div>
+  <div class="col s12">
+    <button class="btn waves-effect waves-light" type="submit">Submit
+      <i class="material-icons right">send</i>
+    </button>
+  </div> -->
