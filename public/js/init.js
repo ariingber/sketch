@@ -12,13 +12,22 @@ $(document).ready(function(){
     $( "#quote_slider_right_chev" ).click(function() {
       $('#quote_slider').slider('next');
     });
-    if (top.location.pathname === '/help')
+    // if (top.location.pathname === '/help' )
       {
         $('#help_button').hover( function() {
-          $('#hello').fadeIn( "fast" );
+          $('#help_dropdown').fadeIn( "fast" );
         });
-        $('#help_button').mouseout( function() {
-          $('#hello').fadeOut( "fast" );
-        });
+        // $('#help_button').mouseout( function() {
+        //   $('#hello').fadeOut( "fast" );
+        // });
       };
+      $('#hello').hover( function() {
+        $('#help_dropdown').show();
+      });
+      $('#help').hover( function() {
+        $('#help_dropdown').fadeOut();
+      });
+      $('#health_care').hover( function() {
+        $('#help_dropdown').fadeOut();
+      });
 });
