@@ -4,26 +4,33 @@ body {
 
 #navbar {
   height: 148px;
-  background-color: #0a50a5 !important;
+  background-color: #0a50a5;
 }
 
 #blue_welcome_screen {
   color: #ffffff;
-  background-color: #0a50a5 !important
+  background-color: #0a50a5;
 }
 
 h1 {
-  font-family: 'Museo-500';
+  font-family: 'museo-rounded-300', roboto;
   font-size: 36px;
   color: #002047;
 }
 
-p {
+h2 {
+  font-family: 'museo-rounded-300', roboto;
+  font-size: 30px;
+  color: #004da8;
+}
+
+#tagline {
   font-size:18px;
 }
 
 header nav ul li a {
-  font-size: 14px;
+  margin-top: 35.7px;
+  font-size: 13px;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
@@ -32,16 +39,11 @@ header nav ul li a {
   margin-left: 11px;
   margin-right: 11px;
 }
-#login_button {
+
+btn {
   border-radius:2px;
 }
 
-
-
-/*/////////////////////*/
-header nav ul li a {
-  margin-top: 35.7px;
-}
 .cohero_logo_white_01 {
   margin-left: 33.5px;
   margin-top: 38.7px;
@@ -60,9 +62,16 @@ header nav ul li a {
 #login_button {
   margin-top: 47.7px;
 }
+
 #GetToKnowCoHero {
   margin-top: 187.7px;
 }
+@media (max-width: 900px) {
+  #GetToKnowCoHero  {
+    margin-top: 50px;
+  }
+}
+
 #health_care_link_mobile {
   margin-top:0;
 }
