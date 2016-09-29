@@ -1,5 +1,7 @@
 body {
   font-family: 'open-sans-light', sans-serif;
+  color: #75787B;
+  font-size: 18px;
 }
 
 #navbar {
@@ -14,13 +16,13 @@ body {
 
 h1 {
   font-family: 'museo-rounded-300', roboto;
-  font-size: 36px;
-  color: #002047;
+  font-size: 30px;
+  color: #004da8;
 }
 
 h2 {
   font-family: 'museo-rounded-300', roboto;
-  font-size: 30px;
+  font-size: 24px;
   color: #004da8;
 }
 
@@ -64,6 +66,9 @@ btn {
 }
 
 #GetToKnowCoHero {
+  font-family: 'museo-rounded-300', roboto;
+  font-size: 36px;
+  color: #002047;
   margin-top: 187.7px;
 }
 @media (max-width: 900px) {
