@@ -91,3 +91,7 @@ header nav ul li a {
 #login_link_mobile {
   margin-top:0;
 }
+
+.page-footer {
+  background-color: #0a50a5 !important;
+}
