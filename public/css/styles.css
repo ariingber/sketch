@@ -1,8 +1,3 @@
-@font-face {
-    font-family: "open-sans-light";
-    src: url("../fonts/open-sans/OpenSans-Light.ttf");
-}
-
 @font-face {font-family: 'museo-rounded-100';
 src: url('../fonts/museo/MuseoSansRounded-100.otf');
 }
@@ -13,6 +8,7 @@ src: url('../fonts/museo/MuseoSansRounded-300.otf');
 src: url('../fonts/museo/MuseoSansRounded-500.otf');
 }
 
+/*This is for the nav bar helper*/
 #arrow-up {
   width: 0;
   height: 0;
