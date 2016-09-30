@@ -42,15 +42,13 @@ header nav ul li a {
   margin-right: 11px;
 }
 
-btn {
-  border-radius:2px;
-}
-
 #cohero_logo {
   margin-top:12px;
   /*margin-left: 33.5px;
   margin-top: 38.7px;*/
-  pointer-events:none;
+}
+#cohero_logo:hover {
+  background-color: transparent;
 }
 
 #products_link_desktop {
@@ -70,6 +68,8 @@ btn {
 
 .btn{
   background-color: #b997cd !important;
+  border-radius:2px;
+  font-size: 13px;
 }
 
 #GetToKnowCoHero {
