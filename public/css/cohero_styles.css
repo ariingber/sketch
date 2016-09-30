@@ -65,6 +65,11 @@ btn {
 
 #login_button {
   margin-top: 47.7px;
+  background-color: #b997cd !important;
+}
+
+.btn{
+  background-color: #b997cd !important;
 }
 
 #GetToKnowCoHero {
@@ -75,7 +80,7 @@ btn {
 }
 @media (max-width: 900px) {
   #GetToKnowCoHero  {
-    margin-top: 50px;
+    margin-top: 0px;
   }
 }
 
