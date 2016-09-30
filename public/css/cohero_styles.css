@@ -46,9 +46,11 @@ btn {
   border-radius:2px;
 }
 
-.cohero_logo_white_01 {
-  margin-left: 33.5px;
-  margin-top: 38.7px;
+#cohero_logo {
+  margin-top:12px;
+  /*margin-left: 33.5px;
+  margin-top: 38.7px;*/
+  pointer-events:none;
 }
 
 #products_link_desktop {
