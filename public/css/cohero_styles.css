@@ -98,6 +98,17 @@ header nav ul li a {
   margin-top:0;
 }
 
-.page-footer {
-  background-color: #0a50a5 !important;
+/*this is css taken and repeated from materialize but backround color changed and made important*/
+footer.page-footer {
+  margin-top: 20px;
+  padding-top: 20px;
+  background-color: #063573 !important;
+}
+
+footer.page-footer .footer-copyright {
+  overflow: hidden;
+  height: 50px;
+  line-height: 50px;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #063573 !important;
 }
