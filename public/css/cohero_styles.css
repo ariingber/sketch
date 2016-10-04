@@ -6,9 +6,17 @@ body {
 }
 
 #navbar {
-  height: 148px;
+  height: 138px;
   background-color: #0a50a5;
 }
+@media (max-width: 995px) {
+  #navbar {
+    height: 98px;
+  }
+}
+
+
+
 
 #blue_welcome_screen {
   color: #ffffff;
@@ -83,12 +91,17 @@ header nav ul li a {
   font-family: 'museo-rounded-300', roboto;
   font-size: 36px;
   color: #002047;
-  margin-top: 187.7px;
+  margin-top: 77.7px;
 }
 @media (max-width: 900px) {
   #GetToKnowCoHero  {
     margin-top: 0px;
   }
+}
+
+#mobile_slide_icon {
+  background-color: white;
+  height: 400px !important;
 }
 
 #health_care_link_mobile {
