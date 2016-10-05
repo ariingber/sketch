@@ -120,6 +120,12 @@ header nav ul li a {
   }
 }
 
+@media (max-width: 450px) {
+  #GetToKnowCoHero  {
+    margin-top: -35px;
+  }
+}
+
 #mobile_slide_icon {
   background-color: white;
   height: 400px !important;
