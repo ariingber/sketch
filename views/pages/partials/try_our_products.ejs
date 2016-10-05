@@ -3,55 +3,69 @@
     <form action="https://formspree.io/ari@coherohealth.com"
         method="POST" enctype="multipart/form-data" class="col s12">
       <input type="hidden" name="_next" value="/products" />
-      <h5 class="center">Try our products</h5>
+      <h1 class="center">Try our products</h1><br>
+
        <div class="row">
-         <div class="input-field col s12">
-           <input id="first_name" type="text" name="first_name" class="validate">
-            <label for="first_name">First Name</label>
+         <div class="col s12">
+           <div class="row">
+             <div class="input-field col s12 m5 l5">
+               <input id="first_name" type="text" name="first_name" class="validate">
+                <label for="first_name">First Name</label>
+             </div>
+           </div>
+           <div class="row">
+             <div class="input-field col s12 m5 l5">
+               <input id="last_name" type="text" name="last_name" class="validate">
+               <label for="last_name">Last Name</label>
+             </div>
+           </div>
+           <div class="row">
+             <div class="input-field col s12 m3 l3">
+               <input id="age" type="text" type="number" class="validate">
+               <label for="age">Age</label>
+             </div>
+           </div>
+           <div class="row">
+             <div class="input-field col s12 m4 l4">
+               <p>Diagnosis</p>
+                <select class="browser-default" name="Diagnosis" id="diagnosis">
+                  <option value="">Select One</option>
+                  <option value="1">Asthma</option>
+                  <option value="2">COPD</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 m4 l4">
+                 <p>Phone Type</p>
+                 <select class="browser-default" name="Phone Type" id="phonetype">
+                   <option value="">Select One</option>
+                   <option value="1">iPhone</option>
+                   <option value="2">Android</option>
+                   <option value="3">Other</option>
+                 </select>
+               </div>
+             </div>
+             <div class="row">
+               <div class="input-field col s12 m4 l4">
+                  <p>Reason for contatct</p>
+                  <select class="browser-default" name="Reason for contact" id="reason_for_contact">
+                    <option value="">Select One</option>
+                    <option value="1">I want to try products by taking part in a clinical study</option>
+                    <option value="2">Something else</option>
+                  </select>
+                </div>
+              </div>
          </div>
        </div>
        <div class="row">
-         <div class="input-field col s12">
-           <input id="last_name" type="text" name="last_name" class="validate">
-           <label for="last_name">Last Name</label>
-         </div>
-       </div>
-       <div class="row">
-         <div class="input-field col m3 s12">
-           <input id="age" type="text" type="number" class="validate">
-           <label for="age">Age</label>
-         </div>
-       </div>
-       <div class="row">
-         <div class="input-field col m3 s12">
-           <p>Diagnosis</p>
-            <select class="browser-default" name="Diagnosis" id="diagnosis">
-              <option value="">Select One</option>
-              <option value="1">Option 1</option>
-              <option value="2">Option 2</option>
-              <option value="3">Option 3</option>
-            </select>
+          <div class="input-field col s12">
+            <textarea placeholder="Additional Comments" name="Message" type="text" id="textarea1" class="materialize-textarea" length="120"></textarea>
+            <label for="textarea1"></label>
           </div>
         </div>
-        <div class="row">
-          <div class="input-field col m3 s12">
-             <p>Phone Type</p>
-             <select class="browser-default" name="Phone Type" id="phonetype">
-               <option value="">Select One</option>
-               <option value="1">Option 1</option>
-               <option value="2">Option 2</option>
-               <option value="3">Option 3</option>
-             </select>
-           </div>
-         </div>
-         <div class="row">
-            <div class="input-field col s12">
-              <textarea placeholder="Message" name="Message" type="text" id="textarea1" class="materialize-textarea" length="120"></textarea>
-              <label for="textarea1"></label>
-            </div>
-          </div>
-          <button class="btn waves-effect waves-light" type="submit">Send Message
-          </button>
+        <button class="btn waves-effect waves-light" type="submit">Send Message
+        </button>
      </form>
    </div>
 </div>
