@@ -73,6 +73,15 @@ header nav ul li a {
   margin-left: 111px;
 }
 
+.btn {
+  box-shadow: none;
+  background-color: #b997cd !important;
+}
+
+.btn:hover {
+  box-shadow: none;
+}
+
 #login_button {
   margin-top: 47.7px;
   margin-right: 40px;
