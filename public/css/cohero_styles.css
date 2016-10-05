@@ -18,7 +18,7 @@ body {
 
 @media (max-width: 995px) {
   #navbar {
-    height: 98px;
+    height: 68px;
   }
 }
 
@@ -112,7 +112,7 @@ header nav ul li a {
   font-family: 'museo-rounded-300', roboto;
   font-size: 36px;
   color: #002047;
-  margin-top: 77.7px;
+  margin-top: 37.7px;
 }
 @media (max-width: 900px) {
   #GetToKnowCoHero  {
