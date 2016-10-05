@@ -5589,8 +5589,9 @@ button.btn-floating {
   -webkit-font-smoothing: antialiased;
 }
 
+/*OUTLINE FROM #c9f3ef TO #b997cd*/
 select:focus {
-  outline: 1px solid #c9f3ef;
+  outline: 1px solid #b997cd;
 }
 
 button:focus {
@@ -5711,6 +5712,8 @@ textarea.materialize-textarea[readonly="readonly"] + label {
   color: rgba(0, 0, 0, 0.26);
 }
 
+/*BORDER-BOTTOM FROM #26a69a TO #b997cd*/
+/*BOX-SHADOW FROM #26a69a TO #b997cd*/
 input:not([type]):focus:not([readonly]),
 input[type=text]:focus:not([readonly]),
 input[type=password]:focus:not([readonly]),
@@ -5724,10 +5727,11 @@ input[type=tel]:focus:not([readonly]),
 input[type=number]:focus:not([readonly]),
 input[type=search]:focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #26a69a;
-  box-shadow: 0 1px 0 0 #26a69a;
+  border-bottom: 1px solid #b997cd;
+  box-shadow: 0 1px 0 0 #b997cd;
 }
 
+/*COLOR FROM #26a69a to #004da8*/
 input:not([type]):focus:not([readonly]) + label,
 input[type=text]:focus:not([readonly]) + label,
 input[type=password]:focus:not([readonly]) + label,
@@ -5741,7 +5745,7 @@ input[type=tel]:focus:not([readonly]) + label,
 input[type=number]:focus:not([readonly]) + label,
 input[type=search]:focus:not([readonly]) + label,
 textarea.materialize-textarea:focus:not([readonly]) + label {
-  color: #26a69a;
+  color: #004da8;
 }
 
 input:not([type]).valid, input:not([type]):focus.valid,
