@@ -28,9 +28,6 @@ body {
   }
 }
 
-
-
-
 #blue_welcome_screen {
   color: #ffffff;
   background-color: #0a50a5;
@@ -73,14 +70,6 @@ header nav ul li a {
   margin-left: 111px;
 }
 
-.btn {
-  box-shadow: none;
-  background-color: #b997cd !important;
-}
-
-.btn:hover {
-  box-shadow: none;
-}
 
 #login_button {
   margin-top: 47.7px;
@@ -107,11 +96,16 @@ header nav ul li a {
 }
 
 
-
+/*overriding materialize box shadow here*/
 .btn{
   background-color: #b997cd !important;
   border-radius:2px;
   font-size: 13px;
+  box-shadow: none;
+}
+
+.btn:hover {
+  box-shadow: none;
 }
 
 #GetToKnowCoHero {
