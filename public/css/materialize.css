@@ -4187,8 +4187,9 @@ nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul 
   margin-right: 15px;
 }
 
+/*DISABLED FOR MY UNDERLINE*/
 nav ul a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  /*background-color: rgba(0, 0, 0, 0.1);*/
 }
 
 nav ul.left {
