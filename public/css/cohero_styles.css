@@ -30,6 +30,18 @@ body {
   }
 }
 
+@media (max-width: 1140px) {
+  #learn_more_button {
+    margin-top: -65px;
+  }
+}
+
+@media (max-width: 1100px) {
+  #our_team_col {
+    margin-top: -65px;
+  }
+}
+
 #blue_welcome_screen {
   color: #ffffff;
   background-color: #0a50a5;
