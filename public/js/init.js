@@ -28,7 +28,7 @@ $(document).ready(function(){
         $('#help_dropdown').fadeOut();
       });
       // story arrow fade outs
-      $('#what_is_CoHero').hover( function() {
-        $('#what_is_cohero_story_arrow').fadeTo(500, 0.3);
-      });
+      // $('#what_is_CoHero').hover( function() {
+      //   $('#what_is_cohero_story_arrow').fadeTo(500, 0.3);
+      // });
 });
