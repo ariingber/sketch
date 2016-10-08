@@ -24,7 +24,7 @@
       <br>
 
             <!-- Modal Video Trigger -->
-       <a class="waves-effect waves-light modal-trigger center hvr-underline-from-center"  href="#videomodal"><img id="play_button" src="images/button.svg" alt=""></a>
+       <a class="waves-effect waves-light modal-trigger center hvr-pulse-grow"  href="#videomodal"><img id="play_button" src="images/button.svg" alt=""></a>
 
 
        <div class="container">
@@ -72,7 +72,7 @@
 
 
 <br>
-  <div class="container hide-on-small-only" >
+  <div class="container hide-on-med-and-down" >
     <div class="center row">
         <div class="col s2">
         </div>
@@ -131,31 +131,43 @@
 
 
 <!-- ******************************MOBILE****************************************** -->
-  <div class="container hide-on-med-and-up show-on-small-only">
+  <div class="container hide-on-large-only show-on-med-and-up">
     <div class="row">
       <div class="col s12">
-        <h1 style="text-align:center;">Build Better habits, and keep your doctor in the loop.</h1>
+        <h1 style="text-align:center;">Build Better habits, <br>and keep your doctor in the loop.</h1>
         <div class="carousel carousel-slider center" data-indicators="true">
          <div class="carousel-item white" href="#one!">
            <h2>Track</h2>
            <img src="images/breather.png" style="width:171.6px;" alt="">
-           <p style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #75787B; font-size: 16px;">
-             Keep track of how often you use your medications, when you’re at risk, how open your lung airways are, and your lung metrics over time.
-           </p>
+           <div id="outer">
+             <div id="inner">
+               <p style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #75787B; font-size: 16px;">
+                 Keep track of how often you use your medications, when you’re at risk, how open your lung airways are, and your lung metrics over time.
+               </p>
+             </div>
+           </div>
          </div>
          <div class="carousel-item white" href="#two!">
            <h2>Engage</h2>
            <img src="images/engage.png" style="width:171.6px;" alt="">
-           <p style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #75787B; font-size: 16px;">
-             Get reminders to take your medication, smart notifications, tips, and timely information.
-           </p>
+           <div id="outer">
+             <div id="inner">
+               <p style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #75787B; font-size: 16px;">
+                 Get reminders to take your medication, smart notifications, tips, and timely information.
+               </p>
+             </div>
+           </div>
          </div>
          <div class="carousel-item white" href="#three!">
            <h2>Connect</h2>
            <img src="images/doc.png" style="width:171.6px;" alt="">
-           <p style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #75787B; font-size: 16px;">
-             Share information with your doctor in real-time, so your treatment is just right and always personal.
-           </p>
+           <div id="outer">
+             <div id="inner">
+               <p style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #75787B; font-size: 16px;">
+                 Share information with your doctor in real-time, so your treatment is just right and always personal.
+               </p>
+             </div>
+           </div>
          </div>
        </div>
       </div>
@@ -382,7 +394,7 @@
 </div>
 
 <%- include ../partials/try_our_products %>
-<br>
+<br><br><br>
 <%- include ../partials/footer %>
 
 <%- include ../partials/bottom_of_body %>

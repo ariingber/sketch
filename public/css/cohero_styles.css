@@ -136,10 +136,6 @@ header nav ul li a {
     margin-top: -35px;
   }
 }
-#play_button:hover {
-  opacity: .8;
-
-}
 
 #mobile_slide_icon {
   background-color: white;
