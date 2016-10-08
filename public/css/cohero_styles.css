@@ -14,6 +14,10 @@ body {
   width: 50%;
   margin: 0 auto;
 }
+#inner_pic {
+  width: 46%;
+  margin: 0 auto;
+}
 
 @media (max-width: 995px) {
   #navbar {
