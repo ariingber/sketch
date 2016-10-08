@@ -7640,12 +7640,13 @@ input[type=range]:focus::-ms-fill-upper {
 
 /*heig to importa*/
 /*heig from 400 to 200*/
-/*then back to 430px*/
+/*then back to 480px*/
+
 .carousel {
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 430px !important;
+  height: 480px !important;
   -webkit-perspective: 500px;
           perspective: 500px;
   -webkit-transform-style: preserve-3d;
