@@ -29,6 +29,6 @@ $(document).ready(function(){
       });
       $('#play_button_link').on('click', function(ev) {
        $("#joe_video")[0].src += "&autoplay=1";
-       ev.preventDefault();
+      //  ev.preventDefault();
      });
 });
