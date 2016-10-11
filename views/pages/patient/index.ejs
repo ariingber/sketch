@@ -12,7 +12,7 @@
       <div class="row">
         <div class="col s12" style="text-align:center;">
           <div>
-            <h1 id="GetToKnowCoHero">Get to know Cohero Health</h1>
+            <h1 id="GetToKnowCoHero">Get to know <br class="show-on-small hide-on-med-and-up"/> Cohero Health</h1>
           </div>
           <div id="outer" style="width:100%; margin-top:-15px;">
             <div id="inner">
@@ -24,39 +24,27 @@
       <br>
 
             <!-- Modal Video Trigger -->
-       <a class="waves-effect waves-light modal-trigger center hvr-pulse-grow"  href="#videomodal"><img id="play_button" src="images/button.svg" alt=""></a>
+      <div class"col s12">
+       <a class="waves-effect waves-light modal-trigger center hvr-grow"  href="#videomodal"><img id="play_button" src="images/button.svg" alt=""><br><p style="font-size:13px; color: white;">Watch our video</p></a>
+     </div>
 
 
-       <div class="container">
-         <div class="center row">
-           <div class="col s12">
-             <div class="col s4">
-             </div>
-             <div class="col s4">
-               <p class="flow-text white-text" style="font-size:13px;">
-                 Watch our video
-               </p>
-             </div>
-             <div class="col s4">
-             </div>
-           </div>
-         </div>
-       </div>
-
-
-       <!-- Modal Structure -->
-       <div id="videomodal" class="modal">
+       <!-- Modal FOR MOBILE -->
+       <div id="videomodal" class="modal" style="width:100%;">
          <div class="modal-content">
            <video class="responsive-video" controls>
             <source src="images/samplemovie.mp4" type="video/mp4">
           </video>
          </div>
        </div>
+       <!-- ************************************************************ -->
+
+
        <div class="hide-on-med-and-down">
           <br>
           <br>
           <br>
-          <div id="what_is_cohero_story_arrow" class="hvr-pulse-grow">
+          <div id="what_is_cohero_story_arrow" class="hvr-grow">
             <a href="#what_is_CoHero">
               <h6 class="white-text" style="font-size:13px;">What is Cohero Health?</h6>
               <img src="images/white_scroll_down.png" width="28px;" alt="">
@@ -117,7 +105,7 @@
     </div>
 
     <div class="center row">
-      <div id="how_does_it_work_story_arrow" class="hvr-pulse-grow">
+      <div id="how_does_it_work_story_arrow" class="hvr-grow">
         <a href="#how_does_it_work" class="hide-on-small-only">
           <p style="font-size:13px; color:#75787B;">How does it work?</p>
           <div style="margin-top:-10px;">
@@ -251,7 +239,7 @@
       <div class="col s4">
       </div>
       <div class="center col s4">
-        <div id="who_are_we_story_arrow" class="hvr-pulse-grow">
+        <div id="who_are_we_story_arrow" class="hvr-grow">
           <a href="#who_are_we">
             <p style="font-size:13px; color:#75787B;" >Who are we?</p>
             <div style="margin-top:-10px;">
@@ -268,7 +256,7 @@
 </div>
 
 
-<div id="who_are_we" class="section scrollspy">
+<br>
   <div class="container hide-on-med-and-down">
     <div class="row">
       <div class="col s12">
@@ -282,10 +270,13 @@
           </p><br>
           <a id="learn_more_button" class="waves-effect waves-light btn" href="about">Learn More</a>
         </div>
+        <div id="who_are_we" class="section scrollspy">
+        </div>
       </div>
     </div>
     <br><br><br><br>
   </div>
+
 
   <!-- **************************MOBILE************************ -->
   <div class="container show-on-medium-and-down hide-on-large-only">
@@ -314,55 +305,73 @@
     <br><br>
   </div>
   <!-- ******************************************************** -->
-</div>
+
 
 <div id="greybox" class="grey lighten-5">
   <div class="container">
-    <div class="center row">
-      <div class="col s7 push-s3">
-        <div class="icon-block">
-          <br><br><br>
-          <h1>Hear from people breathing easier each day.</h1>
+    <div class="row center">
+      <div class="col s12">
+        <div class= "col s1 hide-on-small-only">
+          <img class="hide-on-small-only" style="margin-top:140px;" id="quote_slider_left_chev" src="images/gray_left_arrow.png" alt="">
         </div>
-        <div class="slider" id="quote_slider">
-          <ul class="slides grey lighten-5">
-            <li>
-              <div>
-                <p class="light grey-text text-darken-1">“Text reminders have been really helpful.”</p>
-                <p class="light grey-text text-darken-1">-Zach B., NYC</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <p class="light grey-text text-darken-1">"Lorem ipsum dolor sit amet, consectetur adipiscing elit nunc a facilisis erat, sed aliquet felis."</p>
-                <p class="light grey-text text-darken-1">-Person Two</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <p class="light grey-text text-darken-1">"Lorem ipsum dolor sit amet, consectetur adipiscing elit nunc a facilisis erat, sed aliquet felis."</p>
-                <p class="light grey-text text-darken-1">-Person Three</p><br>
-              </div>
-            </li>
-          </ul>
+        <div class="col s12 m10 l10">
+          <br><br>
+          <h1>Hear from people breathing <br> easier each day.</h1>
+          <div class="slider" id="quote_slider">
+            <ul class="slides grey lighten-5">
+              <li>
+                <div>
+                  <p class="light grey-text text-darken-1">"Using the BreatheSmart app and HeroTracker hardware has finally put me in control of my asthma."</p>
+                  <p class="light grey-text text-darken-1">- Courtney J., Texas</p><br>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p class="light grey-text text-darken-1">“Text reminders have been really helpful.”</p>
+                  <p class="light grey-text text-darken-1">- Zach B., NYC</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p class="light grey-text text-darken-1">“I really like how easily you can look at the data over different lengths of time.” </p>
+                  <p class="light grey-text text-darken-1">- Kristen C., MD</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p class="light grey-text text-darken-1">"I'm an extremely busy professional and because of that, I sometimes forget to take my control inhaler. The BreatheSmart app has changed my life! It has consistently reminded me to take my control inhaler twice a day."</p>
+                  <p class="light grey-text text-darken-1">- Mark VV, NYC</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col s1" class="col s1 hide-on-small-only">
+          <img style="margin-top:140px;" class="hide-on-small-only" id="quote_slider_right_chev" src="images/gray_right_arrow.png" alt="">
         </div>
       </div>
-      <div class="col s3 pull-s7"></div>
     </div>
   </div>
 </div>
 
 
-<div class="left" style="margin-top:-265px; padding:10px; margin-left:60px;"><img class="hide-on-small-only" id="quote_slider_left_chev" src="images/gray_left_arrow.png" alt=""></div>
-<div class="right" style="margin-top:-265px; padding:10px; margin-right:60px;"><img class="hide-on-small-only" id="quote_slider_right_chev" src="images/gray_right_arrow.png" alt=""></div>
+
+
 
 <div id="darkergreybox" class="grey lighten-3" style="margin-top:-20px;">
   <div class="container">
     <div class="center row">
       <div  class="col s12 center grey-text">
           <br>
-          <img src="images/strip.png" width="100%" alt="">
-          <br><br>
+          <div class="col s12 m12 l5">
+            <h2 style="text-align:left;" class="hide-on-med-and-down">We're revolutionizing respiratory health. And the press has noticed.</h2>
+            <!-- MOBILE H2 *********************** -->
+            <h2 style="text-align:center;" class="show-on-med-and-down hide-on-large-only">We're revolutionizing respiratory health. And the press has noticed.</h2>
+            <!-- ********************************************* -->
+            <br>
+          </div>
+          <div class="col s7 push-s1"><br><img src="images/strip.png" width="100%" alt=""></div>
+          <div class="col s1 pull-s7"></div>
       </div>
     </div>
   </div>

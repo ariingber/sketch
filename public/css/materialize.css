@@ -5285,6 +5285,8 @@ button.btn-floating {
   z-index: -1;
 }
 
+/*MAX-HEIGHT FROM 70% to 90%*/
+
 .modal {
   display: none;
   position: fixed;
@@ -5292,7 +5294,7 @@ button.btn-floating {
   right: 0;
   background-color: #fafafa;
   padding: 0;
-  max-height: 70%;
+  max-height: 90%;
   width: 55%;
   margin: auto;
   overflow-y: auto;
