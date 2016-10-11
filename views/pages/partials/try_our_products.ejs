@@ -1,57 +1,58 @@
 <div class="container">
   <div class="row">
     <h1 class="center">Try our products</h1><br>
-    <form action="https://formspree.io/anne@coherohealth.com"
+    <form action="https://formspree.io/ari@coherohealth.com"
         method="POST" enctype="multipart/form-data" class="col s12">
       <input type="hidden" name="_next" value="/products" />
        <div class="row" style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #75787B; font-size: 18px;">
          <div class="col s12">
            <div class="row">
              <div class="input-field col s12 m12 l5">
-               <input id="first_name" type="text" name="first_name" class="validate">
+               <input id="first_name" type="text" name="first_name" class="validate" required>
                 <label for="first_name">First Name</label>
              </div>
            </div>
            <div class="row">
              <div class="input-field col s12 m12 l5">
-               <input id="last_name" type="text" name="last_name" class="validate">
+               <input id="last_name" type="text" name="last_name" class="validate" required>
                <label for="last_name">Last Name</label>
              </div>
            </div>
            <div class="row">
-             <div class="input-field col s12 m12 l3">
-               <input id="age" type="text" type="number" class="validate">
+             <div class="input-field col s12 m12 l2">
+               <input id="age" type="number" min="10" max="120" class="validate" required name="age" pattern="\d+" >
                <label for="age">Age</label>
              </div>
            </div>
            <div class="row" style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #75787B; font-size: 14px;">
              <div class="input-field col s12 m12 l4">
                <p>Diagnosis</p>
-                <select class="browser-default" name="Diagnosis" id="diagnosis" >
+                <select class="browser-default" name="Diagnosis" id="diagnosis" required>
                   <option value="">Select One</option>
-                  <option value="1">Asthma</option>
-                  <option value="2">COPD</option>
+                  <option value="Asthma">Asthma</option>
+                  <option value="COPD">COPD</option>
+                  <option value="Rather not disclose">Rather not disclose</option>
                 </select>
               </div>
             </div>
             <div class="row" style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #75787B; font-size: 14px;">
               <div class="input-field col s12 m12 l4">
                  <p>Phone Type</p>
-                 <select class="browser-default" name="Phone Type" id="phonetype">
+                 <select class="browser-default" name="Phone Type" id="phonetype" required>
                    <option value="">Select One</option>
-                   <option value="1">iPhone</option>
-                   <option value="2">Android</option>
-                   <option value="3">Other</option>
+                   <option value="IPhone">iPhone</option>
+                   <option value="Android">Android</option>
+                   <option value="Other">Other</option>
                  </select>
                </div>
              </div>
              <div class="row" style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #75787B; font-size: 14px;">
                <div class="input-field col s12 m12 l4">
                   <p>Reason for contatct</p>
-                  <select class="browser-default" name="Reason for contact" id="reason_for_contact">
+                  <select class="browser-default" name="Reason for contact" id="reason_for_contact" required>
                     <option value="">Select One</option>
-                    <option value="1">I want to try products by taking part in a clinical study</option>
-                    <option value="2">Something else</option>
+                    <option value="Want to take part in study">I want to try products by taking part in a clinical study</option>
+                    <option value="something Else">Something else</option>
                   </select>
                 </div>
               </div>
