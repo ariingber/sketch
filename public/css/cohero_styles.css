@@ -35,6 +35,12 @@ body {
   }
 }
 
+@media (max-width: 700px) {
+  #videomodal {
+    width: 100% !important;
+  }
+}
+
 /*@media (max-width: 1140px) {
   #learn_more_button {
     margin-top: -65px;
