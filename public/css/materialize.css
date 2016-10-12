@@ -5628,6 +5628,7 @@ label {
   color: #d1d1d1;
 }
 
+/*DISABLED BOX SIZING***********************/
 /* Text inputs */
 input:not([type]),
 input[type=text],
@@ -5653,7 +5654,7 @@ textarea.materialize-textarea {
   margin: 0 0 20px 0;
   padding: 0;
   box-shadow: none;
-  box-sizing: content-box;
+  /*box-sizing: content-box;*/
   transition: all 0.3s;
 }
 
