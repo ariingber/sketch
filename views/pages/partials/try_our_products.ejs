@@ -3,7 +3,7 @@
     <h1 class="center">Try our products</h1><br>
     <form action="https://formspree.io/ari@coherohealth.com"
         method="POST" enctype="multipart/form-data" class="col s12">
-      <input type="hidden" name="_next" value="/products" />
+      <input type="hidden" name="_next" value="/#sucess" />
        <div class="row" style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #75787B; font-size: 18px;">
          <div class="col s12">
            <div class="row">
@@ -21,7 +21,7 @@
            <div class="row">
              <div class="input-field col s12 m12 l2">
                <input id="age" type="number" min="10" max="120" class="validate" required name="age" pattern="\d+" >
-               <label for="age">Age</label>
+               <label for="age" data-error="wrong">Age</label>
              </div>
            </div>
            <div class="row" style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #75787B; font-size: 14px;">
@@ -64,7 +64,7 @@
            <label for="additional_comments">Additional Comments</label>
          </div>
         </div>
-        <button class="btn waves-effect waves-light" type="submit">Send Message
+        <button class="btn waves-effect waves-light" type="submit" >Send Message
         </button>
      </form>
    </div>

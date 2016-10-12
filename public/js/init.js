@@ -31,4 +31,8 @@ $(document).ready(function(){
        $("#joe_video")[0].src += "&autoplay=1";
        ev.preventDefault();
      });
+     $('#sucess_message').hide();
+     if (window.location.hash == '#sucess') {
+       $('#modal1').openModal();
+     }
 });
