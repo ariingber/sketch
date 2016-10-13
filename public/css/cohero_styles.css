@@ -14,7 +14,7 @@ body {
   width: 55%;
   margin: 0 auto;
 }
-#inner_pic {
+#inner_pic_hardware {
   width: 46%;
   margin: 0 auto;
 }
@@ -32,6 +32,12 @@ body {
 @media (max-width: 700px) {
   #inner {
     width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .pic {
+    width: 100% !important;
   }
 }
 
