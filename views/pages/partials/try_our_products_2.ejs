@@ -1,0 +1,63 @@
+<div class="container">
+  <div class="row">
+    <div class="col s12" style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #435663; font-size: 14px;">
+      <h1 class="center">Try our products</h1><br>
+      <form action="https://formspree.io/ari@coherohealth.com"
+          method="POST" enctype="multipart/form-data" class="col s12">
+        <input type="hidden" name="_next" value="/#sucess" />
+         <div class="input-field col s12 m12 l4">
+           <input id="first_name" type="text" name="first_name" class="validate" required>
+            <label style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #435663; font-size: 14px;" for="first_name">First Name</label>
+         </div>
+         <div class="input-field col s12 m12 l4">
+           <input id="last_name" type="text" name="last_name" class="validate" required>
+           <label style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #435663; font-size: 14px;" for="last_name">Last Name</label>
+         </div>
+         <div class="input-field col s12 m12 l4">
+           <select name="Diagnosis" id="diagnosis" required>
+             <option value="" disabled selected>Select One</option>
+             <option value="Asthma">Asthma</option>
+             <option value="COPD">COPD</option>
+             <option value="Choose not to disclose">Choose not to disclose</option>
+           </select>
+           <label style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #435663; font-size: 14px;">Diagnosis</label>
+         </div>
+         <div class="input-field col s12 m12 l4">
+           <input id="email" type="email" min="10" max="120" class="validate" required name="email" >
+           <label style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #435663; font-size: 14px;" for="email" data-error="please provide valid email">Email</label>
+         </div>
+         <div class="input-field col s12 m12 l4">
+           <input id="age" type="number" min="10" max="120" class="validate" required name="age" pattern="\d+" >
+           <label style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #435663; font-size: 14px;" for="age" data-error="wrong">Age</label>
+         </div>
+         <div class="col l4 hide-on-med-and-down">
+         </div>
+        <div class="input-field col s12 m12 l4">
+          <select name="Phone Type" id="phonetype" required>
+            <option value="" disabled selected>Select One</option>
+            <option value="iPhone">iPhone</option>
+            <option value="Android">Android</option>
+            <option value="Other">Other</option>
+          </select>
+          <label style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #435663; font-size: 14px;">Phone Type</label>
+        </div>
+        <div class="col l8 hide-on-med-and-down">
+        </div>
+        <div class="input-field col s12 m12 l4">
+          <select name="Reason for contact" id="reason_for_contact" required>
+            <option value="" disabled selected>Select One</option>
+            <option value="I want to try products by taking part in a clinical study">I want to try products by taking part in a clinical study</option>
+            <option value="Something else">Something else</option>
+          </select>
+          <label style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #435663; font-size: 14px;">Reason for contatct</label>
+        </div>
+        <div class="input-field col s12 m12 l12">
+         <textarea id="additional_comments" name="Additional Comments"  type="text" class="materialize-textarea"></textarea>
+         <label for="additional_comments" style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #435663; font-size: 14px;">Additional Comments</label>
+       </div>
+        <button style="margin-top:45px; margin-left:10px;" class="btn waves-effect waves-light" type="submit" >Send Message
+        </button>
+       </form>
+     </div>
+   </div>
+</div>

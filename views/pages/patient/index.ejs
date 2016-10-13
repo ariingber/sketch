@@ -3,7 +3,7 @@
 <%- include ../partials/head %>
 <body>
 <div id="blue_welcome_screen">
-<%- include ../partials/nav %>
+  <%- include ../partials/nav %>
     <br>
     <br>
     <br>
@@ -11,55 +11,75 @@
     <div class="container center">
       <div class="row">
         <div class="col s12" style="text-align:center;">
-          <div id="modal1" class="modal" style="background-color:#0a50a5; margin-top:70px;">
-             <div class="modal-content">
-               <h1 class="white-text">Thank you.  <br>We got your message.</h1>
-             </div>
-             <div class="modal-footer" style="background-color:#0a50a5;">
-               <a href="#!" class="modal-action modal-close waves-effect waves-light btn">close</a>
-             </div>
-           </div>
           <div>
             <h1 id="GetToKnowCoHero">Get to know <br class="show-on-small hide-on-med-and-up"/> Cohero Health</h1>
           </div>
-          <div id="outer" style="width:100%; margin-top:-15px;">
+          <div id="outer" style="width:100%; margin-top:-15px; color:#435663">
             <div id="inner">
               We’re revolutionizing how you take care of your asthma, COPD or Cystic Fibrosis through technology, data and design.
             </div>
           </div>
+          <br>
+          <br>
         </div>
       </div>
-      <br>
+    </div>
 
-            <!-- Modal Video Trigger -->
-      <div class"col s12">
-       <a class="center hvr-grow modal-trigger" href="#videomodal" id="play_button_link"><img id="play_button" src="images/button.svg" alt=""><br><p style="font-size:13px; color: white;">Watch our video</p></a>
-     </div>
+  <div class="container center">
+    <div class="row">
+      <div class="col s12" style="text-align:center;">
+        <!-- Modal Video Trigger -->
+          <a class="center hvr-grow modal-trigger" href="#videomodal" id="play_button_link">
+            <img id="play_button" src="images/button.svg" alt="">
+            <br>
+            <p style="font-size:13px; color: #435663;">Watch our video</p>
+          </a>
+        </div>
+      </div>
+    </div>
 
-       <!-- Modal FOR MOBILE -->
-       <div id="videomodal" class="modal" style="width:75%; margin-top:30px; border:solid #b997cd 2px;">
-         <div class="modal-content" style="padding:0;">
-           <div class="video-container">
-              <iframe id="joe_video" src="https://player.vimeo.com/video/142920118?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <div class="container center">
+      <div class="row">
+        <div class="col s12" style="text-align:center;">
+            <!-- THANK YOU MODAL -->
+          <div id="modal1" class="modal" style="background-color:white; margin-top:70px;">
+             <div class="modal-content">
+               <br>
+               <h1>Thanks for your message.<h1>
+              <p style="color: #435663; font-size: 18px;"> We'll get back to you as soon as possible.</p>
+             </div>
+             <div class="modal-footer" style="background-color:white;">
+               <a href="#!" class="modal-action modal-close waves-effect waves-light btn">close</a>
+             </div>
+           </div>
+              <!-- VIDEO MODAL -->
+           <div id="videomodal" class="modal" style="width:75%; margin-top:30px; border:solid #b997cd 2px;">
+             <div class="modal-content" style="padding:0;">
+               <div class="video-container">
+                  <iframe id="joe_video" src="https://player.vimeo.com/video/142920118?title=0&byline=0&portrait=0&api=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+             </div>
+           </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="container center">
+      <div class="row">
+        <div class="col s12" style="text-align:center;">
+           <div class="hide-on-med-and-down">
+              <br>
+              <br>
+              <div id="what_is_cohero_story_arrow" class="hvr-grow">
+                <a href="#what_is_CoHero">
+                  <h6 style="font-size:13px; color:#435663">What is Cohero Health?</h6>
+                  <img src="images/grey_scroll_down.png" width="28px;" alt="">
+                </a>
+              </div>
             </div>
-         </div>
-       </div>
-
-
-
-       <div class="hide-on-med-and-down">
-          <br>
-          <br>
-          <br>
-          <div id="what_is_cohero_story_arrow" class="hvr-grow">
-            <a href="#what_is_CoHero">
-              <h6 class="white-text" style="font-size:13px;">What is Cohero Health?</h6>
-              <img src="images/white_scroll_down.png" width="28px;" alt="">
-            </a>
           </div>
-        </div>
       </div>
-      <br>
     </div>
 </div>
 
@@ -79,35 +99,34 @@
         <div class="col s12 m4">
           <div class="icon-block">
             <div id="what_is_CoHero" class="section scrollspy">
-              <img src="images/breather.png" width="171.6px;" alt="">
+              <div style="height:130px;">
+                <img src="images/breather.png" width="171.6px;" alt="">
+              </div>
               <br><br>
             </div>
             <h2 class="center" style="margin-top:0px;">Track</h2>
             <p>Keep track of how often you use your medications, when you’re at risk, how open your lung airways are, and your lung metrics over time.</p>
           </div>
         </div>
-
         <div class="col s12 m4">
           <div class="icon-block">
-            <img src="images/engage.png" width="171.6px;" alt="">
+            <div style="height:130px;">
+              <img src="images/engage.png" width="171.6px;" alt="" style="margin-top:25px;">
+            </div>
             <br><br>
             <h2 class="center">Engage</h2>
             <p class="light">Get reminders to take your medication, smart notifications, tips, and timely information.</p>
           </div>
         </div>
-
-
         <div class="col s12 m4">
           <div class="icon-block">
-            <br>
-            <img src="images/doc.png" width="171.6px;" alt="" style="margin-top:-30px;">
+            <div style="height:130px;">
+              <img src="images/doc.png" width="171.6px;" alt="" style="margin-top:25px;">
+            </div>
             <br><br>
             <h2 class="center">Connect</h2>
-
             <p class="light">Share information with your doctor in real-time, so your treatment is just right and always personal.</p>
           </div>
-
-
       </div>
     </div>
 
@@ -187,8 +206,8 @@
             </p>
           </div>
           <div style="padding:10px; font-size:14px; text-align:left; margin-top:-17px;">
-            <div> • See your health trends over time, and share them with your doctor, too.</div>
-            <div style="margin-top:10px;"> • BreatheSmart helps you build healthy habits with personalized, daily notifications.</div>
+            <div>See your health trends over time, and share them with your doctor, too.</div>
+            <div style="margin-top:10px;">BreatheSmart helps you build healthy habits with personalized, daily notifications.</div>
           </div><br>
           <a style="text-align:left;" id="learn_more_button_hardware" class="waves-effect waves-light btn left" href="products">Learn More</a>
           <!-- <div class="col s11 push-s1"><span style="text-align:left;"> <div>See your health trends over time, and share them with your docotr, too.</div></span></div>
@@ -220,8 +239,8 @@
               Our hardware and apps work together seamlessly to keep you in the driver's seat of your respiratory health.
             </p>
             <div style="padding:10px; font-size:14px; text-align:left; margin-top:-17px;">
-              <div> • See your health trends over time, and share them with your doctor, too.</div>
-              <div style="margin-top:10px;"> • BreatheSmart helps you build healthy habits with personalized, daily notifications.</div>
+              <div>See your health trends over time, and share them with your doctor, too.</div>
+              <div style="margin-top:10px;">BreatheSmart helps you build healthy habits with personalized, daily notifications.</div>
             </div><br>
           </div>
         </div>
@@ -319,42 +338,43 @@
     <div class="row center">
       <div class="col s12">
         <div class= "col s1 hide-on-small-only">
-          <img class="hide-on-small-only" style="margin-top:140px;" id="quote_slider_left_chev" src="images/gray_left_arrow.png" alt="">
+          <img class="hide-on-small-only hvr-grow" style="margin-top:225px; cursor: pointer;" id="quote_slider_left_chev" src="images/gray_left_arrow.png" alt="">
         </div>
         <div class="col s12 m10 l10">
-          <br><br>
+          <br><br><br><br><br><br>
           <h1>Hear from people breathing <br> easier each day.</h1>
           <div class="slider" id="quote_slider">
             <ul class="slides grey lighten-5">
               <li>
                 <div>
-                  <p class="light grey-text text-darken-1">"Using the BreatheSmart app and HeroTracker hardware <br class="hide-on-small-only" />has finally put me in control of my asthma."</p>
-                  <p class="light grey-text text-darken-1">- Courtney J., Texas</p><br>
+                  <p>"Using the BreatheSmart app and HeroTracker hardware <br class="hide-on-small-only" />has finally put me in control of my asthma."</p>
+                  <p>- Courtney J., Texas</p><br>
                 </div>
               </li>
               <li>
                 <div>
-                  <p class="light grey-text text-darken-1">“Text reminders have been really helpful.”</p>
-                  <p class="light grey-text text-darken-1">- Zach B., NYC</p>
+                  <p>“Text reminders have been really helpful.”</p>
+                  <p>- Zach B., NYC</p>
                 </div>
               </li>
               <li>
                 <div>
-                  <p class="light grey-text text-darken-1">“I really like how easily you can look at the data <br class="hide-on-small-only" /> over different lengths of time.” </p>
-                  <p class="light grey-text text-darken-1">- Kristen C., MD</p>
+                  <p>“I really like how easily you can look at the data <br class="hide-on-small-only" /> over different lengths of time.” </p>
+                  <p>- Kristen C., MD</p>
                 </div>
               </li>
               <li>
                 <div>
-                  <p class="light grey-text text-darken-1">"The BreatheSmart app has changed my life! <br class="hide-on-small-only" />  It has consistently reminded me to take my control inhaler twice a day."</p>
-                  <p class="light grey-text text-darken-1">- Mark VV, NYC</p>
+                  <p>"The BreatheSmart app has changed my life! <br class="hide-on-small-only" />  It has consistently reminded me to take my control inhaler twice a day."</p>
+                  <p>- Mark VV, NYC</p>
                 </div>
               </li>
             </ul>
           </div>
+          <br><br><br><br>
         </div>
         <div class="col s1" class="col s1 hide-on-small-only">
-          <img style="margin-top:140px;" class="hide-on-small-only" id="quote_slider_right_chev" src="images/gray_right_arrow.png" alt="">
+          <img style="margin-top:225px; cursor: pointer;" class="hide-on-small-only hvr-grow" id="quote_slider_right_chev" src="images/gray_right_arrow.png" alt="">
         </div>
       </div>
     </div>
@@ -365,18 +385,24 @@
 
 
 
-<div id="darkergreybox" class="grey lighten-4" style="margin-top:-20px;">
+<div id="darkergreybox" class="white" style="margin-top:-20px;">
   <div class="container">
     <div class="center row">
-      <div  class="col s12 center grey-text">
+      <div  class="col s12 center">
+          <br>
           <br>
           <div class="col s12 m12 l5">
-            <h2 style="text-align:left;" class="hide-on-med-and-down">We're revolutionizing respiratory health. <br>And the press has noticed.</h2>
+            <h1 style="text-align:left;" class="hide-on-med-and-down">
+              <br><br><br><br>
+              We're revolutionizing respiratory health. And the press has noticed.
+            </h1>
+            <h2 style="text-align:left;" class="hide-on-med-and-down"></h2>
             <!-- MOBILE H2 *********************** -->
-            <h2 style="text-align:center;" class="show-on-med-and-down hide-on-large-only">We're revolutionizing respiratory health. <br> And the press has noticed.</h2>
+            <h2 style="text-align:center;" class="show-on-med-and-down hide-on-large-only">We're revolutionizing respiratory health. And the press has noticed.</h2>
             <!-- ********************************************* -->
           </div>
-          <div class="col s12 m12 l7 center"><br>
+          <div class="col s12 m12 l7 center">
+            <br><br><br><br><br>
             <img src="images/Wired.png" style="padding:10px;" width="125px" alt="">
             <img src="images/FastCompany.png" style="padding:10px;" width="125px" alt="">
             <img src="images/Crains.png" style="padding:10px;" width="125px" alt="">
@@ -388,13 +414,44 @@
             <img src="images/MountSinai.png" style="padding:10px; opacity:.2;" width="125px" alt="">
             <br><br>
           </div>
+          <div class="col s12">
+            <br><br><br>
+            <div class="slider" id="press_slider" >
+              <ul class="slides white">
+                <li>
+                  <div>
+                    <p>"Using the BreatheSmart app and HeroTracker hardware <br class="hide-on-small-only" />has finally put me in control of my asthma."</p>
+                    <p>- Courtney J., Texas</p><br>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <p>“Text reminders have been really helpful.”</p>
+                    <p>- Zach B., NYC</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <p>“I really like how easily you can look at the data <br class="hide-on-small-only" /> over different lengths of time.” </p>
+                    <p>- Kristen C., MD</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <p>"The BreatheSmart app has changed my life! <br class="hide-on-small-only" />  It has consistently reminded me to take my control inhaler twice a day."</p>
+                    <p>- Mark VV, NYC</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
       </div>
     </div>
   </div>
 </div>
-<br>
+<br><br><br><br>
 
-<%- include ../partials/try_our_products %>
+<%- include ../partials/try_our_products_2 %>
 <br><br><br>
 <%- include ../partials/footer %>
 

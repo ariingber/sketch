@@ -27,12 +27,22 @@ $(document).ready(function(){
       $('#health_care').hover( function() {
         $('#help_dropdown').fadeOut();
       });
-      $('#play_button_link').on('click', function(ev) {
-       $("#joe_video")[0].src += "&autoplay=1";
-       ev.preventDefault();
-     });
-     $('#sucess_message').hide();
-     if (window.location.hash == '#sucess') {
-       $('#modal1').openModal();
-     }
+      $('#sucess_message').hide();
+      if (window.location.hash == '#sucess') {
+        $('#modal1').openModal();
+      };
+
+      var iframe = document.querySelector('#joe_video');
+      var player = new Vimeo.Player(iframe);
+      $('body').click(function(evt){
+        if(!$(evt.target).is('#play_button_link')) {
+            player.pause();
+         }
+      });
+      $( '#play_button_link' ).click(function(event) {
+        event.stopPropagation();
+        player.play();
+      });
+
+     $('select').material_select();
 });
