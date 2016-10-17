@@ -6,13 +6,27 @@ $(document).ready(function(){
     $('.carousel.carousel-slider').carousel({full_width: true});
     $('.modal-trigger').leanModal();
     $('.scrollspy').scrollSpy();
+
+    // ALL SLIDERS ***********************
     $('.slider').slider({full_width: true, indicators: false, height: 200 });
+    // ***************************************
+
+    // QUOTES AND PRESS SLIDERS *********************
     $( "#quote_slider_left_chev" ).click(function() {
       $('#quote_slider').slider('prev');
     });
     $( "#quote_slider_right_chev" ).click(function() {
       $('#quote_slider').slider('next');
     });
+    $( "#press_slider_left_chev" ).click(function() {
+      $('#press_slider').slider('prev');
+    });
+    $( "#press_slider_right_chev" ).click(function() {
+      $('#press_slider').slider('next');
+    });
+    // ***************************************************
+
+    // NAV BAR HELPER***************************************
       {
         $('#help_button').hover( function() {
           $('#help_dropdown').fadeIn( "fast" );
@@ -27,10 +41,14 @@ $(document).ready(function(){
       $('#health_care').hover( function() {
         $('#help_dropdown').fadeOut();
       });
+      // ******************************************
+
       $('#sucess_message').hide();
       if (window.location.hash == '#sucess') {
         $('#modal1').openModal();
+        window.location.hash = ""
       };
+
 
       var iframe = document.querySelector('#joe_video');
       var player = new Vimeo.Player(iframe);
