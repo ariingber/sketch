@@ -13,7 +13,7 @@ body {
 
 #blue_welcome_screen {
   color: #ffffff;
-  /*background-color: #0a50a5;*/
+  background-color: #0a50a5;
 }
 
 #inner {
@@ -143,7 +143,7 @@ header nav ul li a {
 #GetToKnowCoHero {
   font-family: 'museo-rounded-300', roboto;
   font-size: 36px;
-  /*color: #002047;*/
+  color: white;
   margin-top: 37.7px;
 }
 @media (max-width: 900px) {
