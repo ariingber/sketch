@@ -170,6 +170,18 @@ header nav ul li a {
   margin-top:0;
 }
 
+#what_is_content_outer {
+  position: relative;
+
+}
+#what_is_content_inner {
+  width: 265px;
+  height: auto;
+  margin: 0 auto;
+  padding: 5px;
+  position: relative;
+}
+
 /*this is css taken and repeated from materialize but backround color changed and made important*/
 footer.page-footer {
   margin-top: 20px;
