@@ -3,7 +3,8 @@ $(document).ready(function(){
     $(".button-collapse").sideNav();
     $('.materialboxed').materialbox();
     $('ul.tabs').tabs();
-    $('.carousel.carousel-slider').carousel({full_width: true});
+    $('.carousel.carousel-slider#quote_slider').carousel({full_width: true});
+    $('.carousel').carousel({});
     $('.modal-trigger').leanModal();
     $('.scrollspy').scrollSpy();
 
