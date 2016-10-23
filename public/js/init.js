@@ -5,6 +5,16 @@ $(document).ready(function(){
     $('ul.tabs').tabs();
     $('.carousel.carousel-slider#quote_slider').carousel({full_width: true});
     $('.carousel').carousel({});
+    slider = $('.bxslider').bxSlider({
+      minSlides: 4,
+      maxSlides: 4,
+      moveSlides: 1,
+      slideWidth: 275,
+      pagerCustom: '#bx-pager'
+    });
+    $( '#clickTest' ).click(function() {
+      slider.goToNextSlide();
+    });
     $('.modal-trigger').leanModal();
     $('.scrollspy').scrollSpy();
 
