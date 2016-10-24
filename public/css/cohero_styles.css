@@ -66,13 +66,13 @@ body {
 }
 
 h1 {
-  font-family: 'museo-rounded-300', roboto;
+  font-family: 'museo-rounded-300', sans-serif;
   font-size: 30px;
   color: #004da8;
 }
 
 h2 {
-  font-family: 'museo-rounded-300', roboto;
+  font-family: 'museo-rounded-300', sans-serif;
   font-size: 24px;
   color: #004da8;
 }

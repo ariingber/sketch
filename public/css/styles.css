@@ -16,3 +16,11 @@ src: url('../fonts/museo/MuseoSansRounded-500.otf');
   border-right: 8px solid transparent;
   border-bottom: 8px solid #df696e;
 }
+
+#quote_credit {
+  margin-left: 15px;
+  margin-top: 10px;
+  font-family: 'museo-rounded-300', sans-serif;
+  color: #0350AA;
+  font-size: 18px;
+}
