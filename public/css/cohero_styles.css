@@ -196,6 +196,19 @@ header nav ul li a {
   position: absolute;
 }
 
+#outer_press_release {
+  position: relative;
+}
+
+#inner_press_release {
+  z-index: 10;
+  height: auto;
+  margin: 0 auto;
+  left:150px;
+  top:275px;
+  position: absolute;
+}
+
 #readBio {
   font-size:15px;
   border:solid grey 1px;

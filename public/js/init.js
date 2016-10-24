@@ -12,7 +12,7 @@ $(document).ready(function(){
       slideWidth: 275,
       pagerCustom: '#bx-pager'
     });
-    $( '#clickTest' ).click(function() {
+    $( '#press_release_arrow' ).click(function() {
       slider.goToNextSlide();
     });
     $('.modal-trigger').leanModal();
