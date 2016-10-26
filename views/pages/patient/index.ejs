@@ -1,212 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include ../partials/head %>
+<%- include ../globalPartials/head %>
 <body>
 <div id="top_scrollspy" class="section scrollspy" style="display:inline;">
 </div>
 <div id="blue_welcome_screen">
-  <%- include ../partials/nav %>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="container center">
-      <div class="row">
-        <div class="col s12" style="text-align:center;">
-          <div>
-            <h1 id="GetToKnowCoHero">Get to know <br class="show-on-small hide-on-med-and-up"/> Cohero Health.</h1>
-          </div>
-          <div id="outer" style="width:100%; margin-top:-15px; color:white">
-            <div id="inner">
-              We’re revolutionizing how you take care of your asthma, COPD or Cystic Fibrosis through technology, data and design.
-            </div>
-          </div>
-          <br>
-        </div>
-      </div>
-    </div>
-
-  <div class="container center">
-    <div class="row">
-      <div class="col s12" style="text-align:center;">
-        <!-- Modal Video Trigger -->
-          <a class="center hvr-grow modal-trigger" href="#videomodal" id="play_button_link">
-            <img id="play_button" src="images/button.svg" alt="">
-            <br>
-            <p style="font-size:13px; color: white;">Watch our video</p>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="container center">
-      <div class="row">
-        <div class="col s12" style="text-align:center;">
-            <!-- THANK YOU MODAL -->
-          <div id="modal1" class="modal" style="background-color:white; margin-top:70px;">
-             <div class="modal-content">
-               <br>
-               <h1>Thanks for your message.<h1>
-              <p style="color: #435663; font-size: 18px;"> We'll get back to you as soon as possible.</p>
-             </div>
-             <div class="modal-footer" style="background-color:white;">
-               <a href="#!" class="modal-action modal-close waves-effect waves-light btn">close</a>
-             </div>
-           </div>
-              <!-- VIDEO MODAL -->
-           <div id="videomodal" class="modal" style="width:75%; margin-top:30px; border:solid #b997cd 2px;">
-             <div class="modal-content" style="padding:0;">
-               <div class="video-container">
-                  <iframe id="joe_video" src="https://player.vimeo.com/video/142920118?title=0&byline=0&portrait=0&api=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                </div>
-             </div>
-           </div>
-        </div>
-      </div>
-    </div>
-
-    <br>
-    <div class="container center">
-      <div class="row">
-        <div class="col s12" style="text-align:center;">
-           <div class="hide-on-med-and-down">
-              <br>
-              <br>
-              <div id="what_is_cohero_story_arrow" class="hvr-grow">
-                <a href="#what_is_cohero">
-                  <h6 style="font-size:13px; color:white">What is Cohero Health?</h6>
-                  <img src="images/white_scroll_down.png" width="28px;" alt="">
-                  <br>
-                  <br>
-                </a>
-              </div>
-            </div>
-          </div>
-      </div>
-    </div>
+  <%- include ../patient/generalPatientPartials/nav %>
+  <%- include ../patient/homePagePartials/getToKnowCoheroHealth %>
 </div>
-<br><br><br><br>
-
-
-
-
-<br>
-  <div class="container hide-on-med-and-down" >
-    <div class="center row">
-        <div class="col s2">
-        </div>
-        <div class="col s8">
-          <br>
-          <h1>Build better habits, <br>and keep your doctor in the loop.</h1>
-        </div><br>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <div id="what_is_cohero" class="section scrollspy">
-              <div style="height:130px;">
-                <img src="images/breather.png" width="171.6px;" alt="">
-              </div>
-              <br><br>
-            </div>
-            <div id="what_is_content_outer" >
-              <div id="what_is_content_inner">
-                <h2 class="center" style="margin-top:-3px;">Track.</h2>
-                <p>Keep track of how often you use your medications, when you’re at risk, how open your lung airways are, and your lung metrics over time.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <div style="height:130px;">
-              <img src="images/engage.png" width="171.6px;" alt="" style="margin-top:25px;">
-            </div>
-            <br><br>
-            <div id="what_is_content_outer" >
-              <div id="what_is_content_inner">
-                <h2 class="center">Engage.</h2>
-                <p class="light">Get reminders to take your medication, smart notifications, tips, and timely information.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <div style="height:130px;">
-              <img src="images/doc.png" width="171.6px;" alt="" style="margin-top:25px;">
-            </div>
-            <br><br>
-            <div id="what_is_content_outer" >
-              <div id="what_is_content_inner">
-                <h2 class="center">Connect.</h2>
-                <p class="light">Share information with your doctor in real-time, so your treatment is just right and always personal.</p>
-              </div>
-            </div>
-          </div>
-      </div>
-    </div>
-
-    <div class="center row">
-      <div id="how_does_it_work_story_arrow" class="hvr-grow">
-        <a href="#how_does_it_work" class="hide-on-small-only">
-          <p style="font-size:13px; color:#75787B;">How does it work?</p>
-          <div style="margin-top:-10px;">
-            <img src="images/grey_scroll_down.png" width="28px;" alt="">
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-
-
-
-<!-- ******************************MOBILE****************************************** -->
-  <div class="container hide-on-large-only show-on-med-and-up">
-    <div class="row">
-      <div class="col s12">
-        <h1 style="text-align:center;">Build better habits, <br>and keep your doctor in the loop.</h1>
-        <div class="carousel carousel-slider center" data-indicators="true">
-         <div class="carousel-item white" href="#one!">
-           <h2>Track</h2>
-           <img src="images/breather.png" style="width:200px;" alt="">
-           <div id="outer">
-             <div id="inner">
-               <p style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #75787B; font-size: 18px;">
-                 Keep track of how often you use your medications, when you’re at risk, how open your lung airways are, and your lung metrics over time.
-               </p>
-             </div>
-           </div>
-         </div>
-         <div class="carousel-item white" href="#two!">
-           <h2>Engage</h2>
-           <img src="images/engage.png" style="width:200px;" alt="">
-           <div id="outer">
-             <div id="inner">
-               <p style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #75787B; font-size: 18px;">
-                 Get reminders to take your medication, smart notifications, tips, and timely information.
-               </p>
-             </div>
-           </div>
-         </div>
-         <div class="carousel-item white" href="#three!">
-           <h2>Connect</h2>
-           <img src="images/doc.png" style="width:200px;" alt="">
-           <div id="outer">
-             <div id="inner">
-               <p style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #75787B; font-size: 18px;">
-                 Share information with your doctor in real-time, so your treatment is just right and always personal.
-               </p>
-             </div>
-           </div>
-         </div>
-       </div>
-      </div>
-    </div>
-  </div>
-  <!-- **************************************************************************** -->
-
-</div>
-
+<br><br><br><br><br>
+  <%- include ../patient/homePagePartials/buildBetterHabbits %>
 <br><br><br><br><br><br>
 
 
@@ -517,11 +320,11 @@
 
 
 <div id="try_our_products" class="section scrollspy" style="display:inline;">
-<%- include ../partials/try_our_products_2 %>
+<%- include ../globalPartials/try_our_products_2 %>
 </div>
 <br><br><br>
-<%- include ../partials/footer %>
+<%- include ../globalPartials/footer %>
 
-<%- include ../partials/bottom_of_body %>
+<%- include ../globalPartials/bottom_of_body %>
 </body>
 </html>
