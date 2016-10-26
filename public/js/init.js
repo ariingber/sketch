@@ -1,9 +1,15 @@
 $(document).ready(function(){
+  // THIS IS THE NAV BAR HELPER FOR CLIENT SITE MORE CONTROL OF IT LOWER ON THIS PAGE
     $('#hello').hide();
+    // *****************************************
     $(".button-collapse").sideNav();
     $('.materialboxed').materialbox();
     $('ul.tabs').tabs();
+    // CAROUSEL FOR QUOTES
     $('.carousel.carousel-slider#quote_slider').carousel({full_width: true});
+    // **************************
+
+    // CAROUSEL ON PRESS PAGE
     $('.carousel').carousel({});
     slider = $('.bxslider').bxSlider({
       minSlides: 4,
@@ -15,6 +21,9 @@ $(document).ready(function(){
     $( '#press_release_arrow' ).click(function() {
       slider.goToNextSlide();
     });
+    // *******************************
+
+
     $('.modal-trigger').leanModal();
     $('.scrollspy').scrollSpy();
 

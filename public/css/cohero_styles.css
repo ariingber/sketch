@@ -76,6 +76,22 @@ h2 {
   font-size: 24px;
   color: #004da8;
 }
+.tile {
+  padding:18px;
+  width:210px;
+  height:210px;
+  border-radius:8px;
+}
+.tile_title {
+  font-size: 24px;
+  line-height: 28px;
+  font-family: 'museo-rounded-300', sans-serif;
+  color: white;
+}
+.tile_sub_text {
+  font-size: 12px;
+  color: #004da8;
+}
 
 header nav ul li a {
   margin-top: 32px;
@@ -211,9 +227,10 @@ header nav ul li a {
 
 #readBio {
   font-size:15px;
-  border:solid grey 1px;
+  border:solid #C7C7C7 1px;
   padding:10px 30px 10px 30px;
   border-radius:10px;
+  color: #75787B;
 }
 
 /*this is css taken and repeated from materialize but backround color changed and made important*/
