@@ -219,11 +219,20 @@ header nav ul li a {
   position: relative;
 }
 
-#inner_press_release {
+#inner_press_release_arrow_left {
   z-index: 10;
   height: auto;
   margin: 0 auto;
   left:150px;
+  top:275px;
+  position: absolute;
+}
+
+#inner_press_release_arrow_right {
+  z-index: 10;
+  height: auto;
+  margin: 0 auto;
+  right:170px;
   top:275px;
   position: absolute;
 }

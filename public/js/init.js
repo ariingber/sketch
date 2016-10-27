@@ -1,6 +1,7 @@
 $(document).ready(function(){
   // THIS IS THE NAV BAR HELPER FOR CLIENT SITE MORE CONTROL OF IT LOWER ON THIS PAGE
     $('#hello').hide();
+
     // *****************************************
     $(".button-collapse").sideNav();
     $('.materialboxed').materialbox();
@@ -18,8 +19,15 @@ $(document).ready(function(){
       slideWidth: 275,
       pagerCustom: '#bx-pager'
     });
-    $( '#press_release_arrow' ).click(function() {
+
+    // PRESS ARROWS ***********************
+    $('#press_release_arrow_right').hide();
+    $( '#press_release_arrow_left' ).click(function() {
       slider.goToNextSlide();
+      $('#press_release_arrow_right').show();
+    });
+    $( '#press_release_arrow_right' ).click(function() {
+      slider.goToPrevSlide();
     });
     // *******************************
 
