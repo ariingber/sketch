@@ -1,6 +1,25 @@
 $(document).ready(function(){
-  // THIS IS THE NAV BAR HELPER FOR CLIENT SITE MORE CONTROL OF IT LOWER ON THIS PAGE
+
+
+    // NAV BAR HELPER***************************************
     $('#hello').hide();
+      {
+        $('#help_button').hover( function() {
+          $('#help_dropdown').fadeIn( "fast" );
+        });
+      };
+      $('#hello').hover( function() {
+        $('#help_dropdown').show();
+      });
+      $('#help').hover( function() {
+        $('#help_dropdown').fadeOut();
+      });
+      $('#health_care').hover( function() {
+        $('#help_dropdown').fadeOut();
+      });
+      // *****************************************************
+
+      
     $('.slider.testimonial_slider').slider({indicators:true, height:150 });
     $('.slider.press_slider').slider({indicators:false, height:225});
 
@@ -58,22 +77,7 @@ $(document).ready(function(){
     // });
     // ***************************************************
 
-    // NAV BAR HELPER***************************************
-      {
-        $('#help_button').hover( function() {
-          $('#help_dropdown').fadeIn( "fast" );
-        });
-      };
-      $('#hello').hover( function() {
-        $('#help_dropdown').show();
-      });
-      $('#help').hover( function() {
-        $('#help_dropdown').fadeOut();
-      });
-      $('#health_care').hover( function() {
-        $('#help_dropdown').fadeOut();
-      });
-      // ******************************************
+
 
       $('#sucess_message').hide();
       if (window.location.hash == '#sucess') {
