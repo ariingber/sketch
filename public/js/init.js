@@ -1,20 +1,21 @@
 $(document).ready(function(){
   // THIS IS THE NAV BAR HELPER FOR CLIENT SITE MORE CONTROL OF IT LOWER ON THIS PAGE
     $('#hello').hide();
-    $('.slider.testimonial_slider').slider({indicators:true});
+    $('.slider.testimonial_slider').slider({indicators:true, height:150 });
+    $('.slider.press_slider').slider({indicators:false, height:225});
 
     // *****************************************
     $(".button-collapse").sideNav();
     $('.materialboxed').materialbox();
     $('ul.tabs').tabs();
     // CAROUSEL FOR QUOTES
-    $('.carousel.carousel-slider#quote_slider').carousel({full_width: true});
+    // $('.carousel.carousel-slider#quote_slider').carousel({full_width: true});
     // CAROUSEL FOR BUILD BETTER HABBITS
-    $('.carousel.carousel-slider#build_better_habbits_carousel').carousel({});
+    // $('.carousel.carousel-slider#build_better_habbits_carousel').carousel({});
     // **************************
 
     // CAROUSEL ON PRESS PAGE
-    $('.carousel').carousel({});
+    // $('.carousel').carousel({});
     slider = $('.bxslider').bxSlider({
       minSlides: 4,
       maxSlides: 4,
@@ -24,14 +25,14 @@ $(document).ready(function(){
     });
 
     // PRESS ARROWS ***********************
-    $('#press_release_arrow_right').hide();
-    $( '#press_release_arrow_left' ).click(function() {
-      slider.goToNextSlide();
-      $('#press_release_arrow_right').show();
-    });
-    $( '#press_release_arrow_right' ).click(function() {
-      slider.goToPrevSlide();
-    });
+    // $('#press_release_arrow_right').hide();
+    // $( '#press_release_arrow_left' ).click(function() {
+    //   slider.goToNextSlide();
+    //   $('#press_release_arrow_right').show();
+    // });
+    // $( '#press_release_arrow_right' ).click(function() {
+    //   slider.goToPrevSlide();
+    // });
     // *******************************
 
 
@@ -39,22 +40,22 @@ $(document).ready(function(){
     $('.scrollspy').scrollSpy();
 
     // ALL SLIDERS ***********************
-    $('.slider').slider({full_width: true, indicators: false, height: 200 });
+    // $('.slider').slider({full_width: true, indicators: false, height: 200 });
     // ***************************************
 
     // QUOTES AND PRESS SLIDERS *********************
-    $( "#quote_slider_left_chev" ).click(function() {
-      $('#quote_slider').slider('prev');
-    });
-    $( "#quote_slider_right_chev" ).click(function() {
-      $('#quote_slider').slider('next');
-    });
-    $( "#press_slider_left_chev" ).click(function() {
-      $('#press_slider').slider('prev');
-    });
-    $( "#press_slider_right_chev" ).click(function() {
-      $('#press_slider').slider('next');
-    });
+    // $( "#quote_slider_left_chev" ).click(function() {
+    //   $('#quote_slider').slider('prev');
+    // });
+    // $( "#quote_slider_right_chev" ).click(function() {
+    //   $('#quote_slider').slider('next');
+    // });
+    // $( "#press_slider_left_chev" ).click(function() {
+    //   $('#press_slider').slider('prev');
+    // });
+    // $( "#press_slider_right_chev" ).click(function() {
+    //   $('#press_slider').slider('next');
+    // });
     // ***************************************************
 
     // NAV BAR HELPER***************************************

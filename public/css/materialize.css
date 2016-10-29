@@ -7625,20 +7625,23 @@ input[type=range]:focus::-ms-fill-upper {
   margin: 0;
 }
 
+/*backgroundcolor changed from #e0e0e0 to #F7F7F7*/
+/*height and width changed from 16 to 10*/
 .slider .indicators .indicator-item {
   display: inline-block;
   position: relative;
   cursor: pointer;
-  height: 16px;
-  width: 16px;
+  height: 10px;
+  width: 10px;
   margin: 0 12px;
-  background-color: #e0e0e0;
+  background-color: #F7F7F7;
   transition: background-color .3s;
   border-radius: 50%;
 }
 
+/*changed from #4CA50 to #1FD9C7*/
 .slider .indicators .indicator-item.active {
-  background-color: #4CAF50;
+  background-color: #1FD9C7;
 }
 
 /*heig to importa*/

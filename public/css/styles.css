@@ -24,3 +24,7 @@ src: url('../fonts/museo/MuseoSansRounded-500.otf');
   color: #0350AA;
   font-size: 18px;
 }
+
+.testimonial_slider ul.indicators {
+  margin-left: -50px !important;
+}
