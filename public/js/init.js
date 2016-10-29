@@ -114,4 +114,11 @@ $(document).ready(function(){
         });  return true;
     });
     // *************************************************
+    // COOL FORM
+    $("#next").click(function () {
+        var current = $(".qn:visible");
+        current.hide();
+        current.next().show();
+    });
+    // ****************************************************
 });
