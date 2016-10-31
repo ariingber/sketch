@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  console.log(ENV['API'])
     // NAV BAR HELPER***************************************
     $('#hello').hide();
       {
