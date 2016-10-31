@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
     // NAV BAR HELPER***************************************
     $('#hello').hide();
       {
@@ -117,13 +118,42 @@ $(document).ready(function(){
     // ******************************************
 
 
-    // COOL FORM
-    $("#next").click(function () {
-        var current = $(".qn:visible");
-        current.hide();
-        current.next().show();
+    // CUSTOM FORM METHODS
+    $('#question2').hide();
+    $('#question3').hide();
+    $('#message').hide();
+
+    $("#question1 input").keypress(function (event) {
+       if (event.which == 13) {
+           event.preventDefault();
+          //  if else
+           $('#question1').hide();
+           $('#question2').show();
+       }
     });
-    // ****************************************************
+    $("#question2 input").keypress(function (event) {
+       if (event.which == 13) {
+         event.preventDefault();
+           $('#question2').hide();
+           $('#question3').show();
+       }
+    });
+    $("#question3 select").keypress(function (event) {
+       if (event.which == 13) {
+          event.preventDefault();
+           $('#question3').hide();
+           $('#message').show();
+          event.stopPropagation();
+       }
+    });
+    $("#message input, textarea").keypress(function (event) {
+       if (event.which == 13) {
+         $('form').unbind('submit').submit();
+           $('#question3').hide();
+           $('#message').hide();
+       }
+    });
+    // *******************************************************
 });
 
 // THINGS TO EVENTUALLY DELETE#############################

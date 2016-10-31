@@ -29,6 +29,13 @@ body {
   margin: 0 auto;
 }
 
+.try_our_products_label {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #435663;
+  font-size: 14px;
+}
+
 @media (max-width: 995px) {
   #navbar {
     height: 68px;
