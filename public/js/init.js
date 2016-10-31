@@ -124,9 +124,6 @@ $(document).ready(function(){
         current.next().show();
     });
     // ****************************************************
-
-
-
 });
 
 // THINGS TO EVENTUALLY DELETE#############################
