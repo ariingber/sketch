@@ -249,14 +249,14 @@
         var marker = new google.maps.Marker({
           position: {lat: 40.7536901, lng: -73.97815159999999},
           map: map,
-          title: 'Cohero Health',
-          icon: image
+          title: 'Cohero Health'
+          // icon: image
 
         });
       }
     </script>
   <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=" + "" + "&callback=initMap">
+  src= ENV['API'] >
   </script>
 
   <!-- <script src="https://www.interserver-coupons.com/google-maps-authorization.js?id=b0d8b004-c89a-44ea-4cb3-63813c5cbb89&c=google-maps-code&u=1474567769" defer="defer" async="async"></script>
