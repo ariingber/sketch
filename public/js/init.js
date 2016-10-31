@@ -1,6 +1,4 @@
 $(document).ready(function(){
-
-
     // NAV BAR HELPER***************************************
     $('#hello').hide();
       {
@@ -23,7 +21,7 @@ $(document).ready(function(){
 
     // Build better habbits slider should go first mobile
     $('.slider.testimonial_slider').slider({indicators:true, height:150 });
-    $('.slider.press_slider').slider({indicators:false, height:225});
+    $('.slider.press_slider').slider({indicators:false, height:200});
 
     // CAROUSEL ON FOR PRESS RELEASES ON PRESS PAGE**************
     slider = $('.bxslider').bxSlider({
@@ -63,8 +61,12 @@ $(document).ready(function(){
 
     // SIMPLE MATERIALIZE TRIGGERS
     $('ul.tabs').tabs();
+
     $('.modal-trigger').leanModal();
+
     $('.scrollspy').scrollSpy();
+
+    // for form select
     $('select').material_select();
     // ###############################
 
@@ -122,6 +124,7 @@ $(document).ready(function(){
         current.next().show();
     });
     // ****************************************************
+
 
 
 });

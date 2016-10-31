@@ -1,0 +1,131 @@
+
+		<div class="container">
+			<section>
+				<form  action="https://formspree.io/ari@coherohealth.com" id="theForm" class="simform cols12"
+				method="POST" enctype="multipart/form-data">
+				<input type="hidden" name="_next" value="/#sucess"/>
+					<div class="simform-inner">
+						<ol class="questions">
+							<li>
+								<span><label for="q1">What's your name?</label></span>
+								<input id="q1" type="text" name="q1"/>
+							</li>
+							<li>
+								<span><label for="q2">What's your email?</label></span>
+								<input id="q2" name="q2" type="email" class="validate" required />
+							</li>
+							<li>
+								<span><label for="q3">What's your age'?</label></span>
+								<input id="q3" name="q3" type="number" min="10" max="120"/>
+							</li>
+							<li>
+								<p>
+						      <input type="checkbox" id="	q4" />
+						      <label for="q4">Red</label>
+						    </p>
+							</li>
+
+							<li>
+								<span><label for="q5">What book inspires you?</label></span>
+								<input id="q5" name="q5" type="text"/>
+							</li>
+							<li>
+								<span><label for="q6">What's your profession?</label></span>
+								<input id="q6" name="q6" type="text"/>
+							</li>
+						</ol><!-- /questions -->
+						<button class="submit" type="submit">Send answers</button>
+						<div class="controls">
+							<button class="next"></button>
+							<div class="progress"></div>
+							<span class="number">
+								<span class="number-current"></span>
+								<span class="number-total"></span>
+							</span>
+							<span class="error-message"></span>
+						</div><!-- / controls -->
+					</div><!-- /simform-inner -->
+					<span class="final-message"></span>
+				</form><!-- /simform -->
+			</section>
+		</div><!-- /container -->
+		<script src="js/minimal_form/classie.js"></script>
+		<script src="js/minimal_form/stepsForm.js"></script>
+		<script>
+			var theForm = document.getElementById( 'theForm' );
+                        //disable form autocomplete
+                        theForm.setAttribute( "autocomplete", "off" );
+			new stepsForm( theForm, {
+				onSubmit : function( form ) {
+					// hide form
+					classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
+					/*
+					form.submit()
+					or
+					AJAX request (maybe show loading indicator while we don't have an answer..)
+					*/
+					// let's just simulate something...
+					var messageEl = theForm.querySelector( '.final-message' );
+					messageEl.innerHTML = 'Thank you! We\'ll be in touch.';
+					classie.addClass( messageEl, 'show' );
+				}
+			} );
+		</script>
+
+
+		<!-- <form action="https://formspree.io/ari@coherohealth.com"
+				method="POST" enctype="multipart/form-data" class="col s12">
+			<input type="hidden" name="_next" value="/#sucess"/>
+			 <div class="input-field col s12 m12 l5">
+				 <input id="first_name" type="text" name="first_name" class="validate" required>
+					<label style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #435663; font-size: 14px;" for="first_name">First Name</label>
+			 </div>
+			 <div class="col l2 hide-on-med-and-down">
+			 </div>
+			 <div class="input-field col s12 m12 l5 right">
+				 <input id="last_name" type="text" name="last_name" class="validate" required>
+				 <label style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #435663; font-size: 14px;" for="last_name">Last Name</label>
+			 </div>
+			 <div class="input-field col s12 m12 l5">
+				 <input id="email" type="email" min="10" max="120" class="validate" required name="email" >
+				 <label style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #435663; font-size: 14px;" for="email">Email</label>
+			 </div>
+			 <div class="col l2 hide-on-med-and-down">
+			 </div>
+			 <div class="input-field col s12 m12 l3">
+				 <input id="age" type="number" min="10" max="120" class="validate" required name="age" pattern="\d+" >
+				 <label style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #435663; font-size: 14px;" for="age" data-error="wrong">Age</label>
+			 </div>
+
+			 <div class="input-field col s12 m12 l4">
+					<select class="browser-default" name="Diagnosis" id="diagnosis" required>
+						<option value=""> Diagnosis</option>
+						<option value="Asthma"> Asthma</option>
+						<option value="COPD"> COPD</option>
+						<option value="Choose not to disclose"> Choose not to disclose</option>
+					</select>
+			 </div>
+			 <div class="input-field col s12 m12 l4">
+				 <select class="browser-default" name="Phone Type" id="phonetype" required>
+					 <option value="" disabled selected>Phone Type</option>
+					 <option value="iPhone"> iPhone</option>
+					 <option value="Android"> Android</option>
+					 <option value="Other"> Other</option>
+				 </select>
+			 </div>
+			 <div class="input-field col s12 m12 l4">
+				 <select class="browser-default" name="Reason for contact" id="reason_for_contact" required>
+					 <option value="" disabled selected>Reason for contact</option>
+					 <option value="I want to try products by taking part in a clinical study"> I want to try products by taking part in a clinical study</option>
+					 <option value="Something else"> Something else</option>
+				 </select>
+			 </div>
+			<div class="input-field col s12 m12 l12">
+			 <textarea id="additional_comments" name="Additional Comments"  type="text" class="materialize-textarea"></textarea>
+			 <label for="additional_comments" style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #435663; font-size: 14px;">Additional Comments</label>
+		 </div>
+		 <div class="col s12 left">
+				<button class="btn waves-effect waves-light" type="submit" >Send Message
+				</button>
+			</div>
+		 </form> -->

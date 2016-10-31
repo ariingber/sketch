@@ -7,25 +7,52 @@
        <div class="row" style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #75787B; font-size: 18px;">
          <div class="col s12">
            <div class="row">
-             <div class="input-field col s12 m12 l5">
-               <input id="first_name" type="text" name="first_name" class="validate" required>
-                <label for="first_name">First Name</label>
+             <div class="input-field col s12 m4 l4 ">
+               <input id="name" type="text" name="name" class="validate" required>
+                <label for="name">Name</label>
              </div>
-           </div>
-           <div class="row">
-             <div class="input-field col s12 m12 l5">
-               <input id="last_name" type="text" name="last_name" class="validate" required>
-               <label for="last_name">Last Name</label>
+             <div class="input-field col s12 m4 l4 ">
+               <input id="email" type="email" name="email" class="validate" required>
+               <label for="email">Email</label>
              </div>
-           </div>
-           <div class="row">
-             <div class="input-field col s12 m12 l2">
+             <div class="input-field col s12 m12 l4">
                <input id="age" type="number" min="10" max="120" class="validate" required name="age" pattern="\d+" >
                <label for="age" data-error="wrong">Age</label>
              </div>
-           </div>
+            </div>
+            <div>
+              <fieldset class="input-field col s12 m4 l4 ">
+                <legend>Diagnosis</legend>
+                <input name="group1" type="radio" id="test1" />
+                <label for="test1">Asthma</label>
+
+                <input name="group1" type="radio" id="test2" />
+                <label for="test2">COPD</label>
+              </fieldset>
+              <div class="input-field col s12 m4 l4 ">
+                <input id="name" type="text" name="name" class="validate" required>
+                 <label for="name">Name</label>
+                 <ul>
+                   <li>
+                     <input name="group1" type="radio" id="test1" />
+                     <label for="test1">Asthma</label>
+                   </li>
+                   <li>
+                     <input name="group1" type="radio" id="test2" />
+                     <label for="test2">COPD</label>
+                   </li>
+                   <li>
+                     <input class="with-gap" name="group1" type="radio" id="test3"  />
+                     <label for="test3">Rather not disclose</label>
+                   </li>
+                 </ul>
+              </div>
+
+            </div>
+
+
            <div class="row" style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #75787B; font-size: 14px;">
-             <div class="input-field col s12 m12 l4">
+             <!-- <div class="input-field col s12 m12 l4">
                <p>Diagnosis</p>
                 <select class="browser-default" name="Diagnosis" id="diagnosis" required>
                   <option value="">Select One</option>
@@ -33,9 +60,7 @@
                   <option value="COPD">COPD</option>
                   <option value="Rather not disclose">Rather not disclose</option>
                 </select>
-              </div>
-            </div>
-            <div class="row" style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #75787B; font-size: 14px;">
+              </div> -->
               <div class="input-field col s12 m12 l4">
                  <p>Phone Type</p>
                  <select class="browser-default" name="Phone Type" id="phonetype" required>
@@ -45,8 +70,6 @@
                    <option value="Other">Other</option>
                  </select>
                </div>
-             </div>
-             <div class="row" style="font-family: 'Open Sans', sans-serif; font-weight: 300; color: #75787B; font-size: 14px;">
                <div class="input-field col s12 m12 l4">
                   <p>Reason for contatct</p>
                   <select class="browser-default" name="Reason for contact" id="reason_for_contact" required>
@@ -69,6 +92,7 @@
      </form>
    </div>
 </div>
+
 
 
 

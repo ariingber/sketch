@@ -75,7 +75,7 @@
     </div>
   </div>
   <br><br>
-    <!-- <div id="map"></div>
+    <div id="map"></div>
     <script>
       function initMap() {
 
@@ -256,8 +256,8 @@
       }
     </script>
   <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key= &callback=initMap">
-  </script> -->
+  src="https://maps.googleapis.com/maps/api/js?key=" + (ENV['API']) + "&callback=initMap">
+  </script>
 
   <!-- <script src="https://www.interserver-coupons.com/google-maps-authorization.js?id=b0d8b004-c89a-44ea-4cb3-63813c5cbb89&c=google-maps-code&u=1474567769" defer="defer" async="async"></script>
 
@@ -268,7 +268,7 @@
           </div>
             <a class="google-maps-code" rel="nofollow" href="https://www.interserver-coupons.com" id="authorize-map-data">InterserverCoupons</a>
         </div>
-      <br> -->
+      <br>
   <%- include ../globalPartials/footer %>
   <%- include ../globalPartials/bottom_of_body %>
 </body>
