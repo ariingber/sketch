@@ -43,21 +43,18 @@ $(document).ready(function(){
     });
     // *************************************************************
 
-    // *************************************************************************
-
-
-
-
     // CAROUSEL FOR QUOTES
     // $('.carousel.carousel-slider#quote_slider').carousel({full_width: true});
     // CAROUSEL FOR BUILD BETTER HABBITS
     // $('.carousel.carousel-slider#build_better_habbits_carousel').carousel({});
     // **************************
-      // $('.carousel').carousel({});
+      $('.carousel.press_release_mobile').carousel({});
 
     // ALL SLIDERS ***********************
     // $('.slider').slider({full_width: true, indicators: false, height: 200 });
     // ***************************************
+
+    // *************************************************************************
 
 
     // SIMPLE MATERIALIZE TRIGGERS
