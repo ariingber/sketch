@@ -26,10 +26,10 @@ $(document).ready(function(){
 
     // CAROUSEL ON FOR PRESS RELEASES ON PRESS PAGE**************
     slider = $('.bxslider').bxSlider({
-      minSlides: 4,
-      maxSlides: 4,
+      minSlides: 3,
+      maxSlides: 3,
       moveSlides: 1,
-      slideWidth: 275,
+      slideWidth: 400,
       pagerCustom: '#bx-pager'
     });
     // PRESS ARROWS ***********************
