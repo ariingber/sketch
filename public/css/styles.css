@@ -29,14 +29,7 @@ src: url('../fonts/museo/MuseoSansRounded-500.otf');
   margin-left: -50px !important;
 }
 
-/*COOOL FORM CODE*/
-.qn {
-    display: none;
-}
-.qn:first-child {
-    display: block;
-}
-input[type="submit"] {
+
+#div7,#div8{
     display:none;
 }
-/***********************/

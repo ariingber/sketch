@@ -1,5 +1,17 @@
 $(document).ready(function(){
 
+  // load more press release
+  $('#loadMoreButton').click(function() {
+      $('.current').removeClass('current').hide()
+          .next().addClass('current');
+      $('.bottom').removeClass('bottom')
+          .next().show().addClass('bottom');
+      if ($('.current').hasClass('last')) {
+          $('#loadMoreButton').attr('disabled', true);
+      }
+  });
+  // ****************************************
+
     // NAV BAR HELPER***************************************
     $('#hello').hide();
       {
@@ -156,6 +168,8 @@ $(document).ready(function(){
        }
     });
     // *******************************************************
+
+
 });
 
 // THINGS TO EVENTUALLY DELETE#############################
