@@ -1,36 +1,42 @@
-<div class="container">
-  <div class="row">
-    <form action="https://formspree.io/ari@coherohealth.com"
-        method="POST" enctype="multipart/form-data">
-        <input type="hidden" name="_next" value="#try_our_products" />
-        <div id="question1">
-          <div class="input-field col s12 m12 l4">
-            <p>What's your name?</p>
-            <input id="name" type="text" name="name" class="validate" required>
+<div id="turquoise_try_our_products_container" style="height:600px; background-color:#1FD9C7;">
+  <div class="container">
+    <div class="row">
+      <br><br><br><br><br>
+      <h2>Looking to try our products? Let’s get started</h2>
+      <form action="https://formspree.io/ari@coherohealth.com"
+          method="POST" enctype="multipart/form-data">
+          <input type="hidden" name="_next" value="#try_our_products" />
+          <div id="question1">
+            <div class="input-field col s12 m12 l4">
+              <p class="white-text">What's your name?</p>
+              <input id="name" type="text" name="name" class="validate" required>
+            </div>
           </div>
-        </div>
-        <div id="question2">
-          <div class="input-field col s12 m12 l4">
-            <p>What's your email?</p>
-            <input id="email" type="email" name="email" class="validate" required>
+          <div id="question2">
+            <div class="input-field col s12 m12 l4">
+              <p>What's your email?</p>
+              <input id="email" type="email" name="email" class="validate" required>
+            </div>
           </div>
-        </div>
-        <div id="question3" class="input-field col s12 m12 l4">
-           <p>What kind of phone do you have?</p>
-           <select class="browser-default" name="Phone Type" id="phonetype">
-             <option value="">Select One</option>
-             <option value="IPhone">iPhone</option>
-             <option value="Android">Android</option>
-             <option value="Other">Other</option>
-           </select>
-         </div>
-         <div id="message" class="input-field col s12">
-            <p>Send us a message.</p>
-          <input id="additional_comments" name="Additional Comments"  type="text" class="materialize-textarea"></input>
-          <button class="btn waves-effect waves-light" type="submit" >Send Message
-          </button>
-        </div>
-    </form>
+          <div id="question3" class="input-field col s12 m12 l4">
+             <p>What kind of phone do you have?</p>
+             <select class="browser-default" name="Phone Type" id="phonetype">
+               <option value="">Select One</option>
+               <option value="IPhone">iPhone</option>
+               <option value="Android">Android</option>
+               <option value="Other">Other</option>
+             </select>
+           </div>
+           <div id="message" class="input-field col s12">
+              <p>Send us a message.</p>
+            <input id="additional_comments" name="Additional Comments"  type="text" class="materialize-textarea"></input>
+            <button class="btn waves-effect waves-light" type="submit" >Send Message
+            </button>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
 
 
 
@@ -47,5 +53,3 @@
          <a href="#!" class="modal-action modal-close waves-effect waves-light btn">close</a>
        </div>
     </div> -->
-  </div>
-</div>

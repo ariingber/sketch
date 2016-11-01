@@ -117,6 +117,11 @@ $(document).ready(function(){
     };
     // ******************************************
 
+    $( '#turquoise_try_our_products_container' ).mouseover(function(event) {
+        $( '#name' ).focus();
+        $( this ).off( event );
+      });
+
 
     // CUSTOM FORM METHODS
     $('#question2').hide();
