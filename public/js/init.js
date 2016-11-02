@@ -5,7 +5,7 @@ $(document).ready(function(){
       $('.current').removeClass('current').hide()
           .next().addClass('current');
       $('.bottom').removeClass('bottom')
-          .next().show().addClass('bottom');
+          .show().next().addClass('bottom');
       if ($('.current').hasClass('last')) {
           $('#loadMoreButton').attr('disabled', true);
       }
