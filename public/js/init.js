@@ -126,25 +126,42 @@ $(document).ready(function(){
     };
     // ******************************************
 
-    $( '#turquoise_try_our_products_container' ).mouseover(function(event) {
-        $( '#name' ).focus();
-        $( this ).off( event );
-      });
+    // $( '#turquoise_try_our_products_container' ).mouseover(function(event) {
+    //     $( '#name' ).focus();
+    //     $( this ).off( event );
+    //   });
 
 
     // CUSTOM FORM METHODS
     $('#question2').hide();
     $('#question3').hide();
+    $('#question4').hide();
     $('#message').hide();
+    $( "#thank_you_message" ).hide();
 
-    $("#question1 input").keypress(function (event) {
-       if (event.which == 13) {
-           event.preventDefault();
-          //  if else
-           $('#question1').hide();
-           $('#question2').show();
-       }
+    // $("#question1 select").keypress(function (event) {
+    //    if (event.which == 13) {
+    //        event.preventDefault();
+    //        if($('#why_contact').val() == 'Write Message') {
+    //          $('#question1').hide();
+    //          $('#message').show();
+    //        }
+    //        else {
+    //          $('#question1').hide();
+    //          $('#question2').show();
+    //        }
+    //
+    //    }
+    // });
+    $("#choice_send_message").click(function (event) {
+      $('#question1').hide();
+      $('#message').show();
     });
+    $("#choice_clincal_study").click(function (event) {
+      $('#question1').hide();
+      $('#question2').show();
+    });
+
     $("#question2 input").keypress(function (event) {
        if (event.which == 13) {
          event.preventDefault();
@@ -152,21 +169,31 @@ $(document).ready(function(){
            $('#question3').show();
        }
     });
-    $("#question3 select").keypress(function (event) {
+    $("#question3 input").keypress(function (event) {
        if (event.which == 13) {
           event.preventDefault();
            $('#question3').hide();
+           $('#question4').show();
+          event.stopPropagation();
+       }
+    });
+    $("#question4 select").keypress(function (event) {
+       if (event.which == 13) {
+          event.preventDefault();
+           $('#question4').hide();
            $('#message').show();
           event.stopPropagation();
        }
     });
     $("#message input, textarea").keypress(function (event) {
        if (event.which == 13) {
-         $('form').unbind('submit').submit();
+         $( "#thank_you_message" ).show().delay( 20000000 ).fadeOut( 4000000 );
+         $('form').delay( 25000000 ).unbind('submit').submit();
            $('#question3').hide();
            $('#message').hide();
        }
     });
+
     // *******************************************************
 
 
