@@ -2,14 +2,14 @@
   <div class="container">
     <div class="row">
       <br><br><br><br><br>
-      <h2>Looking to try our products? Let’s get started</h2>
+
       <form action="https://formspree.io/ari@coherohealth.com"
           method="POST" enctype="multipart/form-data">
           <input type="hidden" name="_next" value="#try_our_products" />
           <div id="question1" class="input-field col s12 m12 l12">
-             <p class="white-text">What are you getting in touch?</p>
-             <span id="choice_clincal_study" class="white-text" style="cursor: pointer;">Clinical Study</span>
-             <span id="choice_send_message" class="white-text" style="cursor: pointer;">Send us a message</span>
+            <h2 id="looking_to_h2">Looking to try our products? Let’s get started</h2>
+             <span id="choice_clincal_study" class="white-text whiteButton">I would like to try products</span><br><br>
+             <span id="choice_send_message" class="white-text whiteButton">I just want to send you a message</span>
            </div>
           <div id="question2">
             <div class="input-field col s12 m12 l4">
@@ -21,6 +21,7 @@
             <div class="input-field col s12 m12 l4">
               <p>What's your email?</p>
               <input id="email" type="email" name="email" class="validate" required>
+              <p id="email_error" style="margin-top:-20px;" class="red-text">Please Enter A Valid Email</p>
             </div>
           </div>
           <div id="question4" class="input-field col s12 m12 l4">
@@ -38,9 +39,25 @@
             <button class="btn waves-effect waves-light" type="submit" >Send Message
             </button>
           </div>
-          <div id="thank_you_message" class="white-text">Thank you for your message, we got it!
+          <div id="progress_div" class="col s12">
+            <div id="thank_you_message" class="white-text">Thank you for your message, we got it!
+            </div>
+            <br>
+            <div id="backButtonContainer">
+              <span class="whiteButton" id="backButton">Back Button</span>
+            </div><br>
+            <div class="white-text left-align" id="progess_counter">1/4</div>
           </div>
+
       </form>
+
+    </div>
+    <br>
+    <div class="row">
+
+
+      <br>
+
     </div>
   </div>
 </div>
