@@ -4808,6 +4808,7 @@ small {
   white-space: nowrap;
 }
 
+/*disabled text transform uppercase*/
 .tabs .tab {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -4820,7 +4821,7 @@ small {
   height: 48px;
   padding: 0;
   margin: 0;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   text-overflow: ellipsis;
   overflow: hidden;
   letter-spacing: .8px;
@@ -4828,8 +4829,9 @@ small {
   min-width: 80px;
 }
 
+/*from #ee6e73 to #435663*/
 .tabs .tab a {
-  color: #ee6e73;
+  color: #435663;
   display: block;
   width: 100%;
   height: 100%;
@@ -4847,11 +4849,14 @@ small {
   cursor: default;
 }
 
+/*FROM #f6b2b5 to #1FD9C7*/
+/*added width 16% previously had no width attr at all*/
 .tabs .indicator {
   position: absolute;
   bottom: 0;
   height: 2px;
-  background-color: #f6b2b5;
+  background-color: #1FD9C7;
+  width: 17% !important;
   will-change: left, right;
 }
 

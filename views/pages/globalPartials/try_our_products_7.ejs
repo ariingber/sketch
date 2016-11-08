@@ -8,46 +8,69 @@
           <input type="hidden" name="_next" value="#try_our_products" />
           <div id="question1" class="input-field col s12 m12 l12">
             <h2 id="looking_to_h2">Looking to try our products? Let’s get started</h2>
-             <span id="choice_clincal_study" class="white-text whiteButton">I would like to try products</span><br><br>
+             <span id="choice_try_products" class="white-text whiteButton">I would like to try products</span><br><br>
              <span id="choice_send_message" class="white-text whiteButton">I just want to send you a message</span>
            </div>
-          <div id="question2">
-            <div class="input-field col s12 m12 l4">
-              <p class="white-text">What's your name?</p>
-              <input id="name" type="text" name="name" class="validate" required>
-            </div>
+           <div id="question2" class="input-field col s12 m12 l7">
+            <h2>At this time if you would like to try our products you must be willing to take part in a quick clincal study</h2>
+            <span class="whiteButton" id="try_clinical_study">Try products and take part in quick study</span><br><br>
+            <span class="whiteButton" id="wont_try_clinical_study">Just send a message</span><br><br>
+            <span class="whiteButton" id="backButton1">Back</span>
           </div>
           <div id="question3">
             <div class="input-field col s12 m12 l4">
+              <p class="white-text">First name?</p>
+              <input id="first_name" type="text" name="first_name" class="validate" required>
+              <span class="whiteButton" id="backButton2">Back</span>
+            </div>
+          </div>
+          <div id="question4">
+            <div class="input-field col s12 m12 l4">
+              <p class="white-text">Last name?</p>
+              <input id="last_name" type="text" name="last_name" class="validate" required>
+              <span class="whiteButton" id="backButton3">Back</span>
+            </div>
+          </div>
+          <div id="question5">
+            <div class="input-field col s12 m12 l4">
               <p>What's your email?</p>
               <input id="email" type="email" name="email" class="validate" required>
+              <span class="whiteButton" id="backButton4">Back</span>
               <p id="email_error" style="margin-top:-20px;" class="red-text">Please Enter A Valid Email</p>
             </div>
           </div>
-          <div id="question4" class="input-field col s12 m12 l4">
-             <p>What kind of phone do you have?</p>
-             <select class="browser-default" name="Phone Type" id="phonetype">
-               <option value="">Select One</option>
-               <option value="IPhone">iPhone</option>
-               <option value="Android">Android</option>
-               <option value="Other">Other</option>
-             </select>
+          <div id="question6">
+            <div class="input-field col s12 m12 l4">
+              <p class="white-text">What's your age?</p>
+              <input id="age" type="text" name="age" class="validate" required>
+              <span class="whiteButton" id="backButton5">Back</span>
+            </div>
+          </div>
+          <div id="question7" class="input-field col s12 m12 l4">
+             <input id="phoneType" type="hidden" name="phone_type" value="" />
+             <p class="white-text">What kind of phone do you have?</p>
+             <input type="checkbox" id="iPhone" value="iPhone" />
+             <label for="iPhone">iPhone</label>
+             <br>
+             <input type="checkbox" id="android" value="Android" />
+             <label for="android">Android</label>
+             <br>
+             <input type="checkbox" id="not_iPhone_or_android" value="not_iPhone_or_android" />
+             <label for="not_iPhone_or_android">Other</label>
+             <br><br><br>
+             <span class="whiteButton" id="backButton6">Back</span>
            </div>
            <div id="message" class="input-field col s12">
               <p>Send us a message.</p>
             <input id="additional_comments" name="Additional Comments"  type="text" class="materialize-textarea"></input>
-            <button class="btn waves-effect waves-light" type="submit" >Send Message
-            </button>
+            <button class="whiteButton" type="submit" >Send Message</button>
+            <span class="whiteButton" id="backButtonMessage1">Back</span>
           </div>
-          <div id="progress_div" class="col s12">
-            <div id="thank_you_message" class="white-text">Thank you for your message, we got it!
-            </div>
-            <br>
-            <div id="backButtonContainer">
-              <span class="whiteButton" id="backButton">Back Button</span>
-            </div><br>
-            <div class="white-text left-align" id="progess_counter">1/4</div>
+          <div id="thank_you_message" class="white-text">Thank you for your message, we got it!
           </div>
+          <br>
+          <div class="blue-text left-align col s12" id="progress_counter" style="margin-top:50px;">1/4</div>
+
 
       </form>
 
