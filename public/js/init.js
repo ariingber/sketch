@@ -136,6 +136,7 @@ $(document).ready(function(){
     $('#question7').hide();
     $('#question8').hide();
     $('#message_div').hide();
+    $('#no_clinical_study_message_div').hide();
     $('#additional_comments_div').hide();
     $('#progress_counter').hide();
     $('#email_error').hide();
@@ -157,10 +158,18 @@ $(document).ready(function(){
         $('#question1').css({'left':'0'})
       }, 1000);
     });
+    $("#choice_try_products2").click(function (event) {
+      $('#no_clinical_study_message_div').animate({left: '150px'}, 'fast').fadeOut(300);
+      $('#question3').delay(800).fadeIn(300);
+      setTimeout(function () {
+        $('#first_name').focus();
+        $('#no_clinical_study_message_div').css({'left':'0'})
+      }, 1000);
+    });
 
     $("#wont_try_clinical_study").click(function (event) {
       $('#question2').animate({left: '150px'}, 'fast').fadeOut(300);
-      $('#message').delay(800).fadeIn(300);
+      $('#no_clinical_study_message_div').delay(800).fadeIn(300);
       setTimeout(function () {
         $('#question2').css({'left':'0'})
       }, 1000);
@@ -258,20 +267,14 @@ $(document).ready(function(){
        $('#progress_counter').delay(900).fadeIn('slow')
     });
 
-    $("#message_div input, textarea").keypress(function (event) {
+    $("#message_div input, #additional_comments_div, #no_clinical_study_message input, textarea").keypress(function (event) {
        if (event.which == 13) {
          $( "#thank_you_message" ).show().delay( 20000000 ).fadeOut( 4000000 );
          $('form').delay( 25000000 ).unbind('submit').submit();
            $('#progress_counter').hide();
            $('#message_div').hide();
-       }
-    });
-    $("#additional_comments_div input, textarea").keypress(function (event) {
-       if (event.which == 13) {
-         $( "#thank_you_message" ).show().delay( 20000000 ).fadeOut( 4000000 );
-         $('form').delay( 25000000 ).unbind('submit').submit();
-           $('#progress_counter').hide();
            $('#additional_comments_div').hide();
+           $('#no_clinical_study_message').hide();
        }
     });
 
@@ -287,6 +290,7 @@ $(document).ready(function(){
     $("#backButton2").click(function () {
       $('#question3').animate({height: 'toggle'}, 'slow').fadeOut(300);
        $('#question2').delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
+       $('#progress_counter').fadeOut('slow')
     });
     $("#backButton3").click(function () {
       $('#question4').animate({height: 'toggle'}, 'slow').fadeOut(300);
