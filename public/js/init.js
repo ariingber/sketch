@@ -134,7 +134,9 @@ $(document).ready(function(){
     $('#question5').hide();
     $('#question6').hide();
     $('#question7').hide();
-    $('#message').hide();
+    $('#question8').hide();
+    $('#message_div').hide();
+    $('#additional_comments_div').hide();
     $('#progress_counter').hide();
     $('#email_error').hide();
     $( "#thank_you_message" ).hide();
@@ -142,7 +144,7 @@ $(document).ready(function(){
 
     $("#choice_send_message").click(function (event) {
       $('#question1').animate({left: '150px'}, 'fast').fadeOut(300);
-      $('#message').delay(800).fadeIn(300);
+      $('#message_div').delay(800).fadeIn(300);
       setTimeout(function () {
         $('#question1').css({'left':'0'})
       }, 1000);
@@ -183,10 +185,11 @@ $(document).ready(function(){
              $('#last_name').focus()
            }, 1000);
            $('#progress_counter').fadeOut('fast')
-           $('#progress_counter').hide().text('2/4');
+           $('#progress_counter').hide().text('2/7');
            $('#progress_counter').delay(900).fadeIn('slow')
        }
     });
+
     $("#question4 input").keypress(function (event) {
        if (event.which == 13) {
         event.preventDefault();
@@ -196,7 +199,7 @@ $(document).ready(function(){
             $('#email').focus()
           }, 1000);
           $('#progress_counter').fadeOut('fast')
-          $('#progress_counter').hide().text('3/4');
+          $('#progress_counter').hide().text('3/7');
           $('#progress_counter').delay(900).fadeIn('slow')
        }
     });
@@ -219,7 +222,7 @@ $(document).ready(function(){
             $('#age').focus()
           }, 1000);
           $('#progress_counter').fadeOut('fast')
-          $('#progress_counter').hide().text('4/4');
+          $('#progress_counter').hide().text('4/7');
           $('#progress_counter').delay(900).fadeIn('slow')
         }
 
@@ -232,40 +235,48 @@ $(document).ready(function(){
          $('#question6').animate({height: 'toggle'}, 'slow').fadeOut(300);
           $('#question7').delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
           $('#progress_counter').fadeOut('fast')
-          $('#progress_counter').hide().text('5/6');
+          $('#progress_counter').hide().text('5/7');
           $('#progress_counter').delay(900).fadeIn('slow')
        }
     });
+
+    $("#asthma, #copd, #wont_disclose").click(function () {
+      $('#diagnosis').val($(this).val())
+      $('#question7').animate({height: 'toggle'}, 'slow').fadeOut(300);
+       $('#question8').delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
+       $('#progress_counter').fadeOut('fast')
+       $('#progress_counter').hide().text('6/7');
+       $('#progress_counter').delay(900).fadeIn('slow')
+    });
+
     $("#iPhone, #android, #not_iPhone_or_android").click(function () {
       $('#phoneType').val($(this).val())
-      $('#question7').hide();
-      $('#message').show();
-    });;
-    // $("#question5 select").keypress(function (event) {
-    //    if (event.which == 13) {
-    //       event.preventDefault();
-    //        $('#question4').hide();
-    //        $('#message').show();
-    //        $('#progess_counter').text('4/4');
-    //       event.stopPropagation();
-    //    }
-    // });
-    $("#message input, textarea").keypress(function (event) {
+      $('#question8').animate({height: 'toggle'}, 'slow').fadeOut(300);
+       $('#additional_comments_div').delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
+       $('#progress_counter').fadeOut('fast')
+       $('#progress_counter').hide().text('7/7');
+       $('#progress_counter').delay(900).fadeIn('slow')
+    });
+
+    $("#message_div input, textarea").keypress(function (event) {
        if (event.which == 13) {
          $( "#thank_you_message" ).show().delay( 20000000 ).fadeOut( 4000000 );
          $('form').delay( 25000000 ).unbind('submit').submit();
-           $('#question3').hide();
-           $('#progess_counter').hide();
-           $('#message').hide();
+           $('#progress_counter').hide();
+           $('#message_div').hide();
        }
     });
-    $("#backButtonMessage1").click(function () {
-      $('#message').animate({left: '150px'}, 'fast').fadeOut(300);
-      $('#question1').delay(800).fadeIn(300);
-      setTimeout(function () {
-        $('#message').css({'left':'0'})
-      }, 1000);
+    $("#additional_comments_div input, textarea").keypress(function (event) {
+       if (event.which == 13) {
+         $( "#thank_you_message" ).show().delay( 20000000 ).fadeOut( 4000000 );
+         $('form').delay( 25000000 ).unbind('submit').submit();
+           $('#progress_counter').hide();
+           $('#additional_comments_div').hide();
+       }
     });
+
+
+
     $("#backButton1").click(function () {
       $('#question2').animate({left: '150px'}, 'fast').fadeOut(300);
       $('#question1').delay(800).fadeIn(300);
@@ -283,7 +294,7 @@ $(document).ready(function(){
       setTimeout(function () {
         $('#first_name').focus();
       }, 1000);
-      $('#progress_counter').text('1/4');
+      $('#progress_counter').text('1/7');
       $('#progress_counter').fadeIn('slow')
     });
     $("#backButton4").click(function () {
@@ -292,7 +303,7 @@ $(document).ready(function(){
       setTimeout(function () {
         $('#last_name').focus();
       }, 1000);
-      $('#progress_counter').text('2/4');
+      $('#progress_counter').text('2/7');
       $('#progress_counter').fadeIn('slow')
     });
     $("#backButton5").click(function () {
@@ -301,7 +312,7 @@ $(document).ready(function(){
       setTimeout(function () {
         $('#email').focus();
       }, 1000);
-      $('#progress_counter').text('3/4');
+      $('#progress_counter').text('3/7');
       $('#progress_counter').fadeIn('slow')
     });
     $("#backButton6").click(function () {
@@ -310,7 +321,23 @@ $(document).ready(function(){
       setTimeout(function () {
         $('#age').focus();
       }, 1000);
-      $('#progress_counter').text('4/4');
+      $('#progress_counter').text('4/7');
+      $('#progress_counter').fadeIn('slow')
+    });
+    $("#backButton7").click(function () {
+      $('#question8').animate({height: 'toggle'}, 'slow').fadeOut(300);
+       $('#question7').delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
+      $('#progress_counter').text('5/7');
+      $('#progress_counter').fadeIn('slow')
+    });
+    $("#messageBackButton").click(function () {
+      $('#message_div').animate({height: 'toggle'}, 'slow').fadeOut(300);
+      $('#question1').delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
+    });
+    $("#addtionalCommentsBackButton").click(function () {
+      $('#additional_comments_div').animate({height: 'toggle'}, 'slow').fadeOut(300);
+      $('#question8').delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
+      $('#progress_counter').text('6/7');
       $('#progress_counter').fadeIn('slow')
     });
 
@@ -319,24 +346,3 @@ $(document).ready(function(){
 
 
 });
-
-// THINGS TO EVENTUALLY DELETE#############################
-// QUOTES AND PRESS SLIDERS ***
-// $( "#quote_slider_left_chev" ).click(function() {
-//   $('#quote_slider').slider('prev');
-// });
-// $( "#quote_slider_right_chev" ).click(function() {
-//   $('#quote_slider').slider('next');
-// });
-// $( "#press_slider_left_chev" ).click(function() {
-//   $('#press_slider').slider('prev');
-// });
-// $( "#press_slider_right_chev" ).click(function() {
-//   $('#press_slider').slider('next');
-// });
-// ****************
-
-
-// $(".button-collapse").sideNav();
-// $('.materialboxed').materialbox();
-// ********************************************************

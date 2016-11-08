@@ -47,40 +47,58 @@
             </div>
           </div>
           <div id="question7" class="input-field col s12 m12 l4">
-             <input id="phoneType" type="hidden" name="phone_type" value="" />
-             <p class="white-text">What kind of phone do you have?</p>
-             <input type="checkbox" id="iPhone" value="iPhone" />
-             <label for="iPhone">iPhone</label>
-             <br>
-             <input type="checkbox" id="android" value="Android" />
-             <label for="android">Android</label>
-             <br>
-             <input type="checkbox" id="not_iPhone_or_android" value="not_iPhone_or_android" />
-             <label for="not_iPhone_or_android">Other</label>
+            <input id="diagnosis" type="hidden" name="diagnosis" value="" />
+            <p class="white-text">What is your diagnosis?</p>
+            <p>
+               <input name="group1" type="radio" id="asthma" value="asthma" />
+               <label for="asthma">Asthma</label>
+             </p>
+             <p>
+               <input name="group1" type="radio" id="copd" value="copd" />
+               <label for="copd">COPD</label>
+             </p>
+             <p>
+               <input name="group1" type="radio" id="wont_disclose" value="wont_disclose" />
+               <label for="wont_disclose">Choose not to disclose</label>
+             </p>
              <br><br><br>
              <span class="whiteButton" id="backButton6">Back</span>
            </div>
-           <div id="message" class="input-field col s12">
+           <div id="question8" class="input-field col s12 m12 l4">
+              <input id="phoneType" type="hidden" name="phone_type" value="" />
+              <p class="white-text">What kind of phone do you have?</p>
+              <p>
+                 <input name="group1" type="radio" id="iPhone" value="iPhone" />
+                 <label for="iPhone">iPhone</label>
+               </p>
+               <p>
+                 <input name="group1" type="radio" id="android" value="Android" />
+                 <label for="android">Android</label>
+               </p>
+               <p>
+                 <input name="group1" type="radio" id="not_iPhone_or_android" value="not_iPhone_or_android" />
+                 <label for="not_iPhone_or_android">Other</label>
+               </p>
+              <br><br><br>
+              <span class="whiteButton" id="backButton7">Back</span>
+            </div>
+           <div id="message_div" class="input-field col s12">
               <p>Send us a message.</p>
-            <input id="additional_comments" name="Additional Comments"  type="text" class="materialize-textarea"></input>
-            <button class="whiteButton" type="submit" >Send Message</button>
-            <span class="whiteButton" id="backButtonMessage1">Back</span>
+            <input id="message" name="message"  type="text" class="materialize-textarea"></input>
+            <button class="whiteButton" type="submit">Send Message</button>
+            <span class="whiteButton" id="messageBackButton">Back</span>
           </div>
+          <div id="additional_comments_div" class="input-field col s12">
+             <p>Addtional Comments? Send us a message.</p>
+           <input id="additional_comments" name="Additional Comments"  type="text" class="materialize-textarea"></input>
+           <button class="whiteButton" type="submit">Send Message</button>
+           <span class="whiteButton" id="addtionalCommentsBackButton">Back</span>
+         </div>
           <div id="thank_you_message" class="white-text">Thank you for your message, we got it!
           </div>
           <br>
-          <div class="blue-text left-align col s12" id="progress_counter" style="margin-top:50px;">1/4</div>
-
-
+          <div class="blue-text left-align col s12" id="progress_counter" style="margin-top:50px;">1/7</div>
       </form>
-
-    </div>
-    <br>
-    <div class="row">
-
-
-      <br>
-
     </div>
   </div>
 </div>
