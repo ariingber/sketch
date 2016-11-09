@@ -7,11 +7,6 @@
   <%- include ../patient/generalPatientPartials/nav %>
 
 
-  <h1>hello</h1>
-    <a target="_blank" href="https://www.google.com/maps/dir//cohero+health/@40.7535768,-74.0481249,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89c25901eefadfaf:0x90c7f4cf29270a31!2m2!1d-73.978085!2d40.753598">
-      <div id="map"></div>
-    </a>
-
   <div style="height:225px; background-color:#0a50a5;">
     <div class="container">
       <div class="row">
@@ -34,7 +29,7 @@
           <div class="col s12 m6 l6">
             <div class="input-field">
               <input id="name" type="text" name="name" required>
-              <label for="name">Your Name*</label>
+              <label for="name" style="left: 0">Your Name*</label>
             </div>
             <!-- <div class="input-field">
               <input id="last_name" type="text" name="last_name" required>
@@ -42,11 +37,11 @@
             </div> -->
             <div class="input-field">
               <input id="email" type="email" name="email" required>
-              <label for="email">Email*</label>
+              <label for="email" style="left: 0">Email*</label>
             </div>
             <div class="input-field">
               <input id="message" type="text" name="message" required>
-              <label for="message">Message*</label>
+              <label for="message" style="left: 0">Message*</label>
             </div>
           </div>
           <div class="col s12 m1 l2 center">
@@ -82,14 +77,17 @@
     </div>
   </div>
   <br><br>
+  <!-- <a target="_blank" href="https://www.google.com/maps/dir//cohero+health/@40.7535768,-74.0481249,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89c25901eefadfaf:0x90c7f4cf29270a31!2m2!1d-73.978085!2d40.753598">
+      <div id="map"></div>
+    </a> -->
   <div style="height:450px; overflow:hidden;">
     <a target="_blank" href="https://www.google.com/maps/dir/Current+Location/Cohero+Health"><img src="images/blackAndWhiteMap2.png" width=100% alt=""></a>
   </div>
 
 
-  <div style="height:450px; overflow:hidden;">
+  <!-- <div style="height:450px; overflow:hidden;">
     <a target="_blank" href="https://www.google.com/maps/dir/Current+Location/Cohero+Health"><img src="images/blackAndWhiteMap.jpg" width=100% alt=""></a>
-  </div>
+  </div> -->
   <%- include ../globalPartials/footer %>
   <%- include ../globalPartials/bottom_of_body %>
 </body>
