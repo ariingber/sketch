@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  // Nav bar to the side on mobile
   $(".button-collapse").sideNav();
 
   // load more press release
@@ -97,6 +98,11 @@ $(document).ready(function(){
       player.play();
     });
     // ######################################
+
+
+    $('#drivenQuote').hide();
+    $('#sxQuote').hide();
+    $('#disruptiveQuote').hide();
 
 
 
