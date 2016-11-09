@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  $(".button-collapse").sideNav();
 
   // load more press release
   $('#loadMoreButton').click(function() {
