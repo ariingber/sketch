@@ -2,6 +2,36 @@ $(document).ready(function(){
   // Nav bar to the side on mobile
   $(".button-collapse").sideNav();
 
+
+// Quote Hover jQuery
+  $('.hiddenQuote').hide();
+  $('.pressIcon').hover(function(event) {
+    event.stopPropagation()
+    $('.shownQuote').toggleClass('shownQuote hiddenQuote');
+    switch ($(this).attr('id')) {
+      case 'wiredIcon':
+        $('#wiredQuote').toggleClass('hiddenQuote shownQuote').show();
+        break;
+      case 'fastCompanyIcon':
+        $('#fastCompanyQuote').toggleClass('hiddenQuote shownQuote').show();
+        break;
+      case 'crainsIcon':
+        $('#crainsQuote').toggleClass('hiddenQuote shownQuote').show();
+        break;
+      case 'forbesIcon':
+        $('#forbesQuote').toggleClass('hiddenQuote shownQuote').show();
+        break;
+      case 'wallStreetIcon':
+        $('#wallStreetQuote').toggleClass('hiddenQuote shownQuote').show();
+        break;
+      case 'techCrunchIcon':
+        $('#techCrunchQuote').toggleClass('hiddenQuote shownQuote').show();
+        break;
+    }
+    $('.hiddenQuote').hide();
+  });
+
+
   // load more press release
   $('#loadMoreButton').click(function() {
       $('.current').removeClass('current').fadeOut('slow')
