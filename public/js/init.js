@@ -31,6 +31,10 @@ $(document).ready(function(){
     $('.hiddenQuote').hide();
   });
 
+  $('#wiredIcon').hover(function(){
+    $('#wiredhvrTest').toggleClass("::active");
+  });
+
 
   // load more press release
   $('#loadMoreButton').click(function() {
