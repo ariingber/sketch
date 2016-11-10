@@ -74,16 +74,35 @@ $(document).ready(function(){
       maxSlides: 3,
       moveSlides: 1,
       slideWidth: 400,
+      infiniteLoop: false,
       pagerCustom: '#bx-pager'
     });
     // PRESS ARROWS ***********************
-    // $('#press_release_arrow_right').hide();
+    $('#press_release_arrow_right').hide();
+    var pressReleaseClicker = 0;
     $( '#press_release_arrow_left' ).click(function() {
       slider.goToNextSlide();
-      // $('#press_release_arrow_right').show();
+      pressReleaseClicker += 1
+      switch (pressReleaseClicker){
+        case 1:
+          $('#press_release_arrow_right').show();
+          break;
+        case 2:
+          $('#press_release_arrow_left').hide();
+          break;
+      }
     });
     $( '#press_release_arrow_right' ).click(function() {
       slider.goToPrevSlide();
+      pressReleaseClicker -= 1
+      switch (pressReleaseClicker){
+        case 1:
+          $('#press_release_arrow_left').show();
+          break;
+        case 0:
+          $('#press_release_arrow_right').hide();
+          break;
+      }
     });
     // *************************************************************
 
