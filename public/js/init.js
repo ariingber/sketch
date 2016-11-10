@@ -99,10 +99,10 @@ $(document).ready(function(){
     });
     // ######################################
 
-
-    $('#drivenQuote').hide();
-    $('#sxQuote').hide();
-    $('#disruptiveQuote').hide();
+    // $('techCrunchQuote').hide()
+    // $('#drivenQuote').hide();
+    // $('#sxQuote').hide();
+    // $('#disruptiveQuote').hide();
 
 
 
