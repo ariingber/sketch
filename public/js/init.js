@@ -78,28 +78,28 @@ $(document).ready(function(){
       pagerCustom: '#bx-pager'
     });
     // PRESS ARROWS ***********************
-    $('#press_release_arrow_right').hide();
+    $('#press_release_arrow_left').hide();
     var pressReleaseClicker = 0;
     $( '#press_release_arrow_left' ).click(function() {
-      slider.goToNextSlide();
-      pressReleaseClicker += 1
+      slider.goToPrevSlide();
+      pressReleaseClicker -= 1
       switch (pressReleaseClicker){
         case 1:
           $('#press_release_arrow_right').show();
           break;
-        case 2:
+        case 0:
           $('#press_release_arrow_left').hide();
           break;
       }
     });
     $( '#press_release_arrow_right' ).click(function() {
-      slider.goToPrevSlide();
-      pressReleaseClicker -= 1
+      slider.goToNextSlide();
+      pressReleaseClicker += 1
       switch (pressReleaseClicker){
         case 1:
           $('#press_release_arrow_left').show();
           break;
-        case 0:
+        case 2:
           $('#press_release_arrow_right').hide();
           break;
       }
