@@ -219,9 +219,8 @@ $(document).ready(function(){
     });
     $("#choice_try_products2").click(function (event) {
       $('#no_clinical_study_message_div').animate({left: '150px'}, 'fast').fadeOut(300);
-      $('#question3').delay(800).fadeIn(300);
+      $('#question2').delay(800).fadeIn(300);
       setTimeout(function () {
-        $('#first_name').focus();
         $('#no_clinical_study_message_div').css({'left':'0'})
       }, 1000);
     });
