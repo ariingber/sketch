@@ -101,14 +101,23 @@ body {
   border-radius:10px;
   color: #75787B;
 }
+.form_h1{
+  color: white;
+  font-size: 48px;
+}
 
 .whiteButton {
   font-size:15px;
+  width:200px !important;
   border:solid white 1px;
   padding:10px 30px 10px 30px;
   border-radius:10px;
   color: white;
   cursor: pointer;
+}
+.whiteButton:hover {
+  color: #1FD9C7 !important;
+  background-color: white;
 }
 
 .whiteCloseButton {

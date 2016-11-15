@@ -192,7 +192,7 @@ $(document).ready(function(){
     $('#question7').hide();
     $('#question8').hide();
     $('#message_div').hide();
-    $('#no_clinical_study_message_div').hide();
+    $('#sorry_message_div').hide();
     $('#additional_comments_div').hide();
     $('#progress_counter').hide();
     $('#email_error').hide();
@@ -218,18 +218,17 @@ $(document).ready(function(){
       }, 1000);
     });
     $("#choice_try_products2").click(function (event) {
-      $('#no_clinical_study_message_div').animate({left: '150px'}, 'fast').fadeOut(300);
+      $('#sorry_message_div').animate({left: '150px'}, 'fast').fadeOut(300);
       $('#question2').delay(800).fadeIn(300);
       setTimeout(function () {
-        $('#no_clinical_study_message_div').css({'left':'0'})
+        $('#sorry_message_div').css({'left':'0'})
       }, 1000);
     });
 
     $("#wont_try_clinical_study").click(function (event) {
       $('#question2').animate({left: '150px'}, 'fast').fadeOut(300);
-      $('#no_clinical_study_message_div').delay(800).fadeIn(300);
+      $('#sorry_message_div').delay(800).fadeIn(300);
       setTimeout(function () {
-        $('#no_clinical_study_message').focus();
         $('#question2').css({'left':'0'})
       }, 1000);
     });
@@ -244,17 +243,27 @@ $(document).ready(function(){
       $('#progress_counter').delay(800).fadeIn(300);
     });
 
+    function formEnterFunction(currentInput) {
+      currentInput.animate({height: 'toggle'}, 'slow').fadeOut(300);
+      currentInput.next().delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
+      currentInput.next().find('input').focus();
+    }
+
+
     $("#question3 input").keypress(function (event) {
+      var currentInput = $(this).parent().parent();
        if (event.which == 13) {
          event.preventDefault();
-          $('#question3').animate({height: 'toggle'}, 'slow').fadeOut(300);
-           $('#question4').delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
-           setTimeout(function () {
-             $('#last_name').focus()
-           }, 1000);
-           $('#progress_counter').fadeOut('fast')
-           $('#progress_counter').hide().text('2/7');
-           $('#progress_counter').delay(900).fadeIn('slow')
+         formEnterFunction(currentInput);
+
+          // $('#question3').animate({height: 'toggle'}, 'slow').fadeOut(300);
+          //  $('#question4').delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
+          //  setTimeout(function () {
+          //    $('#last_name').focus()
+          //  }, 1000);
+          //  $('#progress_counter').fadeOut('fast')
+          //  $('#progress_counter').hide().text('2/7');
+          //  $('#progress_counter').delay(900).fadeIn('slow');
        }
     });
 
@@ -326,7 +335,7 @@ $(document).ready(function(){
        $('#progress_counter').delay(900).fadeIn('slow')
     });
 
-    $("#message_div input, #additional_comments_div, #no_clinical_study_message, textarea").keypress(function (event) {
+    $("#message_div input, #additional_comments_div, textarea").keypress(function (event) {
        if (event.which == 13) {
          $( "#thank_you_message" ).show().delay( 20000000 ).fadeOut( 4000000 );
          $('form').delay( 25000000 ).unbind('submit').submit();
@@ -337,7 +346,11 @@ $(document).ready(function(){
        }
     });
 
-
+    function backButtonFunction(currentInput) {
+      currentInput.animate({height: 'toggle'}, 'slow').fadeOut(300);
+      currentInput.delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
+      currentInput.prev().find('input').focus();
+    }
 
     $("#backButton1").click(function () {
       $('#question2').animate({left: '150px'}, 'fast').fadeOut(300);
@@ -352,13 +365,16 @@ $(document).ready(function(){
        $('#progress_counter').fadeOut('slow')
     });
     $("#backButton3").click(function () {
-      $('#question4').animate({height: 'toggle'}, 'slow').fadeOut(300);
-       $('#question3').delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
-      setTimeout(function () {
-        $('#first_name').focus();
-      }, 1000);
-      $('#progress_counter').text('1/7');
-      $('#progress_counter').fadeIn('slow')
+      var currentInput = $(this).parent().parent();
+      backButtonFunction(currentInput);
+
+      // $('#question4').animate({height: 'toggle'}, 'slow').fadeOut(300);
+      //  $('#question3').delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
+      // setTimeout(function () {
+      //   $('#first_name').focus();
+      // }, 1000);
+      // $('#progress_counter').text('1/7');
+      // $('#progress_counter').fadeIn('slow')
     });
     $("#backButton4").click(function () {
       $('#question5').animate({height: 'toggle'}, 'slow').fadeOut(300);
