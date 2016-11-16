@@ -109,9 +109,11 @@ body {
 .whiteButton {
   font-size:15px;
   width:200px !important;
+  width:160px !important;
+  text-align: center;
   border:solid white 1px;
   padding:10px 30px 10px 30px;
-  border-radius:10px;
+  border-radius: 10px;
   color: white;
   cursor: pointer;
 }

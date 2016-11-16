@@ -196,6 +196,7 @@ $(document).ready(function(){
     $('#additional_comments_div').hide();
     $('#progress_counter').hide();
     $('#email_error').hide();
+    $('#name_error').hide();
     $( "#thank_you_message" ).hide();
 
 
@@ -206,8 +207,6 @@ $(document).ready(function(){
         $('#message').focus();
         $('#question1').css({'left':'0'})
       }, 1000);
-
-
     });
 
     $("#choice_try_products").click(function (event) {
@@ -243,11 +242,54 @@ $(document).ready(function(){
       $('#progress_counter').delay(800).fadeIn(300);
     });
 
-    function formEnterFunction(currentInput) {
+    var count = 1;
+
+    function fire (currentInput) {
+      count += 1;
       currentInput.animate({height: 'toggle'}, 'slow').fadeOut(300);
       currentInput.next().delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
-      currentInput.next().find('input').focus();
+      setTimeout(function () {
+        currentInput.next().find('input').focus()
+      }, 1000);
+       $('#count').text(count + '');
     }
+
+    function formEnterFunction(currentInput) {
+      switch (currentInput.find('input')[0].id){
+        case 'first_name':
+          if ($("#first_name").val() == '') {
+            $('#name_error').fadeIn().delay(900).fadeOut();
+          }
+          else {
+            fire(currentInput)
+          }
+          break;
+        case 'last_name':
+          if ($("#last_name").val() == '') {
+            alert('bad name')
+          }
+          else {
+            fire(currentInput)
+          }
+          break;
+        default :
+          fire(currentInput);
+        // var $first_name = $("#first_name").val();
+        // var re = /[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}/igm;
+        // if ($first_name == '' || !re.test($first_name)) {
+        //   $("#email_error").fadeIn('slow').delay(5000).fadeOut('slow')
+        //   $("#first_name").addClass('invalid').delay(5000).removeClass('invalid');
+        //   return false
+        // }
+      }
+      // else {
+
+      // }
+    }
+    $('.nextButton').click(function(){
+      var currentInput = $(this).parent().parent();
+      formEnterFunction(currentInput);
+    });
 
 
     $("#question3 input").keypress(function (event) {
@@ -255,6 +297,7 @@ $(document).ready(function(){
        if (event.which == 13) {
          event.preventDefault();
          formEnterFunction(currentInput);
+         event.stopPropagation();
 
           // $('#question3').animate({height: 'toggle'}, 'slow').fadeOut(300);
           //  $('#question4').delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
@@ -268,16 +311,10 @@ $(document).ready(function(){
     });
 
     $("#question4 input").keypress(function (event) {
+      var currentInput = $(this).parent().parent();
        if (event.which == 13) {
         event.preventDefault();
-         $('#question4').animate({height: 'toggle'}, 'slow').fadeOut(300);
-          $('#question5').delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
-          setTimeout(function () {
-            $('#email').focus()
-          }, 1000);
-          $('#progress_counter').fadeOut('fast')
-          $('#progress_counter').hide().text('3/7');
-          $('#progress_counter').delay(900).fadeIn('slow')
+         formEnterFunction(currentInput);
        }
     });
 
@@ -289,7 +326,7 @@ $(document).ready(function(){
         var re = /[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}/igm;
         if ($email == '' || !re.test($email)) {
           $("#email_error").fadeIn('slow').delay(5000).fadeOut('slow')
-          $("#email").removeClass('validate').addClass('invalid').delay(5000).removeClass('inalid').addClass('validate');
+          $("#email").removeClass('validate').addClass('invalid').delay(5000).removeClass('invalid').addClass('validate');
           return false
         }
         else {
@@ -347,9 +384,13 @@ $(document).ready(function(){
     });
 
     function backButtonFunction(currentInput) {
+      count -= 1;
       currentInput.animate({height: 'toggle'}, 'slow').fadeOut(300);
-      currentInput.delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
-      currentInput.prev().find('input').focus();
+      currentInput.prev().delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
+      setTimeout(function () {
+        currentInput.prev().find('input').focus()
+      }, 1000);
+      $('#count').text(count + '');
     }
 
     $("#backButton1").click(function () {

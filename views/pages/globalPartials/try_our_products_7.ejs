@@ -10,36 +10,40 @@
             <h1 class="form_h1">What can we help you with?</h1>
             <h2 id="looking_to_h2">Interested in our products? Let’s get started.</h2>
             <br>
-             <div id="choice_try_products" class="white-text whiteButton" style="width:160px !important; text-align:center;"> Try products </div><br>
-             <div id="choice_send_message" class="white-text whiteButton" style="width:160px !important; text-align:center;">Send message</div>
+             <div id="choice_try_products" class="white-text whiteButton"> Try products </div><br>
+             <div id="choice_send_message" class="white-text whiteButton">Send message</div>
            </div>
            <div id="question2" class="input-field col s12 m12 l12">
             <h1 class="white-text" style="font-size:48px;">Great. Would you be okay to try products as part of a clinical study?</h1>
             <br>
-            <span class="whiteButton" id="try_clinical_study">Yes</span><br><br>
-            <span class="whiteButton" id="wont_try_clinical_study">No</span><br><br>
-            <span class="whiteButton" id="backButton1">Back</span>
+            <div class="whiteButton" id="try_clinical_study">Yes</div><br>
+            <div class="whiteButton" id="wont_try_clinical_study">No</div><br>
+            <div class="whiteButton" id="backButton1">Back</div>
           </div>
           <div id="question3">
             <div class="input-field col s12 m12 l8">
               <h1 class="form_h1">What’s your first name?</h1>
               <input id="first_name" type="text" name="first_name">
-              <span class="whiteButton" id="nextButton2">Next</span><br><br>
-              <span class="whiteButton" id="backButton2">Back</span>
+              <div id="name_error">Error</div><br>
+              <div class="whiteButton nextButton">Next</div><br>
+              <div class="whiteButton" id="backButton2">Back</div>
             </div>
           </div>
           <div id="question4">
-            <div class="input-field col s12 m12 l5">
-              <p class="white-text">Last name?</p>
-              <input id="last_name" type="text" name="last_name" class="validate" required>
-              <span class="whiteButton" id="backButton3">Back</span>
+            <div class="input-field col s12 m12 l8">
+              <h1 class="form_h1">Last name?</h1>
+              <br>
+              <input id="last_name" type="text" name="last_name">
+              <div class="whiteButton nextButton">Next</div><br>
+              <div class="whiteButton" id="backButton3">Back</div>
             </div>
           </div>
           <div id="question5">
             <div class="input-field col s12 m12 l5">
-              <p>What's your email?</p>
+              <h1 class="form_h1">And your email?</h1>
               <input id="email" type="email" name="email" class="validate" required>
-              <span class="whiteButton" id="backButton4">Back</span>
+              <!-- <div class="whiteButton nextButton">Next</div><br> -->
+              <div class="whiteButton" id="backButton4">Back</div>
               <p id="email_error" style="margin-top:-20px;" class="red-text">Please Enter A Valid Email</p>
             </div>
           </div>
@@ -47,7 +51,7 @@
             <div class="input-field col s12 m12 l4">
               <p class="white-text">What's your age?</p>
               <input id="age" type="text" name="age" class="validate" required>
-              <span class="whiteButton" id="backButton5">Back</span>
+              <div class="whiteButton" id="backButton5">Back</div>
             </div>
           </div>
           <div id="question7" class="input-field col s12 m12 l6">
@@ -66,7 +70,7 @@
                <label for="wont_disclose">Choose not to disclose</label>
              </p>
              <br><br><br>
-             <span class="whiteButton" id="backButton6">Back</span>
+             <div class="whiteButton" id="backButton6">Back</div>
            </div>
            <div id="question8" class="input-field col s12 m12 l6">
               <input id="phoneType" type="hidden" name="phone_type" value="" />
@@ -84,31 +88,31 @@
                  <label for="not_iPhone_or_android">Other</label>
                </p>
               <br><br><br>
-              <span class="whiteButton" id="backButton7">Back</span>
+              <div class="whiteButton" id="backButton7">Back</div>
             </div>
            <div id="message_div" class="input-field col s12">
               <p>Send us a message.</p>
             <input id="message" name="message"  type="text" class="materialize-textarea"></input>
             <button class="whiteButton" type="submit">Send Message</button>
-            <span class="whiteButton" id="messageBackButton">Back</span>
+            <div class="whiteButton" id="messageBackButton">Back</div>
           </div>
           <div id="sorry_message_div" class="input-field col s12">
             <h1 class="white-text" style="font-size:48px;">Sorry. Right now, our products are only available through a healthcare provider or people in clinical studies.</h1>
             <br>
-           <span class="whiteButton" id="choice_try_products2">Start over</span>
+           <div class="whiteButton" id="choice_try_products2">Start over</div>
 
          </div>
           <div id="additional_comments_div" class="input-field col s12">
              <p>Addtional Comments? Send us a message.</p>
            <input id="additional_comments" name="Additional Comments"  type="text" class="materialize-textarea"></input>
            <button class="whiteButton" type="submit">Send Message</button>
-           <span class="whiteButton" id="addtionalCommentsBackButton">Back</span>
+           <div class="whiteButton" id="addtionalCommentsBackButton">Back</div>
          </div>
           <div id="thank_you_message" class="white-text">Thank you for your message, we got it!
           </div>
           <br>
-          <div class="blue-text left-align col s12" id="progress_counter" style="margin-top:50px;">
-            <span>1</span>/7
+          <div class="white-text left-align col s12" id="progress_counter" style="margin-top:50px;">
+            <span id="count" style="font-weight:bold;">1</span>/7
           </div>
 
 

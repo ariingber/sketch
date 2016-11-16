@@ -5635,6 +5635,7 @@ label {
 
 /*changed fontsize from 1 rem to 36px;
 added color white*/
+/*border bottom from  #9e9e9e to white*/
 /*DISABLED BOX SIZING***********************/
 /* Text inputs */
 input:not([type]),
@@ -5652,7 +5653,7 @@ input[type=search],
 textarea.materialize-textarea {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #9e9e9e;
+  border-bottom: 1px solid white;
   border-radius: 0;
   outline: none;
   height: 3rem;
