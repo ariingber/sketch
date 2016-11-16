@@ -218,6 +218,7 @@ $(document).ready(function(){
         $('#question1').css({'left':'0'})
       }, 1000);
     });
+
     $("#choice_try_products2").click(function (event) {
       $('#sorry_message_div').animate({left: '150px'}, 'fast').fadeOut(300);
       $('#question2').delay(800).fadeIn(300);
@@ -296,52 +297,53 @@ $(document).ready(function(){
     });
 
 
-    $("#question3 input").keypress(function (event) {
-      var currentInput = $(this).parent().parent();
-       if (event.which == 13) {
-         event.preventDefault();
-         formEnterFunction(currentInput);
-         event.stopPropagation();
-       }
-    });
+    // $("#question3 input").keypress(function (event) {
+    //   var currentInput = $(this).parent().parent();
+    //    if (event.which == 13) {
+    //      event.preventDefault();
+    //      formEnterFunction(currentInput);
+    //      event.stopPropagation();
+    //    }
+    // });
+    //
+    // $("#question4 input").keypress(function (event) {
+    //   var currentInput = $(this).parent().parent();
+    //    if (event.which == 13) {
+    //     event.preventDefault();
+    //      formEnterFunction(currentInput);
+    //    }
+    // });
+    //
+    // $("#question5 input").keypress(function (event) {
+    //   var currentInput = $(this).parent().parent();
+    //    if (event.which == 13) {
+    //      event.preventDefault();
+    //      formEnterFunction(currentInput);
+    //     }
+    //   });
 
-    $("#question4 input").keypress(function (event) {
-      var currentInput = $(this).parent().parent();
-       if (event.which == 13) {
-        event.preventDefault();
-         formEnterFunction(currentInput);
-       }
-    });
-
-    $("#question5 input").keypress(function (event) {
+    $(".question input").keypress(function (event) {
       var currentInput = $(this).parent().parent();
        if (event.which == 13) {
          event.preventDefault();
          formEnterFunction(currentInput);
         }
-      });
-
-    $("#question6 input").keypress(function (event) {
-      var currentInput = $(this).parent().parent();
-       if (event.which == 13) {
-         event.preventDefault();
-         formEnterFunction(currentInput);
-        }
     });
 
-    $("#asthma, #copd, #wont_disclose").click(function () {
+    $("#asthma, #copd, #wont_disclose, iPhone, #android, #not_iPhone_or_android").click(function () {
       $('#diagnosis').val($(this).val())
-      var currentInput = $(this).parent().parent();
-       event.preventDefault();
-       formEnterFunction(currentInput);
-    });
-
-    $("#iPhone, #android, #not_iPhone_or_android").click(function () {
       $('#phoneType').val($(this).val())
       var currentInput = $(this).parent().parent();
        event.preventDefault();
        formEnterFunction(currentInput);
     });
+
+    // $("#iPhone, #android, #not_iPhone_or_android").click(function () {
+    //   $('#phoneType').val($(this).val())
+    //   var currentInput = $(this).parent().parent();
+    //    event.preventDefault();
+    //    formEnterFunction(currentInput);
+    // });
 
     $("#message_div input, #additional_comments_div, textarea").keypress(function (event) {
        if (event.which == 13) {
