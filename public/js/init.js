@@ -63,6 +63,7 @@ $(document).ready(function(){
       // *****************************************************
 
     // CAROUSELS AND SILDERS ***************************************************
+    $('.carousel.carousel-slider#build_better_habbits_carousel').carousel({full_width: true});
 
     // Build better habbits slider should go first mobile
     $('.slider.testimonial_slider').slider({indicators:true, height:150 });
