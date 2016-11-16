@@ -333,16 +333,13 @@ $(document).ready(function(){
       var currentInput = $(this).parent().parent();
        event.preventDefault();
        formEnterFunction(currentInput);
-
     });
 
     $("#iPhone, #android, #not_iPhone_or_android").click(function () {
       $('#phoneType').val($(this).val())
-      $('#question8').animate({height: 'toggle'}, 'slow').fadeOut(300);
-       $('#additional_comments_div').delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
-       $('#progress_counter').fadeOut('fast')
-       $('#progress_counter').hide().text('7/7');
-       $('#progress_counter').delay(900).fadeIn('slow')
+      var currentInput = $(this).parent().parent();
+       event.preventDefault();
+       formEnterFunction(currentInput);
     });
 
     $("#message_div input, #additional_comments_div, textarea").keypress(function (event) {
@@ -358,6 +355,9 @@ $(document).ready(function(){
 
     function backButtonFunction(currentInput) {
       count -= 1;
+      if (count < 1) {
+        count = 1;
+      }
       currentInput.animate({height: 'toggle'}, 'slow').fadeOut(300);
       currentInput.prev().delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
       setTimeout(function () {
@@ -367,62 +367,34 @@ $(document).ready(function(){
     }
 
     $("#backButton1").click(function () {
-      $('#question2').animate({left: '150px'}, 'fast').fadeOut(300);
-      $('#question1').delay(800).fadeIn(300);
-      setTimeout(function () {
-        $('#question2').css({'left':'0'})
-      }, 1000);
+      var currentInput = $(this).parent();
+      backButtonFunction(currentInput);
     });
     $("#backButton2").click(function () {
-      $('#question3').animate({height: 'toggle'}, 'slow').fadeOut(300);
-       $('#question2').delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
-       $('#progress_counter').fadeOut('slow')
+      var currentInput = $(this).parent().parent();
+      backButtonFunction(currentInput);
     });
     $("#backButton3").click(function () {
       var currentInput = $(this).parent().parent();
       backButtonFunction(currentInput);
-
-      // $('#question4').animate({height: 'toggle'}, 'slow').fadeOut(300);
-      //  $('#question3').delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
-      // setTimeout(function () {
-      //   $('#first_name').focus();
-      // }, 1000);
-      // $('#progress_counter').text('1/7');
-      // $('#progress_counter').fadeIn('slow')
     });
     $("#backButton4").click(function () {
-      $('#question5').animate({height: 'toggle'}, 'slow').fadeOut(300);
-       $('#question4').delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
-      setTimeout(function () {
-        $('#last_name').focus();
-      }, 1000);
-      $('#progress_counter').text('2/7');
-      $('#progress_counter').fadeIn('slow')
+      var currentInput = $(this).parent().parent();
+      backButtonFunction(currentInput);
     });
     $("#backButton5").click(function () {
-      $('#question6').animate({height: 'toggle'}, 'slow').fadeOut(300);
-       $('#question5').delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
-      setTimeout(function () {
-        $('#email').focus();
-      }, 1000);
-      $('#progress_counter').text('3/7');
-      $('#progress_counter').fadeIn('slow')
+      var currentInput = $(this).parent().parent();
+      backButtonFunction(currentInput);
     });
     $("#backButton6").click(function () {
-      $('#question7').animate({height: 'toggle'}, 'slow').fadeOut(300);
-       $('#question6').delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
-      setTimeout(function () {
-        $('#age').focus();
-      }, 1000);
-      $('#progress_counter').text('4/7');
-      $('#progress_counter').fadeIn('slow')
+      var currentInput = $(this).parent();
+      backButtonFunction(currentInput);
     });
     $("#backButton7").click(function () {
-      $('#question8').animate({height: 'toggle'}, 'slow').fadeOut(300);
-       $('#question7').delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
-      $('#progress_counter').text('5/7');
-      $('#progress_counter').fadeIn('slow')
+      var currentInput = $(this).parent();
+      backButtonFunction(currentInput);
     });
+    
     $("#messageBackButton").click(function () {
       $('#message_div').animate({height: 'toggle'}, 'slow').fadeOut(300);
       $('#question1').delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
