@@ -254,6 +254,7 @@ $(document).ready(function(){
         currentInput.next().find('input').focus()
       }, 1000);
        $('#count').text(count + '');
+       $('#progress_counter').fadeOut('fast').delay(700).fadeIn(500);
     }
 
     function formEnterFunction(currentInput) {
@@ -364,6 +365,7 @@ $(document).ready(function(){
         currentInput.prev().find('input').focus()
       }, 1000);
       $('#count').text(count + '');
+      $('#progress_counter').fadeOut('fast').delay(700).fadeIn(500);
     }
 
     $("#backButton1").click(function () {
@@ -394,7 +396,7 @@ $(document).ready(function(){
       var currentInput = $(this).parent();
       backButtonFunction(currentInput);
     });
-    
+
     $("#messageBackButton").click(function () {
       $('#message_div').animate({height: 'toggle'}, 'slow').fadeOut(300);
       $('#question1').delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
