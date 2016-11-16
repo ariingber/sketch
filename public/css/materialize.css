@@ -6076,6 +6076,8 @@ textarea.materialize-textarea {
   opacity: 0;
 }
 
+/*font-size 1rem to 30px; */
+/*added color white */
 [type="radio"]:not(:checked) + label,
 [type="radio"]:checked + label {
   position: relative;
@@ -6084,7 +6086,8 @@ textarea.materialize-textarea {
   display: inline-block;
   height: 25px;
   line-height: 25px;
-  font-size: 1rem;
+  font-size: 30px;
+  color: white;
   transition: .28s ease;
   /* webkit (konqueror) browsers */
   -webkit-user-select: none;
@@ -6093,6 +6096,7 @@ textarea.materialize-textarea {
           user-select: none;
 }
 
+/*width and height from 16px to 20px*/
 [type="radio"] + label:before,
 [type="radio"] + label:after {
   content: '';
@@ -6100,8 +6104,8 @@ textarea.materialize-textarea {
   left: 0;
   top: 0;
   margin: 4px;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   z-index: 0;
   transition: .28s ease;
 }
@@ -6116,9 +6120,10 @@ textarea.materialize-textarea {
   border-radius: 50%;
 }
 
+/*changed #5a5a5a to white*/
 [type="radio"]:not(:checked) + label:before,
 [type="radio"]:not(:checked) + label:after {
-  border: 2px solid #5a5a5a;
+  border: 2px solid white;
 }
 
 [type="radio"]:not(:checked) + label:after {
@@ -6132,15 +6137,17 @@ textarea.materialize-textarea {
   border: 2px solid transparent;
 }
 
+/*changed #26a69a to white*/
 [type="radio"]:checked + label:after,
 [type="radio"].with-gap:checked + label:before,
 [type="radio"].with-gap:checked + label:after {
-  border: 2px solid #26a69a;
+  border: 2px solid white;
 }
 
+/*changed #26a69a to white;*/
 [type="radio"]:checked + label:after,
 [type="radio"].with-gap:checked + label:after {
-  background-color: #26a69a;
+  background-color: white;
   z-index: 0;
 }
 

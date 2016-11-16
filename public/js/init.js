@@ -197,7 +197,8 @@ $(document).ready(function(){
     $('#additional_comments_div').hide();
     $('#progress_counter').hide();
     $('#email_error').hide();
-    $('#name_error').hide();
+    $('#first_name_error').hide();
+    $('#last_name_error').hide();
     $( "#thank_you_message" ).hide();
 
 
@@ -248,7 +249,7 @@ $(document).ready(function(){
     function fire (currentInput) {
       count += 1;
       currentInput.animate({height: 'toggle'}, 'slow').fadeOut(300);
-      currentInput.next().delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
+      currentInput.next().delay(700).animate({height: 'toggle'}, 'slow').fadeIn(500);
       setTimeout(function () {
         currentInput.next().find('input').focus()
       }, 1000);
@@ -259,7 +260,7 @@ $(document).ready(function(){
       switch (currentInput.find('input')[0].id){
         case 'first_name':
           if ($("#first_name").val() == '') {
-            $('#name_error').fadeIn().delay(900).fadeOut();
+            $('#first_name_error').fadeIn().delay(900).fadeOut();
           }
           else {
             fire(currentInput)
@@ -267,7 +268,17 @@ $(document).ready(function(){
           break;
         case 'last_name':
           if ($("#last_name").val() == '') {
-            alert('bad name')
+            $('#last_name_error').fadeIn().delay(900).fadeOut();
+          }
+          else {
+            fire(currentInput)
+          }
+          break;
+        case 'email':
+          var $email = $("#email").val();
+          var re = /[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}/igm;
+          if ($email == '' || !re.test($email)) {
+            $('#email_error').fadeIn().delay(900).fadeOut();
           }
           else {
             fire(currentInput)
@@ -275,18 +286,9 @@ $(document).ready(function(){
           break;
         default :
           fire(currentInput);
-        // var $first_name = $("#first_name").val();
-        // var re = /[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}/igm;
-        // if ($first_name == '' || !re.test($first_name)) {
-        //   $("#email_error").fadeIn('slow').delay(5000).fadeOut('slow')
-        //   $("#first_name").addClass('invalid').delay(5000).removeClass('invalid');
-        //   return false
-        // }
       }
-      // else {
-
-      // }
     }
+
     $('.nextButton').click(function(){
       var currentInput = $(this).parent().parent();
       formEnterFunction(currentInput);
@@ -299,15 +301,6 @@ $(document).ready(function(){
          event.preventDefault();
          formEnterFunction(currentInput);
          event.stopPropagation();
-
-          // $('#question3').animate({height: 'toggle'}, 'slow').fadeOut(300);
-          //  $('#question4').delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
-          //  setTimeout(function () {
-          //    $('#last_name').focus()
-          //  }, 1000);
-          //  $('#progress_counter').fadeOut('fast')
-          //  $('#progress_counter').hide().text('2/7');
-          //  $('#progress_counter').delay(900).fadeIn('slow');
        }
     });
 
@@ -320,48 +313,27 @@ $(document).ready(function(){
     });
 
     $("#question5 input").keypress(function (event) {
+      var currentInput = $(this).parent().parent();
        if (event.which == 13) {
          event.preventDefault();
-        //  email validation
-        var $email = $("#email").val();
-        var re = /[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}/igm;
-        if ($email == '' || !re.test($email)) {
-          $("#email_error").fadeIn('slow').delay(5000).fadeOut('slow')
-          $("#email").removeClass('validate').addClass('invalid').delay(5000).removeClass('invalid').addClass('validate');
-          return false
+         formEnterFunction(currentInput);
         }
-        else {
-          $('#question5').animate({height: 'toggle'}, 'slow').fadeOut(300);
-          $('#question6').delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
-          setTimeout(function () {
-            $('#age').focus()
-          }, 1000);
-          $('#progress_counter').fadeOut('fast')
-          $('#progress_counter').hide().text('4/7');
-          $('#progress_counter').delay(900).fadeIn('slow')
-        }
-
-       }
-    });
+      });
 
     $("#question6 input").keypress(function (event) {
+      var currentInput = $(this).parent().parent();
        if (event.which == 13) {
-        event.preventDefault();
-         $('#question6').animate({height: 'toggle'}, 'slow').fadeOut(300);
-          $('#question7').delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
-          $('#progress_counter').fadeOut('fast')
-          $('#progress_counter').hide().text('5/7');
-          $('#progress_counter').delay(900).fadeIn('slow')
-       }
+         event.preventDefault();
+         formEnterFunction(currentInput);
+        }
     });
 
     $("#asthma, #copd, #wont_disclose").click(function () {
       $('#diagnosis').val($(this).val())
-      $('#question7').animate({height: 'toggle'}, 'slow').fadeOut(300);
-       $('#question8').delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
-       $('#progress_counter').fadeOut('fast')
-       $('#progress_counter').hide().text('6/7');
-       $('#progress_counter').delay(900).fadeIn('slow')
+      var currentInput = $(this).parent().parent();
+       event.preventDefault();
+       formEnterFunction(currentInput);
+
     });
 
     $("#iPhone, #android, #not_iPhone_or_android").click(function () {
