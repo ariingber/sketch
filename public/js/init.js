@@ -219,19 +219,19 @@ $(document).ready(function(){
       }, 1000);
     });
 
-    $("#choice_try_products2").click(function (event) {
-      $('#sorry_message_div').animate({left: '150px'}, 'fast').fadeOut(300);
-      $('#question2').delay(800).fadeIn(300);
-      setTimeout(function () {
-        $('#sorry_message_div').css({'left':'0'})
-      }, 1000);
-    });
-
     $("#wont_try_clinical_study").click(function (event) {
       $('#question2').animate({left: '150px'}, 'fast').fadeOut(300);
       $('#sorry_message_div').delay(800).fadeIn(300);
       setTimeout(function () {
         $('#question2').css({'left':'0'})
+      }, 1000);
+    });
+
+    $("#choice_try_products2").click(function (event) {
+      $('#sorry_message_div').animate({left: '150px'}, 'fast').fadeOut(300);
+      $('#question2').delay(800).fadeIn(300);
+      setTimeout(function () {
+        $('#sorry_message_div').css({'left':'0'})
       }, 1000);
     });
 
@@ -330,30 +330,38 @@ $(document).ready(function(){
         }
     });
 
-    $("#asthma, #copd, #wont_disclose, iPhone, #android, #not_iPhone_or_android").click(function () {
+    $("#asthma, #copd, #wont_disclose").click(function () {
       $('#diagnosis').val($(this).val())
+      var currentInput = $(this).parent().parent();
+       event.preventDefault();
+       formEnterFunction(currentInput);
+    });
+
+    $("#iPhone, #android, #not_iPhone_or_android").click(function () {
       $('#phoneType').val($(this).val())
       var currentInput = $(this).parent().parent();
        event.preventDefault();
        formEnterFunction(currentInput);
     });
 
-    // $("#iPhone, #android, #not_iPhone_or_android").click(function () {
-    //   $('#phoneType').val($(this).val())
-    //   var currentInput = $(this).parent().parent();
-    //    event.preventDefault();
-    //    formEnterFunction(currentInput);
-    // });
-
     $("#message_div input, #additional_comments_div, textarea").keypress(function (event) {
        if (event.which == 13) {
-         $( "#thank_you_message" ).show().delay( 20000000 ).fadeOut( 4000000 );
+         $( "#thank_you_message" ).show().delay( 200000000 ).fadeOut( 4000000 );
          $('form').delay( 25000000 ).unbind('submit').submit();
            $('#progress_counter').hide();
            $('#message_div').hide();
            $('#additional_comments_div').hide();
            $('#no_clinical_study_message_div').hide();
        }
+    });
+    $("#message_div input, #additional_comments_div").click(function (event) {
+      event.preventDefault();
+       $( "#thank_you_message" ).show().delay( 20000000 ).fadeOut( 4000000 );
+       $('form').delay( 25000000 ).unbind('submit').submit();
+         $('#progress_counter').hide();
+         $('#message_div').hide();
+         $('#additional_comments_div').hide();
+         $('#no_clinical_study_message_div').hide();
     });
 
     function backButtonFunction(currentInput) {
@@ -372,42 +380,47 @@ $(document).ready(function(){
 
     $("#backButton1").click(function () {
       var currentInput = $(this).parent();
-      backButtonFunction(currentInput);
+      currentInput.animate({height: 'toggle'}, 'slow').fadeOut(300);
+      currentInput.prev().delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
     });
-    $("#backButton2").click(function () {
+
+    $("#backButtonFirstName").click(function () {
+      var currentInput = $(this).parent().parent();
+      currentInput.animate({height: 'toggle'}, 'slow').fadeOut(300);
+      currentInput.prev().delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
+      $('#progress_counter').fadeOut('fast')
+    });
+
+    $(".backButtonType1").click(function () {
       var currentInput = $(this).parent().parent();
       backButtonFunction(currentInput);
     });
-    $("#backButton3").click(function () {
-      var currentInput = $(this).parent().parent();
-      backButtonFunction(currentInput);
-    });
-    $("#backButton4").click(function () {
-      var currentInput = $(this).parent().parent();
-      backButtonFunction(currentInput);
-    });
-    $("#backButton5").click(function () {
-      var currentInput = $(this).parent().parent();
-      backButtonFunction(currentInput);
-    });
-    $("#backButton6").click(function () {
+
+    // $("#backButton4").click(function () {
+    //   var currentInput = $(this).parent().parent();
+    //   backButtonFunction(currentInput);
+    // });
+    // $("#backButton5").click(function () {
+    //   var currentInput = $(this).parent().parent();
+    //   backButtonFunction(currentInput);
+    // });
+    $(".backButtonType2").click(function () {
       var currentInput = $(this).parent();
       backButtonFunction(currentInput);
     });
-    $("#backButton7").click(function () {
-      var currentInput = $(this).parent();
-      backButtonFunction(currentInput);
-    });
+    // $("#backButton7").click(function () {
+    //   var currentInput = $(this).parent();
+    //   backButtonFunction(currentInput);
+    // });
+
+    // $("#addtionalCommentsBackButton").click(function () {
+    //   var currentInput = $(this).parent();
+    //   backButtonFunction(currentInput);
+    // });
 
     $("#messageBackButton").click(function () {
       $('#message_div').animate({height: 'toggle'}, 'slow').fadeOut(300);
       $('#question1').delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
-    });
-    $("#addtionalCommentsBackButton").click(function () {
-      $('#additional_comments_div').animate({height: 'toggle'}, 'slow').fadeOut(300);
-      $('#question8').delay(900).animate({height: 'toggle'}, 'slow').fadeIn(500);
-      $('#progress_counter').text('6/7');
-      $('#progress_counter').fadeIn('slow')
     });
 
 

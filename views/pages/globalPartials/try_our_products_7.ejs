@@ -25,7 +25,7 @@
               <input id="first_name" type="text" name="first_name">
               <div id="first_name_error" class="red-text">Please fill out this field</div><br>
               <div class="whiteButton nextButton">Next</div><br>
-              <div class="whiteButton" id="backButton2">Back</div>
+              <div class="whiteButton" id="backButtonFirstName">Back</div>
             </div>
           </div>
           <div id="question4" class="question">
@@ -35,7 +35,7 @@
               <input id="last_name" type="text" name="last_name">
               <div id="last_name_error" class="red-text">Please fill out this field</div><br>
               <div class="whiteButton nextButton">Next</div><br>
-              <div class="whiteButton" id="backButton3">Back</div>
+              <div class="whiteButton backButtonType1">Back</div>
             </div>
           </div>
           <div id="question5" class="question">
@@ -44,7 +44,7 @@
               <input id="email" type="email" name="email">
               <div id="email_error" class="red-text">Please enter a valid email</div><br>
               <div class="whiteButton nextButton">Next</div><br>
-              <div class="whiteButton" id="backButton4">Back</div>
+              <div class="whiteButton backButtonType1">Back</div>
             </div>
           </div>
           <div id="question6" class="question">
@@ -52,7 +52,7 @@
               <h1 class="form_h1">How old are you?</h1>
               <input id="age" type="text" name="age">
               <div class="whiteButton nextButton">Next</div><br>
-              <div class="whiteButton" id="backButton5">Back</div>
+              <div class="whiteButton backButtonType1">Back</div>
             </div>
           </div>
           <div id="question7" class="input-field col s12 m12 l8">
@@ -71,7 +71,7 @@
                <label for="wont_disclose">Choose not to disclose</label>
              </p>
              <br>
-             <div class="whiteButton" id="backButton6">Back</div>
+             <div class="whiteButton backButtonType2">Back</div>
            </div>
            <div id="question8" class="input-field col s12 m12 l8">
               <input id="phoneType" type="hidden" name="phone_type" value="" />
@@ -89,12 +89,18 @@
                  <label for="not_iPhone_or_android">Other</label>
                </p>
                <br>
-              <div class="whiteButton" id="backButton7">Back</div>
-            </div>
+              <div class="whiteButton backButtonType2">Back</div>
+          </div>
+          <div id="additional_comments_div" class="input-field col s12">
+            <h1 class="form_h1">Submit your form, add a message too if you like.</h1>
+           <input id="additional_comments" name="Additional Comments"  type="text" class="materialize-textarea"></input>
+           <button class="whiteButton subButton" style="background-color:#1FD9C7;" type="submit">Submit form</button>
+           <div class="whiteButton backButtonType2">Back</div>
+         </div>
            <div id="message_div" class="input-field col s12">
-              <p>Send us a message.</p>
+            <h1 class="form_h1">Send us a message.</h1>
             <input id="message" name="message"  type="text" class="materialize-textarea"></input>
-            <button class="whiteButton" type="submit">Send Message</button>
+            <button class="whiteButton subButton" style="background-color:#1FD9C7;" type="submit">Send</button>
             <div class="whiteButton" id="messageBackButton">Back</div>
           </div>
           <div id="sorry_message_div" class="input-field col s12">
@@ -103,14 +109,7 @@
            <div class="whiteButton" id="choice_try_products2">Start over</div>
 
          </div>
-          <div id="additional_comments_div" class="input-field col s12">
-             <p>Addtional Comments? Send us a message.</p>
-           <input id="additional_comments" name="Additional Comments"  type="text" class="materialize-textarea"></input>
-           <button class="whiteButton" type="submit">Send Message</button>
-           <div class="whiteButton" id="addtionalCommentsBackButton">Back</div>
-         </div>
-          <div id="thank_you_message" class="white-text">Thank you for your message, we got it!
-          </div>
+           <h1 id="thank_you_message" class="form_h1">Thank you for your message, we got it!</h1>
           <br>
           <div class="white-text left-align col s12" id="progress_counter" style="margin-top:50px;">
             <span id="count" style="font-weight:bold;">1</span>/7

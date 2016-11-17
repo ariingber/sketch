@@ -121,6 +121,10 @@ body {
   color: #1FD9C7 !important;
   background-color: white;
 }
+.subButton:hover {
+  color: #1FD9C7 !important;
+  background-color: white !important;
+}
 
 .whiteCloseButton {
   font-size:15px !important;
