@@ -354,7 +354,7 @@ $(document).ready(function(){
            $('#no_clinical_study_message_div').hide();
        }
     });
-    $("#message_div input, #additional_comments_div").click(function (event) {
+    $(".subButton").click(function (event) {
       event.preventDefault();
        $( "#thank_you_message" ).show().delay( 20000000 ).fadeOut( 4000000 );
        $('form').delay( 25000000 ).unbind('submit').submit();
