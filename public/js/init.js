@@ -176,11 +176,11 @@ $(document).ready(function(){
     // *************************************************
 
     // SUCCESFULL FORM FILLED OUT
-    $('#sucess_message').hide();
-    if (window.location.hash == '#sucess') {
-      $('#modal1').openModal();
-      window.location.hash = ""
-    };
+    // $('#sucess_message').hide();
+    // if (window.location.hash == '#sucess') {
+    //   $('#modal1').openModal();
+    //   window.location.hash = ""
+    // };
     // ******************************************
 
 

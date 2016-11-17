@@ -7,17 +7,16 @@
   <%- include ../patient/generalPatientPartials/nav %>
 
 
-  <div style="height:225px; background-color:#0a50a5;">
+
     <div class="container">
       <div class="row">
         <div class="col s12">
           <br><br><br>
-          <h1 style="color:white;">Say hello anytime.</h1>
-          <div style="margin-top:-25px; color:#1FD9C7;">We'd love to talk to you!</div>
+          <h1 >Say hello anytime.</h1>
         </div>
       </div>
     </div>
-  </div>
+
   <br><br>
 
   <div class="container">
@@ -28,20 +27,16 @@
           <input type="hidden" name="_next" value="/contact" />
           <div class="col s12 m6 l6">
             <div class="input-field">
-              <input id="name" type="text" name="name" required>
-              <label for="name" style="left: 0">Your Name*</label>
-            </div>
-            <!-- <div class="input-field">
-              <input id="last_name" type="text" name="last_name" required>
-              <label for="last_name">Last Name</label>
-            </div> -->
-            <div class="input-field">
-              <input id="email" type="email" name="email" required>
-              <label for="email" style="left: 0">Email*</label>
+              <input class="contact_label validate" id="name" type="text" name="name" required="" aria-required="true">
+              <label for="name" data-error="Please fill out this field"  style="left: 0">Your Name</label>
             </div>
             <div class="input-field">
-              <input id="message" type="text" name="message" required>
-              <label for="message" style="left: 0">Message*</label>
+              <input class="contact_label validate" id="email" type="email" name="email" required="" aria-required="true">
+              <label for="email" data-error="Please enter a valid email" style="left: 0">Your Email</label>
+            </div>
+            <div class="input-field">
+              <input class="contact_label contact_message validate" id="contactMessage" type="text" name="contactMessage" required="" aria-required="true">
+              <label for="contactMessage" style="left: 0;">Your Message</label>
             </div>
           </div>
           <div class="col s12 m1 l2 center">
@@ -68,16 +63,15 @@
               </div>
             </div>
           </div>
-          <div class="col s12" style="margin-top:16px;">
-            <span id="submitButton" type="submit">Submit
-            </span>
+          <div class="col s12 input-field" style="margin-top:16px;">
+             <input type="submit" value="Send">
           </div>
         </form>
       </div>
     </div>
   </div>
   <br><br>
-  
+
   <div style="height:450px; overflow:hidden;">
     <a target="_blank" href="https://www.google.com/maps/dir/Current+Location/Cohero+Health"><img src="images/blackAndWhiteMap3.jpg" width=100% alt=""></a>
   </div>
