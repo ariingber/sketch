@@ -62,7 +62,7 @@ $(document).ready(function(){
       });
       // *****************************************************
 
-    // CAROUSELS AND SILDERS ***************************************************
+    // build better habbits CAROUSEL for mobile ***************************************************
     $('.carousel.carousel-slider#build_better_habbits_carousel').carousel({full_width: true});
 
     // Build better habbits slider should go first mobile
@@ -227,9 +227,9 @@ $(document).ready(function(){
       }, 1000);
     });
 
-    $("#choice_try_products2").click(function (event) {
+    $("#start_over").click(function (event) {
       $('#sorry_message_div').animate({left: '150px'}, 'fast').fadeOut(300);
-      $('#question2').delay(800).fadeIn(300);
+      $('#question1').delay(800).fadeIn(300);
       setTimeout(function () {
         $('#sorry_message_div').css({'left':'0'})
       }, 1000);

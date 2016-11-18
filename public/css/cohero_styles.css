@@ -1,3 +1,13 @@
+@font-face {font-family: 'museo-rounded-100';
+src: url('../fonts/museo/MuseoSansRounded-100.otf');
+}
+@font-face {font-family: 'museo-rounded-300';
+src: url('../fonts/museo/MuseoSansRounded-300.otf');
+}
+@font-face {font-family: 'museo-rounded-500';
+src: url('../fonts/museo/MuseoSansRounded-500.otf');
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -34,6 +44,28 @@ body {
   font-weight: 300;
   color: #435663;
   font-size: 14px;
+}
+
+
+/*This is for the nav bar helper*/
+#arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #df696e;
+}
+
+#quote_credit {
+  margin-left: 15px;
+  margin-top: 10px;
+  font-family: 'museo-rounded-300', sans-serif;
+  color: #0350AA;
+  font-size: 18px;
+}
+
+.testimonial_slider ul.indicators {
+  margin-left: -50px !important;
 }
 
 @media (max-width: 995px) {
