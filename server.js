@@ -3,7 +3,7 @@ var logger = require('morgan');
 var path = require('path');
 var request = require('request');
 var bodyParser = require('body-parser');
-var $ = require('jquery');
+// var $ = require('jquery');
 
 
 /* app setting */
