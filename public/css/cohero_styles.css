@@ -153,6 +153,7 @@ body {
 }
 
 .whiteButton {
+  margin-top:-20px;
   font-size:15px;
   width:200px !important;
   width:160px !important;
