@@ -69,6 +69,12 @@ body {
 }
 
 @media (max-width: 995px) {
+  .testimonial_slider ul.indicators {
+    display: none;
+  }
+}
+
+@media (max-width: 995px) {
   #navbar {
     height: 68px;
   }
