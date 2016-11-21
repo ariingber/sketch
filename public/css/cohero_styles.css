@@ -154,6 +154,7 @@ body {
   color: #75787B;
 }
 .form_h1{
+  line-height:57px;
   color: white;
   font-size: 48px;
 }
@@ -161,12 +162,12 @@ body {
 .whiteButton {
   margin-top:-20px;
   font-size:15px;
-  width:200px !important;
+  /*width:200px !important;*/
   width:160px !important;
   text-align: center;
   border:solid white 1px;
-  padding:10px 30px 10px 30px;
-  border-radius: 10px;
+  padding:13px 28px 13px 28px;
+  border-radius: 8px;
   color: white;
   cursor: pointer;
 }
@@ -377,7 +378,7 @@ header nav ul li a {
 footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
-  background-color: #063573 !important;
+  background-color: #001999 !important;
 }
 
 footer.page-footer .footer-copyright {
@@ -385,5 +386,5 @@ footer.page-footer .footer-copyright {
   height: 50px;
   line-height: 50px;
   color: rgba(255, 255, 255, 0.8);
-  background-color: #063573 !important;
+  background-color: #001999 !important;
 }
