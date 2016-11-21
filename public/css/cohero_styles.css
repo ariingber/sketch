@@ -102,8 +102,8 @@ body {
 #learnMoreButtonGrey {
   font-size:15px;
   border:solid #C7C7C7 1px;
-  padding:10px 30px 10px 30px;
-  border-radius:10px;
+  padding:12px 26px 12px 26px;
+  border-radius:8px;
   color: #75787B;
 }
 #learnMoreButtonGrey:hover {
