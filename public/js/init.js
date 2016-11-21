@@ -5,15 +5,19 @@ $(document).ready(function(){
 
 // Quote Hover jQuery
   $('.hiddenQuote').hide();
+  $('.hiddenArrow').hide();
   $('.pressIcon').hover(function(event) {
     event.stopPropagation()
     $('.shownQuote').toggleClass('shownQuote hiddenQuote');
+    $('.shownArrow').toggleClass('shownArrow hiddenArrow');
     switch ($(this).attr('id')) {
       case 'wiredIcon':
         $('#wiredQuote').toggleClass('hiddenQuote shownQuote').show();
+        $('#wiredArrow').toggleClass('hiddenArrow shownArrow').show();
         break;
       case 'fastCompanyIcon':
         $('#fastCompanyQuote').toggleClass('hiddenQuote shownQuote').show();
+        $('#fastCompanyArrow').toggleClass('hiddenArrow shownArrow').show();
         break;
       case 'crainsIcon':
         $('#crainsQuote').toggleClass('hiddenQuote shownQuote').show();
@@ -28,6 +32,7 @@ $(document).ready(function(){
         $('#techCrunchQuote').toggleClass('hiddenQuote shownQuote').show();
         break;
     }
+    $('.hiddenArrow').hide();
     $('.hiddenQuote').hide();
   });
 
