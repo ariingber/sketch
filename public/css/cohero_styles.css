@@ -8,15 +8,7 @@ src: url('../fonts/museo/MuseoSansRounded-300.otf');
 src: url('../fonts/museo/MuseoSansRounded-500.otf');
 }
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  line-height: 31px;
-  /*color: #75787B;*/
-  color: #435663;
-  font-size: 18px;
-}
-
+/*SPACING BREAKS FOR DIFFERENT SIZE DEVICES*/
 .min-space {
   height:80px;
 }
@@ -32,16 +24,42 @@ body {
   top:0;
 }
 
-#navbar {
-  height: 90px;
-  background-color: #0a50a5;
+/*GLOBAL FONTS*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 31px;
+  /*color: #75787B;*/
+  color: #435663;
+  font-size: 18px;
 }
+h1 {
+  font-family: 'museo-rounded-300', sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  color: #004da8;
+}
+
+h2 {
+  font-family: 'museo-rounded-300', sans-serif;
+  font-size: 24px;
+  color: #004da8;
+}
+
 
 #blue_welcome_screen {
   color: #ffffff;
   background-color: #0a50a5;
 }
 
+#navbar {
+  height: 90px;
+  background-color: #0a50a5;
+}
+
+
+
+/*MUST CHECK THESE NECCISARY*/
 #inner {
   width: 55%;
   margin: 0 auto;
@@ -55,12 +73,11 @@ body {
   margin: 0 auto;
 }
 
-.try_our_products_label {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  color: #435663;
-  font-size: 14px;
+.top-container {
+  margin-top: 200px;
 }
+
+
 
 #build_better_habbits_carousel_ipad {
   height:460px !important;
@@ -88,36 +105,8 @@ body {
   margin-left: -50px !important;
 }
 
-@media (max-width: 995px) {
-  .testimonial_slider ul.indicators {
-    display: none;
-  }
-}
 
-@media (max-width: 995px) {
-  #navbar {
-    height: 68px;
-  }
-}
-
-@media (max-width: 700px) {
-  #inner {
-    width: 100%;
-  }
-}
-
-@media (max-width: 500px) {
-  .pic {
-    width: 100% !important;
-  }
-}
-
-@media (max-width: 700px) {
-  #videomodal {
-    width: 100% !important;
-  }
-}
-
+/*BUTTONS ************************/
 #learnMoreButtonGrey {
   font-size:15px;
   border:solid #C7C7C7 1px;
@@ -130,6 +119,7 @@ body {
   /*background-color: #F5F5F5;*/
   color: #435663;
 }
+
 #submitButton {
   font-size:15px;
   border:solid #C7C7C7 1px;
@@ -172,12 +162,6 @@ body {
   border-radius:10px;
   color: #75787B;
 }
-.form_h1{
-  line-height:57px;
-  color: white;
-  font-size: 48px;
-}
-
 .whiteButton {
   margin-top:-20px;
   font-size:15px;
@@ -198,7 +182,6 @@ body {
   color: #1FD9C7 !important;
   background-color: white !important;
 }
-
 .whiteCloseButton {
   font-size:15px !important;
   border:solid white 1px;
@@ -207,26 +190,36 @@ body {
   color: white;
   cursor: pointer;
 }
-
-
-@media (max-width: 1100px) {
-  #our_team_col {
-    margin-top: -65px;
-  }
+#login_button {
+  margin-top: 25px;
+  margin-right: 40px;
+  background-color: #b997cd !important;
 }
 
-h1 {
-  font-family: 'museo-rounded-300', sans-serif;
-  font-size: 30px;
-  line-height: 36px;
-  color: #004da8;
+
+
+/*FORM STYLES *****************/
+.form_h1{
+  line-height:57px;
+  color: white;
+  font-size: 48px;
 }
 
-h2 {
-  font-family: 'museo-rounded-300', sans-serif;
-  font-size: 24px;
-  color: #004da8;
+.try_our_products_label {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #435663;
+  font-size: 14px;
 }
+
+
+
+
+
+
+
+
+
 .tile {
   padding:18px;
   width:210px;
@@ -273,31 +266,6 @@ header nav ul li a {
 }
 
 
-#login_button {
-  margin-top: 25px;
-  margin-right: 40px;
-  background-color: #b997cd !important;
-}
-
-
-@media (max-width: 1200px) {
-  #products_link_desktop {
-    margin-left: 0px;
-  }
-
-}
-
-@media (max-width: 1075px) {
-  #products_link_desktop {
-    margin-left: -30px;
-  }
-  #login_button {
-    margin-right: 0px;
-  }
-
-}
-
-
 
 
 #GetToKnowCoHero {
@@ -306,17 +274,7 @@ header nav ul li a {
   color: white;
   margin-top: 37.7px;
 }
-@media (max-width: 900px) {
-  #GetToKnowCoHero  {
-    margin-top: 0px;
-  }
-}
 
-@media (max-width: 450px) {
-  #GetToKnowCoHero  {
-    margin-top: -35px;
-  }
-}
 
 #mobile_slide_icon {
   background-color: white;
@@ -363,36 +321,6 @@ header nav ul li a {
   position: absolute;
 }
 
-/*#outer_press_release {
-  position: relative;
-}*/
-
-/*#inner_press_release_arrow_left {
-  z-index: 10;
-  height: auto;
-  margin: 0 auto;
-  left:150px;
-  top:275px;
-  position: absolute;
-}
-
-#inner_press_release_arrow_right {
-  z-index: 10;
-  height: auto;
-  margin: 0 auto;
-  right:170px;
-  top:275px;
-  position: absolute;
-}*/
-
-
-
-#map {
-  width: 100%;
-  height: 400px;
-  background-color: grey;
-}
-
 /*this is css taken and repeated from materialize but backround color changed and made important*/
 footer.page-footer {
   margin-top: 20px;
@@ -406,4 +334,66 @@ footer.page-footer .footer-copyright {
   line-height: 50px;
   color: rgba(255, 255, 255, 0.8);
   background-color: #001999 !important;
+}
+
+
+/*MEDIA QUERIES **********************/
+@media (max-width: 1200px) {
+  #products_link_desktop {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 1075px) {
+  #products_link_desktop {
+    margin-left: -30px;
+  }
+  #login_button {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 900px) {
+  #GetToKnowCoHero  {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 1100px) {
+  #our_team_col {
+    margin-top: -65px;
+  }
+}
+
+@media (max-width: 450px) {
+  #GetToKnowCoHero  {
+    margin-top: -35px;
+  }
+}
+@media (max-width: 995px) {
+  .testimonial_slider ul.indicators {
+    display: none;
+  }
+}
+
+@media (max-width: 995px) {
+  #navbar {
+    height: 68px;
+  }
+}
+
+@media (max-width: 700px) {
+  #inner {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .pic {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 700px) {
+  #videomodal {
+    width: 100% !important;
+  }
 }
