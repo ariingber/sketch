@@ -17,6 +17,17 @@ body {
   font-size: 18px;
 }
 
+.min-space {
+  height:80px;
+}
+
+.subtract-from-phone {
+  height:280px;
+}
+.subtract-from-tablet {
+  height:155px;
+}
+
 #navbar {
   height: 90px;
   background-color: #0a50a5;
