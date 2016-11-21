@@ -11,6 +11,7 @@ src: url('../fonts/museo/MuseoSansRounded-500.otf');
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
+  line-height: 31px;
   /*color: #75787B;*/
   color: #435663;
   font-size: 18px;
@@ -309,6 +310,13 @@ header nav ul li a {
 }
 #what_is_content_inner {
   width: 300px;
+  height: auto;
+  margin: 0 auto;
+  padding: 5px;
+  position: relative;
+}
+#what_is_content_inner_track {
+  width: 310px;
   height: auto;
   margin: 0 auto;
   padding: 5px;
