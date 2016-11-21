@@ -22,10 +22,10 @@ body {
 }
 
 .subtract-from-phone {
-  height:280px;
+  height:150px;
 }
 .subtract-from-tablet {
-  height:155px;
+  height:150px;
 }
 
 #navbar {
@@ -56,6 +56,10 @@ body {
   font-weight: 300;
   color: #435663;
   font-size: 14px;
+}
+
+#build_better_habbits_carousel_ipad {
+  height:380px !important;
 }
 
 

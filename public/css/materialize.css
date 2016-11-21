@@ -7753,8 +7753,11 @@ input[type=range]:focus::-ms-fill-upper {
   line-height: 32px;
 }
 
+/*changed font-size 15px to everything you see here*/
 .carousel.carousel-slider .carousel-item p {
-  font-size: 15px;
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 300; color: #75787B !important;
+  font-size: 18px !important;
 }
 
 .carousel .carousel-item {
