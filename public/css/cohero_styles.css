@@ -23,6 +23,15 @@ src: url('../fonts/museo/MuseoSansRounded-500.otf');
   position: relative;
   top:0;
 }
+.card-text {
+  background-color:#004DA8 !important;
+  color:white;
+  font-size:18px;
+  padding:27px;
+  line-height:24px;
+  font-family: 'Open Sans';
+  text-align:left;
+}
 
 /*GLOBAL FONTS*/
 body {
