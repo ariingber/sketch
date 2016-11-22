@@ -4704,9 +4704,10 @@ small {
   display: none;
 }
 
+/*DISABLED DISPLAY BLOCK*/
 .card .card-reveal .card-title {
   cursor: pointer;
-  display: block;
+  /*display: block;*/
 }
 
 #toast-container {
