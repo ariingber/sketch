@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <%- include ../globalPartials/head %>
+
+
 <body>
   <%- include ../patient/generalPatientPartials/nav %>
-  <div class="container top-container">
-    <div class="center row">
-      <div class="col s12">
-        <div class="col s6">
+  <div class="container">
+    <div class="row">
+      <div class="col s12" style="margin-top:216px;">
+        <div class="col s5" style="margin-left:-40px;">
           <h1 class="left-align">Our product suite brings <br class="hide-on-med-and-down">smart technology to<br class="hide-on-med-and-down"> respiratory health.</h1>
           <div class="left-align">
             Integrated hardware and software tracks your medication use and lung function. Get daily reminders to take your medication, alerts about environmental dangers where you are, learn about how to stay healthy, and keep your doctor in the know.
           </div>
         </div>
-        <div class="col s6">
+        <div class="col s7 right" style="max-width:626px; min-width:550px; margin-right:-110px">
           <img src="images/dialTemp.png" width="100%">
+          <div style="height:1px;background-color:#B4B4B4; z-index:200; width:700%;"></div>
         </div>
       </div>
     </div>
   </div>
+  <div style="height:1px;background-color:#B4B4B4; z-index:200;"></div>
+
+
+
   <div class="container" style="margin-top:234px;">
     <div class="center row">
       <div class="col s12">
@@ -112,7 +119,15 @@
     </div>
   </div>
 </div>
-<%- include ../globalPartials/footer %>
+
+
 <%- include ../globalPartials/bottom_of_body %>
+<div style="margin-top:-20px;">
+  <%- include ../globalPartials/try_our_products_1.ejs %>
+</div>
+<script type="text/javascript" src="js/form.js"></script>
+<%- include ../globalPartials/footer %>
+
+
 </body>
 </html>
