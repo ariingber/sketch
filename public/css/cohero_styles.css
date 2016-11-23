@@ -132,6 +132,17 @@ h2 {
   border-radius:10px;
   color: #75787B;
 }
+
+#contactSendButton {
+  font-size:16px !important;
+  line-height: 22px;
+  border:solid #C7C7C7 1px;
+  padding:10px 55px 13px 55px;
+  border-radius:8px;
+  color: #75787B;
+  background: white;
+}
+
 .greyButton {
   font-size:15px !important;
   border:solid #C7C7C7 1px;

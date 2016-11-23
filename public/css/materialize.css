@@ -5687,7 +5687,7 @@ input.contact_label {
   transition: all 0.3s;
 }
 input.contact_label.contact_message {
-  margin: 45px 0 20px 0;
+  margin: 85px 0 20px 0;
 }
 /*BORDER-BOTTOM FROM #26a69a TO #0a50a5*/
 /*BOX-SHADOW FROM #26a69a TO #0a50a5*/
