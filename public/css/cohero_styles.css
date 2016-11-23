@@ -33,6 +33,14 @@ src: url('../fonts/museo/MuseoSansRounded-500.otf');
   text-align:left;
 }
 
+.shownArrow {
+  width: 0;
+  height: 0;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-top: 13px solid #F7F7F7;
+}
+
 /*GLOBAL FONTS*/
 body {
   font-family: 'Open Sans', sans-serif;
@@ -344,6 +352,11 @@ header nav ul li a {
   position: absolute;
 }
 
+.footer-top {
+  font-family: 'Open Sans';
+  line-height: 18px;
+  font-size:13px;
+}
 /*this is css taken and repeated from materialize but backround color changed and made important*/
 footer.page-footer {
   margin-top: 20px;

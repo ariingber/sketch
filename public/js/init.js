@@ -21,15 +21,19 @@ $(document).ready(function(){
         break;
       case 'crainsIcon':
         $('#crainsQuote').toggleClass('hiddenQuote shownQuote').show();
+        $('#crainsArrow').toggleClass('hiddenArrow shownArrow').show();
         break;
       case 'forbesIcon':
         $('#forbesQuote').toggleClass('hiddenQuote shownQuote').show();
+        $('#forbesArrow').toggleClass('hiddenArrow shownArrow').show();
         break;
       case 'wallStreetIcon':
         $('#wallStreetQuote').toggleClass('hiddenQuote shownQuote').show();
+        $('#wallStreetArrow').toggleClass('hiddenArrow shownArrow').show();
         break;
       case 'techCrunchIcon':
         $('#techCrunchQuote').toggleClass('hiddenQuote shownQuote').show();
+        $('#techCrunchArrow').toggleClass('hiddenArrow shownArrow').show();
         break;
     }
     $('.hiddenArrow').hide();
