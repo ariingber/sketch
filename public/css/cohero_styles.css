@@ -352,10 +352,33 @@ header nav ul li a {
   position: absolute;
 }
 
-.footer-top {
+.footer-col-container {
+  display: flex;
+}
+.bottom-footer-text a {
   font-family: 'Open Sans';
   line-height: 18px;
   font-size:13px;
+  flex: 1;
+  color: white;
+}
+
+.footer-col {
+  font-family: 'Open Sans';
+  line-height: 18px;
+  font-size:13px;
+  flex: 1;
+  color: white;
+}
+
+.footer-col a {
+  display: block;
+  font-family: 'Open Sans';
+  line-height: 40px;
+  font-size:13px;
+  flex: 1;
+  color: white;
+
 }
 /*this is css taken and repeated from materialize but backround color changed and made important*/
 footer.page-footer {
