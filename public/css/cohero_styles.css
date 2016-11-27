@@ -19,27 +19,30 @@ src: url('../fonts/museo/MuseoSansRounded-500.otf');
 .subtract-from-tablet {
   height:150px;
 }
-.quoteArrowDown{
-  position: relative;
-  top:0;
-}
-.card-text {
-  background-color:#004DA8 !important;
-  color:white;
-  font-size:18px;
-  padding:27px;
-  line-height:24px;
-  font-family: 'Open Sans';
-  text-align:left;
-}
+/*/////////////////////////////////////////////*/
 
-.shownArrow {
-  width: 0;
-  height: 0;
-  border-left: 13px solid transparent;
-  border-right: 13px solid transparent;
-  border-top: 13px solid #F7F7F7;
+
+/*nab bar items*/
+#navbar {
+  height: 150px;
+  background: white;
 }
+#navbar-top {
+  display:flex;
+  margin-top:45px;
+}
+#navbar-first-col{
+  flex:2;
+  margin-left:40px;
+}
+#navbar-second-col{
+  flex:2;
+}
+#navbar-third-col{
+  flex:2;
+  margin-right:60px;
+}
+/*///////////////////*/
 
 /*GLOBAL FONTS*/
 body {
@@ -62,32 +65,42 @@ h2 {
   font-size: 24px;
   color: #004da8;
 }
+/*///////////////////*/
+
+/*INDEX PAGE */
+#GetToKnowCoHero {
+  font-family: 'museo-rounded-300', roboto;
+  font-size: 40px;
+  line-height: 42px;
+  color: #0350AA;
+}
+/*///////////////////////*/
 
 
-#blue_welcome_screen {
-  color: #ffffff;
-  background-color: #0a50a5;
+/*MOVE*/
+.quoteArrowDown{
+  position: relative;
+  top:0;
+}
+.card-text {
+  background-color:#004DA8 !important;
+  color:white;
+  font-size:18px;
+  padding:27px;
+  line-height:24px;
+  font-family: 'Open Sans';
+  text-align:left;
 }
 
-#navbar {
-  height: 150px;
-  background: white;
+.shownArrow {
+  width: 0;
+  height: 0;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-top: 13px solid #F7F7F7;
 }
-#navbar-top {
-  display:flex;
-  margin-top:45px;
-}
-#navbar-first-col{
-  flex:2;
-  margin-left:40px;
-}
-#navbar-second-col{
-  flex:2;
-}
-#navbar-third-col{
-  flex:2;
-  margin-right:60px;
-}
+/*///////////////////*/
+
 
 
 
@@ -316,12 +329,7 @@ h2 {
 }*/
 
 
-#GetToKnowCoHero {
-  font-family: 'museo-rounded-300', roboto;
-  font-size: 36px;
-  color: white;
-  margin-top: 37.7px;
-}
+
 
 #what_is_content_outer {
   position: relative;
