@@ -4,9 +4,9 @@
        <div class="nav-wrapper">
          <!-- MOBILE -->
          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-         <ul data-activates="mobile-demo" style="line-height: 2;">
-           <!-- <li><a style="margin-top:20px;" id="health_care_link_mobile" href="health_care" class="hide-on-large-only hvr-underline-from-center">For Healthcare </a></li> -->
-           <li><a style="margin-top:20px;" id="login_link_mobile" href="https://mte.cohero-health.com" class="hide-on-large-only hvr-underline-from-center">Log in </a></li>
+         <ul data-activates="mobile-demo">
+           <!-- <li><a id="health_care_link_mobile" href="health_care" class="hide-on-large-only">For Healthcare </a></li> -->
+           <li><a href="https://mte.cohero-health.com" class="hide-on-large-only">Log in </a></li>
           </ul>
 
           <!-- MOBILE -->
@@ -20,18 +20,22 @@
           </ul>
 
           <!-- NONMOBILE -->
-         <ul class="left hide-on-med-and-down" style="line-height: 2;">
-           <li><a id="cohero_logo" class="nav_link hvr-underline-from-center" href="/"><img width="234.56px;" src="images/logo.png" alt=""></a></li>
-           <li><a href="products" class="nav_link hvr-underline-from-center" id="products_link_desktop">Products</a></li>
-           <li><a href="about" class="hvr-underline-from-center">About</a></li>
-           <li><a href="press" class="hvr-underline-from-center">Press</a></li>
-           <!-- <li><a href="resources" class="hvr-underline-from-center">Resources</a></li> -->
-           <li><a href="contact" class="hvr-underline-from-center">Contact</a></li>
-         </ul>
-         <ul class="right hide-on-med-and-down" style="line-height: 2;">
-           <!-- <li><a href="health_care" class="hvr-underline-from-center">For Healthcare</a></li> -->
-           <li><a id="login_button" class="waves-effect waves-light btn hvr-underline-from-center" href="https://mte.cohero-health.com">Login</a></li>
-         </ul>
+         <div id="navbar-top" class="hide-on-med-and-down">
+           <div id="navbar-first-col">
+             <a class="hvr-grow" href="/" style="margin-top:0px;"><img width="191.35px;" src="images/logoblue@2x.png"></a>
+           </div>
+           <div id="navbar-second-col">
+             <a href="products">Products</a>
+             <a href="about">About</a>
+             <a href="press">Press</a>
+             <!-- <a href="resources" style="felx:1" >Resources</a> -->
+             <a href="contact">Contact</a>
+           </div>
+           <div align="right" id="navbar-third-col">
+             <!-- <a href="health_care" >For Healthcare</a> -->
+             <a id="login_button" href="https://mte.cohero-health.com">Login</a>
+           </div>
+         </div>
          <!-- MOBILE -->
 
        </div>

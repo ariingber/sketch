@@ -70,8 +70,23 @@ h2 {
 }
 
 #navbar {
-  height: 90px;
-  background-color: #0a50a5;
+  height: 150px;
+  background: white;
+}
+#navbar-top {
+  display:flex;
+  margin-top:45px;
+}
+#navbar-first-col{
+  flex:2;
+  margin-left:40px;
+}
+#navbar-second-col{
+  flex:2;
+}
+#navbar-third-col{
+  flex:2;
+  margin-right:60px;
 }
 
 
@@ -218,10 +233,20 @@ h2 {
   cursor: pointer;
 }
 #login_button {
+  border:solid #C7C7C7 1px;
+  color: #75787B;
+  font-size:15px;
+  line-height: 22px;
+  padding:10px 46px 13px 46px;
+  border-radius:8px;
   margin-top: 25px;
   margin-right: 40px;
-  background-color: #b997cd !important;
 }
+#login_button:hover {
+  border:solid #435663 1px;
+  color: #435663;
+}
+
 .card {
   text-align:center;
   max-width:390px;
@@ -243,14 +268,6 @@ h2 {
   font-size: 14px;
 }
 
-
-
-
-
-
-
-
-
 .tile {
   padding:18px;
   width:210px;
@@ -271,32 +288,32 @@ h2 {
   height: 155px;
 }
 
-header nav ul li a {
+#navbar a {
   margin-top: 32px;
   font-size: 13px;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
   text-align: left;
-  color: #ffffff;
+  color: #435663;
   margin-left: 11px;
   margin-right: 11px;
 }
 
-#cohero_logo {
-  margin-top:23px;
-  /*margin-left: 33.5px;
-  margin-top: 38.7px;*/
-}
-#cohero_logo:hover {
-  background-color: transparent;
-}
-
-#products_link_desktop {
-  margin-left: 111px;
+#navbar a:hover {
+  color:#1F2930;
 }
 
 
+
+
+
+
+
+/*#mobile_slide_icon {
+  background-color: white;
+  height: 400px !important;
+}*/
 
 
 #GetToKnowCoHero {
@@ -306,22 +323,8 @@ header nav ul li a {
   margin-top: 37.7px;
 }
 
-
-#mobile_slide_icon {
-  background-color: white;
-  height: 400px !important;
-}
-
-#health_care_link_mobile {
-  margin-top:0;
-}
-#login_link_mobile {
-  margin-top:0;
-}
-
 #what_is_content_outer {
   position: relative;
-
 }
 #what_is_content_inner {
   width: 300px;
@@ -397,11 +400,7 @@ footer.page-footer .footer-copyright {
 
 
 /*MEDIA QUERIES **********************/
-@media (max-width: 1200px) {
-  #products_link_desktop {
-    margin-left: 0px;
-  }
-}
+
 
 #ourFoundersLarge {
     display:none;
@@ -413,14 +412,7 @@ footer.page-footer .footer-copyright {
     }
 }
 
-@media (max-width: 1075px) {
-  #products_link_desktop {
-    margin-left: -30px;
-  }
-  #login_button {
-    margin-right: 0px;
-  }
-}
+
 @media (max-width: 900px) {
   #GetToKnowCoHero  {
     margin-top: 0px;
