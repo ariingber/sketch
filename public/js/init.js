@@ -73,6 +73,7 @@ $(document).ready(function(){
 
     // build better habbits CAROUSEL for mobile ***************************************************
     $('.carousel.carousel-slider#build_better_habbits_carousel_ipad').carousel({full_width: true});
+    $('.carousel.carousel-slider#breathsmart_carousel_ipad').carousel({full_width: true});
 
     // Build better habbits slider should go first mobile
     $('.slider.testimonial_slider').slider({indicators:true, height:150 });

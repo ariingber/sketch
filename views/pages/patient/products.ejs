@@ -5,26 +5,50 @@
 
 <body>
   <%- include ../patient/generalPatientPartials/nav %>
-  <div class="container">
+  <div class="container hide-on-med-and-down" style="margin-top:256px;">
     <div class="row">
-      <div class="col s12" style="margin-top:216px;">
+      <div class="col s12">
         <div class="col s5" style="margin-left:-40px;">
-          <h1 class="left-align">Our product suite brings <br class="hide-on-med-and-down">smart technology to<br class="hide-on-med-and-down"> respiratory health.</h1>
-          <div class="left-align">
+          <h1 class="left-align">Our product suite brings <br>smart technology to<br> respiratory health.</h1>
+          <div class="left-align productsCopy">
             Integrated hardware and software tracks your medication use and lung function. Get daily reminders to take your medication, alerts about environmental dangers where you are, learn about how to stay healthy, and keep your doctor in the know.
           </div>
         </div>
         <div class="col s7 right" style="max-width:626px; min-width:550px; margin-right:-110px">
-          <img src="images/dialTemp.png" width="100%">
+          <img src="images/temp2.png" width="100%">
         </div>
       </div>
     </div>
   </div>
-  <div style="height:1px;background-color:#F2F2F2; z-index:200;"></div>
+  <div class="hide-on-med-and-down" style="height:1px; background:#F2F2F2; margin-top:-29px;" ></div>
+
+  <!-- Mobile -->
+  <div class="container hide-on-large-only" style="margin-top:116px;">
+    <div class="center row">
+      <div class="col s12">
+        <h1 style="text-align:center;">Our product suite brings smart <br class="hide-on-small-only">technology to respiratory health.</h1>
+        <div id="outer">
+          <div id="inner_pic_hardware" class="pic" style="min-width:400px;">
+            <img width="100%" src="images/temp2.png">
+          </div>
+        </div>
+        <div class="col s12">
+          <div id="outer">
+            <div id="inner" style="margin-top:-20px;">
+              <p style="text-align:left;">
+                Integrated hardware and software tracks your medication use and lung function. Get daily reminders to take your medication, alerts about environmental dangers where you are, learn about how to stay healthy, and keep your doctor in the know.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /////////////////////////////////////// -->
 
 
 
-  <div class="container" style="margin-top:234px;">
+  <div class="container hide-on-med-and-down" style="margin-top:234px;">
     <div class="center row">
       <div class="col s12">
         <h1 style="font-size:18px; color:#1FD9C7;">BREATHESMART</h1>
@@ -33,44 +57,120 @@
     </div>
   </div>
 
-  <div class="container" style="margin-top:215px; margin-bottom:266px;">
+  <div class="container hide-on-med-and-down" style="margin-top:215px; margin-bottom:266px;">
     <div class="row center">
       <div class="col s12">
         <div class="col s4">
           <h2 style="font-size:18px;">GET MEDICATION REMINDERS</h2>
-          <p>Set custom scheduled reminders for daily medications.</p>
+          <p class="productsCopy" >Set custom scheduled reminders for daily medications.</p>
           <br>
           <h2 style="font-size:18px;">TRACK INHALER USE</h2>
-          <p>Automatically record how often you use daily and relief inhalers.</p>
+          <p class="productsCopy" >Automatically record how often you use daily and relief inhalers.</p>
           <br>
           <h2 style="font-size:18px;">MEASURE LUNG FUNCTION</h2>
-          <p>See how open your airways are each day with mSpirometer.</p>
+          <p class="productsCopy" >See how open your airways are each day with mSpirometer.</p>
         </div>
         <div class="col s4">
           <img width="250px" src="images/iphonetemp.png">
         </div>
         <div class="col s4">
           <h2 style="font-size:18px;">RECORD HOW YOU FEEL</h2>
-          <p>Record symptoms and triggers to learn what’s affecting your health.</p>
+          <p class="productsCopy" >Record symptoms and triggers to learn what’s affecting your health.</p>
           <br>
           <h2 style="font-size:18px;">STAY SYNCED WITH YOUR DOCTOR</h2>
-          <p>Get push notifications about essential need-to-knows.</p>
+          <p class="productsCopy" >Get push notifications about essential need-to-knows.</p>
           <br>
           <h2 style="font-size:18px;">ADD CARGIVERS</h2>
-          <p>Involve friends, family or medical professionals through alerts and access to data.</p>
+          <p class="productsCopy" >Involve friends, family or medical professionals through alerts and access to data.</p>
         </div>
       </div>
     </div>
   </div>
 
 
+  <!-- MOBILE -->
+  <div class="container hide-on-large-only" >
+    <div class="row center">
+      <div class="col s12">
+        <h1 style="font-size:18px; color:#1FD9C7;">BREATHESMART</h1>
+        <h1 style="margin-top:-15px;">BreatheSmart makes <br>understanding your health easy.</h1>
+        <img width="131px" src="images/iphonetemp.png">
+
+        <div id="breathsmart_carousel_ipad" class="carousel carousel-slider center" data-indicators="true">
+         <div class="carousel-item white" href="#one!">
+           <div id="outer">
+             <div>
+               <h1 style="font-size:16px;">GET MEDICATION REMINDERS</h1>
+               <p class="productsCopy">
+                 Set custom scheduled reminders for daily medications.
+               </p>
+             </div>
+           </div>
+         </div>
+         <div class="carousel-item white" href="#two!">
+           <div id="outer">
+             <div>
+               <h1 style="font-size:16px;">TRACK INHALER USE</h1>
+               <p class="productsCopy">
+                 Automatically record how often you use daily and relief inhalers.
+               </p>
+             </div>
+           </div>
+         </div>
+         <div class="carousel-item white" href="#three!">
+           <div id="outer">
+             <div>
+               <h1 style="font-size:16px;">MEASURE LUNG FUNCTION</h1>
+               <p class="productsCopy">
+                 See how open your airways are each day with mSpirometer.
+               </p>
+             </div>
+           </div>
+         </div>
+         <div class="carousel-item white" href="#four!">
+           <div id="outer">
+             <div>
+               <h1 style="font-size:16px;">RECORD HOW YOU FEEL</h1>
+               <p class="productsCopy">
+                 Record symptoms and triggers to learn what’s affecting your health.
+               </p>
+             </div>
+           </div>
+         </div>
+         <div class="carousel-item white" href="#five!">
+           <div id="outer">
+             <div>
+               <h1 style="font-size:16px;">STAY SYNCED WITH YOUR DOCTOR</h1>
+               <p class="productsCopy">
+                 Get push notifications about essential need-to-knows.
+               </p>
+             </div>
+           </div>
+         </div>
+         <div class="carousel-item white" href="#six!">
+           <div id="outer">
+             <div>
+               <h1 style="font-size:16px;">ADD CARGIVERS</h1>
+               <p class="productsCopy">
+                 Involve friends, family or medical professionals through alerts and access to data.
+               </p>
+             </div>
+           </div>
+         </div>
+       </div>
+      </div>
+    </div>
+  </div>
+
+<!-- ////////////////// -->
+
 <div style="background-color:#F8F8F8;" style="margin-top:266">
 
   <div class="container hide-on-med-and-down">
     <div class="row">
       <div class="col s12" style="margin-top:216px;">
-        <div class="col s7 left" style="max-width:626px; min-width:525px; margin-left:-80px;">
-          <img width="100%" src="images/coheroConnect.png">
+        <div class="col s7 left" style="max-width:329px; margin-left:-80px;">
+          <img width="100%" src="images/mSpiro@2x.png">
         </div>
         <div class="col s5 right" style="margin-right:-40px;">
           <h1 style="font-size:18px; color:#1FD9C7;">MSPIROMETER</h1>
@@ -90,8 +190,8 @@
         <h1 style="font-size:18px; color:#1FD9C7; text-align:center;">MSPIROMETER</h1>
         <h1 style="text-align:center;">mSpirometer measures your lung abilities.</h1>
         <div id="outer">
-          <div class="pic" id="inner_pic_team" style="min-width:300px;">
-            <img width="100%" src="images/coheroConnect.png">
+          <div class="pic" id="inner_pic_team" style=" max-width:300px; min-width:250px;">
+            <img width="100%" src="images/mSpiro@2x.png">
           </div>
         </div>
         <div class="col s12">
@@ -120,11 +220,36 @@
           </p>
         </div>
         <div class="col s7 right" style="max-width:626px; min-width:550px; margin-right:-110px">
-            <img style="text-align:left;" width="100%" src="images/coheroConnect.png">
+            <img style="text-align:left;" width="100%" src="images/tracker@2x.png">
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Mobile -->
+  <div class="container hide-on-large-only" >
+    <div class="center row">
+      <div class="col s12">
+        <h1 style="font-size:18px; color:#1FD9C7;">HEROTRACKER</h1>
+        <h1>HeroTracker records your inhaler usage.</h1>
+        <div id="outer">
+          <div id="inner_pic_hardware" class="pic" style="min-width:300px;">
+            <img width="100%" src="images/tracker@2x.png">
+          </div>
+        </div>
+        <div class="col s12">
+          <div id="outer">
+            <div id="inner" style="margin-top:-20px;">
+              <p style="text-align:left;">
+                HeroTracker fits most HFA and Diskus inhalers and automatically tracks when you use each of your respiratory medications. HeroTracker connects wirelessly to BreatheSmart with Bluetooth and never needs to charge.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /////////////////////////////////// -->
 
 
   <div class="container hide-on-med-and-down">
@@ -144,6 +269,31 @@
     </div>
   </div>
 </div>
+
+<!-- MOBILE -->
+<div class="container hide-on-large-only">
+  <div class="row">
+    <div class="col s12">
+      <h1 style="font-size:18px; color:#1FD9C7; text-align:center;">COHEROCONNECT</h1>
+      <h1 style="text-align:center;">CoheroConnect gives detailed insights on the web.</h1>
+      <div id="outer">
+        <div class="pic" id="inner_pic_team" style=" max-width:300px; min-width:250px;">
+          <img width="100%" src="images/coheroConnect.png">
+        </div>
+      </div>
+      <div class="col s12">
+        <div id="outer">
+          <div id="inner" style="margin-top:-20px;">
+            <p style="text-align:left;">
+              Explore respiratory health trends on CoheroConnect, your personal web dashboard. Set up a friend or family member as a caregiver, and work together to stay healthy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ///////////////// -->
 
 
 <%- include ../globalPartials/bottom_of_body %>

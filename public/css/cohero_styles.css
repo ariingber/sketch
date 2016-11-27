@@ -24,7 +24,7 @@ src: url('../fonts/museo/MuseoSansRounded-500.otf');
 
 /*nab bar items*/
 #navbar {
-  height: 150px;
+  height: 163px;
   background: white;
 }
 #navbar-top {
@@ -56,7 +56,7 @@ body {
 h1 {
   font-family: 'museo-rounded-300', sans-serif;
   font-size: 30px;
-  line-height: 36px;
+  line-height: 35px;
   color: #004da8;
 }
 
@@ -75,6 +75,11 @@ h2 {
   color: #0350AA;
 }
 /*///////////////////////*/
+
+/*prouctsPage*/
+.productsCopy {
+  line-height: 24px;
+}
 
 
 /*MOVE*/
@@ -123,7 +128,9 @@ h2 {
 #build_better_habbits_carousel_ipad {
   height:460px !important;
 }
-
+#breathsmart_carousel_ipad {
+  height:240px !important;
+}
 
 /*This is for the nav bar helper*/
 #arrow-up {
@@ -446,7 +453,7 @@ footer.page-footer .footer-copyright {
 
 @media (max-width: 995px) {
   #navbar {
-    height: 68px;
+    height: 110px;
   }
 }
 
