@@ -81,6 +81,36 @@ h2 {
   line-height: 24px;
 }
 
+/*PRESS PAGE*/
+.tile {
+  padding:30px;
+  width:317.72px;
+  height:312.88px;
+  border-radius:8px;
+}
+.tile_title {
+  text-align: left;
+  font-size: 30px;
+  line-height: 35px;
+  font-family: 'museo-rounded-300', sans-serif;
+  color: white;
+}
+.tile_sub_text {
+  text-align: left;;
+  font-size: 14px;
+  color: #0350AA;
+}
+.press_quote_text_box {
+  height: 155px;
+}
+#press_release_arrow_right:hover {
+  cursor: pointer;
+}
+#press_release_arrow_left:hover {
+  cursor: pointer;
+}
+/*///////////////*/
+
 
 /*MOVE*/
 .quoteArrowDown{
@@ -288,25 +318,7 @@ h2 {
   font-size: 14px;
 }
 
-.tile {
-  padding:18px;
-  width:210px;
-  height:210px;
-  border-radius:8px;
-}
-.tile_title {
-  font-size: 24px;
-  line-height: 28px;
-  font-family: 'museo-rounded-300', sans-serif;
-  color: white;
-}
-.tile_sub_text {
-  font-size: 12px;
-  color: #004da8;
-}
-.press_quote_text_box {
-  height: 155px;
-}
+
 
 #navbar a {
   margin-top: 32px;

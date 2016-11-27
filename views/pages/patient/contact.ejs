@@ -22,7 +22,7 @@
         <form action="https://formspree.io/ariingber@gmail.com"
             method="POST" enctype="multipart/form-data">
           <input type="hidden" name="_next" value="/contact" />
-          <div class="col s12 m6 l6" style="margin-left:-10px;">
+          <div class="col s12 m12 l6" style="margin-left:-10px;">
             <div class="input-field">
               <input class="contact_label validate" id="name" type="text" name="name" required="" aria-required="true">
               <label for="name" data-error="Please fill out this field"  style="left: 0">Your Name</label>
@@ -39,7 +39,7 @@
           </div>
           <div class="col s12 m1 l2">
           </div>
-          <div class="col s12 m5 l4" style="margin-left:-40px;">
+          <div class="col s12 m5 l4 hide-on-med-and-down" style="margin-left:-40px;">
             <div>
               <div style="margin-top:36px; color:#004DA8; font-family: museo-rounded-300; font-size:18px; line-height:21px;">Contact Information</div>
               <div style="margin-top:18px; line-height:24px; font-family: Open Sans; color:#435663; font-size:18px;">
@@ -60,13 +60,38 @@
         </form>
       </div>
     </div>
-  </div>
-  <br><br>
+      <!-- MOBILE -->
+      <div class="hide-on-large-only" style="display:flex;">
+        <div style="flex:1">
+          <div style="margin-top:36px; color:#004DA8; font-family: museo-rounded-300; font-size:18px; line-height:21px;">
+            Contact Information
+          </div>
+          <div style="margin-top:18px; line-height:24px; font-family: Open Sans; color:#435663; font-size:18px;">
+            Cohero Health Inc.<br>
+            335 Madison Avenue<br>
+            New York, NY 10017<br>
+            +1 (212) 6234578<br>
+            <div style="font-size:18px; line-height:24px; color:#1FD9C7">contact@coherohealth.com</div>
+          </div>
+        </div>
+        <div style="flex:1; margin-top:-45px;">
+          <div style="margin-top:86px; color:#004DA8; font-family: museo-rounded-300; font-size:18px; line-height:21px;">Press</div>
+          <div style="margin-top:18px; line-height:24px; font-family: Open Sans; color:#435663; font-size:18px;">
+            For all press inquieries<br>
+            please contact:
+            <div style="font-size:18px; line-height:24px; color:#1FD9C7">emile@coherohealth.com</div>
+          </div>
+        </div>
+      </div>
+      <!-- /////////////// -->
+    </div>
+</div>
+<br><br>
 
 
 
   <div>
-    <a target="_blank" href="https://www.google.com/maps/dir/Current+Location/Cohero+Health"><img src="images/blackAndWhiteMap3.jpg" width=100% alt=""></a>
+    <a target="_blank" href="https://www.google.com/maps/dir/Current+Location/Cohero+Health"><img src="images/blackAndWhiteMap3.jpg" width=100% style="min-height:150px;" alt=""></a>
   </div>
   <%- include ../globalPartials/footer %>
   <%- include ../globalPartials/bottom_of_body %>
