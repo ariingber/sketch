@@ -1,12 +1,7 @@
-@font-face {font-family: 'museo-rounded-100';
-src: url('../fonts/museo/MuseoSansRounded-100.otf');
-}
 @font-face {font-family: 'museo-rounded-300';
 src: url('../fonts/museo/MuseoSansRounded-300.otf');
 }
-@font-face {font-family: 'museo-rounded-500';
-src: url('../fonts/museo/MuseoSansRounded-500.otf');
-}
+
 
 /*SPACING BREAKS FOR DIFFERENT SIZE DEVICES*/
 .min-space {
@@ -91,6 +86,7 @@ h2 {
 }
 /*///////////////////*/
 
+
 /*INDEX PAGE */
 #atCohero {
   font-family: 'museo-rounded-300';
@@ -99,11 +95,39 @@ h2 {
   color: #0350AA;
   -webkit-font-smoothing: antialiased;
 }
-/*///////////////////////*/
+#build_better_habbits_carousel_ipad {
+  height:460px !important;
+}
+      /*on hover quote arrows*/
+.quoteArrowDown{
+  position: relative;
+  top:0;
+}
+.shownArrow {
+  width: 0;
+  height: 0;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-top: 13px solid #F7F7F7;
+}
+/*////////////////////////////////*/
 
-/*Products Page*/
-.productsCopy {
-  line-height: 24px;
+
+/*PRODUTCS PAGE*/
+#breathsmart_carousel_ipad {
+  height:240px !important;
+}
+
+
+/*ABOUT PAGE*/
+.card-text {
+  background-color:#004DA8 !important;
+  color:white;
+  font-size:18px;
+  padding:27px;
+  line-height:24px;
+  font-family: 'Open Sans';
+  text-align:left;
 }
 
 /*PRESS PAGE*/
@@ -155,30 +179,6 @@ h2 {
 /*///////////////*/
 
 
-/*MOVE*/
-.quoteArrowDown{
-  position: relative;
-  top:0;
-}
-.card-text {
-  background-color:#004DA8 !important;
-  color:white;
-  font-size:18px;
-  padding:27px;
-  line-height:24px;
-  font-family: 'Open Sans';
-  text-align:left;
-}
-
-.shownArrow {
-  width: 0;
-  height: 0;
-  border-left: 13px solid transparent;
-  border-right: 13px solid transparent;
-  border-top: 13px solid #F7F7F7;
-}
-/*///////////////////*/
-
 
 
 
@@ -198,12 +198,8 @@ h2 {
 /*/////////////////////*/
 
 
-#build_better_habbits_carousel_ipad {
-  height:460px !important;
-}
-#breathsmart_carousel_ipad {
-  height:240px !important;
-}
+
+
 
 /*This is for the nav bar helper*/
 #arrow-up {
