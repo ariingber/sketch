@@ -136,7 +136,7 @@ $(document).ready(function(){
 
     $('.modal-trigger').leanModal();
 
-    $('.scrollspy').scrollSpy();
+    $('.scrollspy').scrollSpy({scrollOffset:200});
 
     // for form select
     $('select').material_select();
