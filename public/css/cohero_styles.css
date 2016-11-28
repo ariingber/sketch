@@ -42,6 +42,21 @@ src: url('../fonts/museo/MuseoSansRounded-500.otf');
   flex:2;
   margin-right:60px;
 }
+#navbar a {
+  margin-top: 32px;
+  font-size: 13px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  text-align: left;
+  color: #435663;
+  margin-left: 11px;
+  margin-right: 11px;
+}
+
+#navbar a:hover {
+  color:#1F2930;
+}
 /*///////////////////*/
 
 /*GLOBAL FONTS*/
@@ -52,31 +67,41 @@ body {
   /*color: #75787B;*/
   color: #435663;
   font-size: 18px;
+  -webkit-font-smoothing: antialiased;
 }
 h1 {
   font-family: 'museo-rounded-300', sans-serif;
   font-size: 30px;
   line-height: 35px;
   color: #004da8;
+  -webkit-font-smoothing: antialiased;
 }
 
 h2 {
   font-family: 'museo-rounded-300', sans-serif;
   font-size: 24px;
-  color: #004da8;
+  color: #004DA8;
+  -webkit-font-smoothing: antialiased;
+}
+.line24 {
+  line-height: 24px;
+}
+.line36 {
+  line-height: 36px;
 }
 /*///////////////////*/
 
 /*INDEX PAGE */
-#GetToKnowCoHero {
-  font-family: 'museo-rounded-300', roboto;
+#atCohero {
+  font-family: 'museo-rounded-300';
   font-size: 40px;
   line-height: 42px;
   color: #0350AA;
+  -webkit-font-smoothing: antialiased;
 }
 /*///////////////////////*/
 
-/*prouctsPage*/
+/*Products Page*/
 .productsCopy {
   line-height: 24px;
 }
@@ -170,7 +195,7 @@ h2 {
   width: 66%;
   margin: 0 auto;
 }
-
+/*/////////////////////*/
 
 
 #build_better_habbits_carousel_ipad {
@@ -338,21 +363,7 @@ h2 {
 
 
 
-#navbar a {
-  margin-top: 32px;
-  font-size: 13px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  text-align: left;
-  color: #435663;
-  margin-left: 11px;
-  margin-right: 11px;
-}
 
-#navbar a:hover {
-  color:#1F2930;
-}
 
 
 
@@ -429,6 +440,9 @@ h2 {
 
 }
 /*this is css taken and repeated from materialize but backround color changed and made important*/
+.footer-bold {
+  font-weight: 400;
+}
 footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
@@ -459,7 +473,7 @@ footer.page-footer .footer-copyright {
 
 
 @media (max-width: 900px) {
-  #GetToKnowCoHero  {
+  #atCohero  {
     margin-top: 0px;
   }
 }
@@ -471,7 +485,7 @@ footer.page-footer .footer-copyright {
 }
 
 @media (max-width: 450px) {
-  #GetToKnowCoHero  {
+  #atCohero  {
     margin-top: -35px;
   }
 }
