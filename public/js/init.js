@@ -142,6 +142,25 @@ $(document).ready(function(){
     $('select').material_select();
     // ###############################
 
+    // our founders js
+    $('#ourFoundersSmall').hide();
+    if (window.location.pathname.includes("/about")) {
+      if ($( window ).width() < 1288) {
+        $('#ourFoundersSmall').show();
+      }
+      else {
+        $('#ourFoundersSmall').hide();
+      }
+      $( window ).resize(function() {
+        if ($( window ).width() < 1288) {
+          $('#ourFoundersSmall').show();
+        }
+        else {
+          $('#ourFoundersSmall').hide();
+        }
+      });
+    }
+
 
 
 
