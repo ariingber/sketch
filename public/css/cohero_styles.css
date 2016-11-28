@@ -3,7 +3,7 @@ src: url('../fonts/museo/MuseoSansRounded-300.otf');
 }
 
 
-hash anchor offsets
+/*hash anchor offsets*/
 a#how_we_integrate {
     display: block;
     position: relative;
