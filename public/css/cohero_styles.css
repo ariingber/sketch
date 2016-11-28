@@ -54,6 +54,7 @@ src: url('../fonts/museo/MuseoSansRounded-300.otf');
 }
 /*///////////////////*/
 
+
 /*GLOBAL FONTS*/
 body {
   font-family: 'Open Sans', sans-serif;
@@ -110,6 +111,9 @@ h2 {
   border-right: 13px solid transparent;
   border-top: 13px solid #F7F7F7;
 }
+.testimonial_slider ul.indicators {
+  margin-left: -50px !important;
+}
 /*////////////////////////////////*/
 
 
@@ -120,6 +124,10 @@ h2 {
 
 
 /*ABOUT PAGE*/
+.card {
+  text-align:center;
+  max-width:390px;
+}
 .card-text {
   background-color:#004DA8 !important;
   color:white;
@@ -128,6 +136,19 @@ h2 {
   line-height:24px;
   font-family: 'Open Sans';
   text-align:left;
+}
+#card_outer {
+  position: relative;
+}
+#card_inner {
+  z-index: 10;
+  width:46px;
+  height: auto;
+  margin: 0 auto;
+  right:35px;
+  top:35px;
+  padding: 5px;
+  position: absolute;
 }
 
 /*PRESS PAGE*/
@@ -176,13 +197,17 @@ h2 {
 #press_release_arrow_left:hover {
   cursor: pointer;
 }
+#quote_credit {
+  margin-left: 15px;
+  margin-top: 10px;
+  font-family: 'museo-rounded-300', sans-serif;
+  color: #0350AA;
+  font-size: 18px;
+}
 /*///////////////*/
 
 
-
-
-
-/*MUST CHECK THESE NECCISARY*/
+/*THESE ARE ON ALL PICTURES NEED TO BE RENAMED*/
 #inner {
   width: 55%;
   margin: 0 auto;
@@ -197,29 +222,18 @@ h2 {
 }
 /*/////////////////////*/
 
-
-
-
-
-/*This is for the nav bar helper*/
-#arrow-up {
-  width: 0;
-  height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-bottom: 8px solid #df696e;
+/*FORM STYLES *****************/
+.form_h1{
+  line-height:57px;
+  color: white;
+  font-size: 48px;
 }
 
-#quote_credit {
-  margin-left: 15px;
-  margin-top: 10px;
-  font-family: 'museo-rounded-300', sans-serif;
-  color: #0350AA;
-  font-size: 18px;
-}
-
-.testimonial_slider ul.indicators {
-  margin-left: -50px !important;
+.try_our_products_label {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #435663;
+  font-size: 14px;
 }
 
 
@@ -336,45 +350,7 @@ h2 {
   color: #435663;
 }
 
-.card {
-  text-align:center;
-  max-width:390px;
-}
-
-
-
-/*FORM STYLES *****************/
-.form_h1{
-  line-height:57px;
-  color: white;
-  font-size: 48px;
-}
-
-.try_our_products_label {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  color: #435663;
-  font-size: 14px;
-}
-
-
-
-
-
-
-
-
-
-
-
-/*#mobile_slide_icon {
-  background-color: white;
-  height: 400px !important;
-}*/
-
-
-
-
+/*NOT SURE WHAT THIS IS FOR*/
 #what_is_content_outer {
   position: relative;
 }
@@ -392,21 +368,19 @@ h2 {
   padding: 5px;
   position: relative;
 }
+/*//////////////////////////*/
 
-#card_outer {
-  position: relative;
-}
-#card_inner {
-  z-index: 10;
-  width:46px;
-  height: auto;
-  margin: 0 auto;
-  right:35px;
-  top:35px;
-  padding: 5px;
-  position: absolute;
+
+/*This is for the nav bar helper*/
+#arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #df696e;
 }
 
+/*FOOTER*/
 .footer-col-container {
   display: flex;
 }
@@ -417,7 +391,6 @@ h2 {
   flex: 1;
   color: white;
 }
-
 .footer-col {
   font-family: 'Open Sans';
   line-height: 18px;
@@ -425,7 +398,6 @@ h2 {
   flex: 1;
   color: white;
 }
-
 .footer-col a {
   display: block;
   font-family: 'Open Sans';
@@ -433,7 +405,6 @@ h2 {
   font-size:13px;
   flex: 1;
   color: white;
-
 }
 /*this is css taken and repeated from materialize but backround color changed and made important*/
 .footer-bold {
@@ -444,7 +415,6 @@ footer.page-footer {
   padding-top: 20px;
   background-color: #001999 !important;
 }
-
 footer.page-footer .footer-copyright {
   overflow: hidden;
   height: 50px;
@@ -455,8 +425,6 @@ footer.page-footer .footer-copyright {
 
 
 /*MEDIA QUERIES **********************/
-
-
 #ourFoundersLarge {
     display:none;
 }
