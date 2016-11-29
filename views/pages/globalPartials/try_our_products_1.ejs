@@ -5,60 +5,58 @@
       <form action="https://formspree.io/ari@coherohealth.com"
           method="POST" enctype="multipart/form-data">
           <input type="hidden" name="_next" value="#try_our_products" />
-          <div style="margin-bottom:80px; color:#1FD9C7">.</div>
+          <div style="margin-bottom:70px; color:#1FD9C7">.</div>
           <div id="question1" class="input-field col s12 m12 l8">
-            <h1 id="looking_to_h2" style="line-height:22px; font-size:18px;">Interested in our products? Let’s get started.</h1>
-            <h1 class="form_h1" style="line-height:57px;">What can we help you with?</h1>
-            <br><br>
-             <div id="choice_try_products" class="form_button"> Try products </div><br>
+            <h1 id="looking_to_h2" style="font-size:18px;">Interested in our products? Let’s get started.</h1>
+            <h1 class="form_h1" style="line-height:57px; margin-top:-17px;">What can we help you with?</h1>
+             <div id="choice_try_products" class="form_button" style="margin-top:60px;"> Try products </div><br>
              <div id="choice_send_message" class="form_button">Send message</div>
            </div>
            <div id="question2" class="input-field col s12 m12 l8">
-            <h1 class="white-text" style="font-size:48px;">Great. Would you be okay to try products as part of a clinical study?</h1>
+            <h1 class="form_h1">Great. Would you be okay to try products as part of a clinical study?</h1>
             <br>
-            <div class="whiteButton" id="try_clinical_study">Yes</div><br>
-            <div class="whiteButton" id="wont_try_clinical_study">No</div><br>
-            <div class="whiteButton" id="backButton1">Back</div>
+            <div class="form_button" id="try_clinical_study">Yes</div><br>
+            <div class="form_button" id="wont_try_clinical_study">No</div><br>
+            <div class="form_button" id="backButton1">Back</div>
           </div>
           <div id="question3" class="question">
             <div class="input-field col s12 m12 l8">
               <h1 class="form_h1">What’s your first name?</h1>
-              <input id="first_name" type="text" name="first_name">
+              <input id="first_name" type="text" name="first_name" style="margin-top:30px;">
               <br>
               <div id="first_name_error" class="red-text">Please fill out this field</div><br>
-              <div class="whiteButton nextButton">Next</div><br>
-              <div class="whiteButton" id="backButtonFirstName">Back</div>
+              <div class="form_button nextButton">Next</div><br>
+              <div class="form_button" id="backButtonFirstName">Back</div>
             </div>
           </div>
           <div id="question4" class="question">
             <div class="input-field col s12 m12 l8">
               <h1 class="form_h1">Last name?</h1>
-              <br>
-              <input id="last_name" type="text" name="last_name">
+              <input id="last_name" type="text" name="last_name" style="margin-top:30px;">
               <br>
               <div id="last_name_error" class="red-text">Please fill out this field</div><br>
-              <div class="whiteButton nextButton">Next</div><br>
-              <div class="whiteButton backButtonType1">Back</div>
+              <div class="form_button nextButton">Next</div><br>
+              <div class="form_button backButtonType1">Back</div>
             </div>
           </div>
           <div id="question5" class="question">
             <div class="input-field col s12 m12 l8">
               <h1 class="form_h1">And your email?</h1>
-              <input id="email" type="email" name="email">
+              <input id="email" type="email" name="email" style="margin-top:30px;">
               <br>
               <div id="email_error" class="red-text">Please enter a valid email</div><br>
-              <div class="whiteButton nextButton">Next</div><br>
-              <div class="whiteButton backButtonType1">Back</div>
+              <div class="form_button nextButton">Next</div><br>
+              <div class="form_button backButtonType1">Back</div>
             </div>
           </div>
           <div id="question6" class="question">
             <div class="input-field col s12 m12 l8">
               <h1 class="form_h1">How old are you?</h1>
+              <input id="age" type="text" name="age" style="margin-top:30px;">
               <br>
-              <input id="age" type="text" name="age"><br>
               <div></div><br>
-              <div class="whiteButton nextButton">Next</div><br>
-              <div class="whiteButton backButtonType1">Back</div>
+              <div class="form_button nextButton">Next</div><br>
+              <div class="form_button backButtonType1">Back</div>
             </div>
           </div>
           <div id="question7" class="input-field col s12 m12 l8">
@@ -77,7 +75,7 @@
                <label for="wont_disclose">Choose not to disclose</label>
              </p>
              <br><br>
-             <div class="whiteButton backButtonType2">Back</div>
+             <div class="form_button backButtonType2">Back</div>
            </div>
            <div id="question8" class="input-field col s12 m12 l8">
               <input id="phoneType" type="hidden" name="phone_type" value="" />
@@ -95,24 +93,26 @@
                  <label for="not_iPhone_or_android">Other</label>
                </p>
                <br><br>
-              <div class="whiteButton backButtonType2">Back</div>
+              <div class="form_button backButtonType2">Back</div>
           </div>
           <div id="additional_comments_div" class="input-field col s12">
             <h1 class="form_h1">Submit your form, add a message too if you like.</h1>
-           <input id="additional_comments" name="Additional Comments"  type="text" class="materialize-textarea"></input><br>
-           <button class="whiteButton subButton" style="background-color:#1FD9C7;" type="submit">Submit form</button><br><br>
-           <div class="whiteButton backButtonType2">Back</div>
+           <input id="additional_comments" name="Additional Comments"  type="text" class="materialize-textarea" style="margin-top:30px;"></input>
+           <br>
+           <div></div><br>
+           <button class="form_button subButton" style="background-color:#1FD9C7;" type="submit">Submit form</button><br><br>
+           <div class="form_button backButtonType2">Back</div>
          </div>
            <div id="message_div" class="input-field col s12">
-            <h1 class="form_h1">Send us a message.</h1>
-            <input id="message" name="message"  type="text" class="materialize-textarea"></input><br>
-            <button class="whiteButton subButton" style="background-color:#1FD9C7;" type="submit">Send</button><br><br>
-            <div class="whiteButton" id="messageBackButton">Back</div>
+            <h1 class="form_h1">What's your message.</h1>
+            <input id="message" name="message"  type="text" class="materialize-textarea" style="margin-top:30px;"></input><br><br>
+            <button class="form_button subButton" style="background-color:#1FD9C7;" type="submit">Send</button><br><br>
+            <div class="form_button" id="messageBackButton">Back</div>
           </div>
           <div id="sorry_message_div" class="input-field col s12">
-            <h1 class="white-text" style="font-size:48px;">Sorry. Right now, our products are only available through a healthcare provider or people in clinical studies.</h1>
+            <h1 class="form_h1">Sorry. Right now, our products are only available through a healthcare provider or people in clinical studies.</h1>
             <br>
-           <div class="whiteButton" id="start_over">Start over</div>
+           <div class="form_button" id="start_over">Start over</div>
 
          </div>
            <h1 id="thank_you_message" class="form_h1">Thank you for your message, we got it!</h1>
