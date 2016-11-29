@@ -25,6 +25,12 @@ a#our_team {
     top: -175px;
     visibility: hidden;
 }
+a#what_patients_say {
+  display: block;
+  position: relative;
+  top: -175px;
+  visibility: hidden;
+}
 
 /*SPACING BREAKS FOR DIFFERENT SIZE DEVICES*/
 .min-space {
