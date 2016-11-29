@@ -1,6 +1,9 @@
 @font-face {font-family: 'museo-rounded-300';
 src: url('../fonts/museo/MuseoSansRounded-300.otf');
 }
+@font-face {font-family: 'museo-rounded-500';
+src: url('../fonts/museo/MuseoSansRounded-500.otf');
+}
 
 
 /*hash anchor offsets*/
@@ -51,7 +54,7 @@ a#our_team {
   margin-left:40px;
 }
 #navbar-second-col{
-  flex:2;
+  flex:4;
 }
 #navbar-third-col{
   flex:2;
@@ -65,8 +68,8 @@ a#our_team {
   font-stretch: normal;
   text-align: left;
   color: #435663;
-  margin-left: 11px;
-  margin-right: 11px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 #navbar a:hover {
@@ -112,7 +115,7 @@ h2 {
 #atCohero {
   font-family: 'museo-rounded-300';
   font-size: 40px;
-  line-height: 42px;
+  line-height: 48px;
   color: #0350AA;
   -webkit-font-smoothing: antialiased;
 }
@@ -134,6 +137,23 @@ h2 {
 .testimonial_slider ul.indicators {
   margin-left: -50px !important;
 }
+#what_is_content_outer {
+  position: relative;
+}
+#what_is_content_inner {
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  padding: 5px;
+  position: relative;
+}
+#what_is_content_inner_track {
+  width: 310px;
+  height: auto;
+  margin: 0 auto;
+  padding: 5px;
+  position: relative;
+}
 /*////////////////////////////////*/
 
 
@@ -151,7 +171,7 @@ h2 {
 .card-text {
   background-color:#004DA8 !important;
   color:white;
-  font-size:18px;
+  font-size:16px;
   padding:27px;
   line-height:24px;
   font-family: 'Open Sans';
@@ -186,6 +206,8 @@ h2 {
   color: white;
 }
 .tile_sub_text {
+  font-family: 'museo-rounded-500', sans-serif;
+  letter-spacing: 1.9px;
   text-align: left;;
   font-size: 14px;
   color: #0350AA;
@@ -341,6 +363,23 @@ h2 {
   color: #1FD9C7 !important;
   background-color: white;
 }
+.form_button {
+  font-weight: 400;
+  margin-top:-20px;
+  font-size:15px;
+  width:160px !important;
+  text-align: center;
+  border:solid white 1px;
+  padding:13px 28px 13px 28px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+.form_button:hover {
+  color: #1FD9C7 !important;
+  background-color: white;
+}
+
 .subButton:hover {
   color: #1FD9C7 !important;
   background-color: white !important;
@@ -371,23 +410,7 @@ h2 {
 }
 
 /*NOT SURE WHAT THIS IS FOR*/
-#what_is_content_outer {
-  position: relative;
-}
-#what_is_content_inner {
-  width: 300px;
-  height: auto;
-  margin: 0 auto;
-  padding: 5px;
-  position: relative;
-}
-#what_is_content_inner_track {
-  width: 310px;
-  height: auto;
-  margin: 0 auto;
-  padding: 5px;
-  position: relative;
-}
+
 /*//////////////////////////*/
 
 
@@ -433,14 +456,14 @@ h2 {
 footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
-  background-color: #001999 !important;
+  background-color: #004DA8 !important;
 }
 footer.page-footer .footer-copyright {
   overflow: hidden;
   height: 50px;
   line-height: 50px;
   color: rgba(255, 255, 255, 0.8);
-  background-color: #001999 !important;
+  background-color: #004DA8 !important;
 }
 
 
