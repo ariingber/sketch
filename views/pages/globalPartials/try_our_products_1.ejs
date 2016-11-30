@@ -9,55 +9,47 @@
           <div id="question1" class="input-field col s12 m12 l8">
             <h1 id="looking_to_h2" style="font-size:18px;">Interested in our products? Let’s get started.</h1>
             <h1 class="form_h1" style="line-height:57px; margin-top:-17px;">What can we help you with?</h1>
-             <div id="choice_try_products" class="form_button" style="margin-top:60px;"> Try products </div><br>
-             <div id="choice_send_message" class="form_button">Send message</div>
+             <div class="form_button" id="choice_try_products" style="margin-top:60px;"> Try products </div><br>
+             <div class="form_button" id="choice_send_message" >Send message</div>
            </div>
            <div id="question2" class="input-field col s12 m12 l8">
             <h1 class="form_h1">Great. Would you be okay to try products as part of a clinical study?</h1>
             <br>
-            <div class="form_button" id="try_clinical_study">Yes</div><br>
+            <div class="form_button" id="will_try_clinical_study">Yes</div><br>
             <div class="form_button" id="wont_try_clinical_study">No</div><br>
-            <div class="form_button" id="backButton1">Back</div>
+            <div class="form_button backButtonType2">Back</div>
           </div>
-          <div id="question3" class="question">
-            <div class="input-field col s12 m12 l8">
-              <h1 class="form_h1">What’s your first name?</h1>
-              <input id="first_name" type="text" name="first_name" style="margin-top:30px;">
-              <br>
-              <div id="first_name_error" class="red-text">Please fill out this field</div><br>
-              <div class="form_button nextButton">Next</div><br>
-              <div class="form_button" id="backButtonFirstName">Back</div>
-            </div>
+          <div id="question3" class="input-field col s12 m12 l8 question">
+            <h1 class="form_h1">What’s your first name?</h1>
+            <input id="first_name" type="text" name="first_name" style="margin-top:30px;">
+            <br>
+            <div id="first_name_error" class="red-text">Please fill out this field</div><br>
+            <div class="form_button nextButton">Next</div><br>
+            <div class="form_button backButtonType2">Back</div>
           </div>
-          <div id="question4" class="question">
-            <div class="input-field col s12 m12 l8">
-              <h1 class="form_h1">Last name?</h1>
-              <input id="last_name" type="text" name="last_name" style="margin-top:30px;">
-              <br>
-              <div id="last_name_error" class="red-text">Please fill out this field</div><br>
-              <div class="form_button nextButton">Next</div><br>
-              <div class="form_button backButtonType1">Back</div>
-            </div>
+          <div id="question4" class="input-field col s12 m12 l8 question">
+            <h1 class="form_h1">Last name?</h1>
+            <input id="last_name" type="text" name="last_name" style="margin-top:30px;">
+            <br>
+            <div id="last_name_error" class="red-text">Please fill out this field</div><br>
+            <div class="form_button nextButton">Next</div><br>
+            <div class="form_button backButtonType2">Back</div>
           </div>
-          <div id="question5" class="question">
-            <div class="input-field col s12 m12 l8">
-              <h1 class="form_h1">And your email?</h1>
-              <input id="email" type="email" name="email" style="margin-top:30px;">
-              <br>
-              <div id="email_error" class="red-text">Please enter a valid email</div><br>
-              <div class="form_button nextButton">Next</div><br>
-              <div class="form_button backButtonType1">Back</div>
-            </div>
+          <div id="question5" class="input-field col s12 m12 l8 question">
+            <h1 class="form_h1">And your email?</h1>
+            <input id="email" type="email" name="email" style="margin-top:30px;">
+            <br>
+            <div id="email_error" class="red-text">Please enter a valid email</div><br>
+            <div class="form_button nextButton">Next</div><br>
+            <div class="form_button backButtonType2">Back</div>
           </div>
-          <div id="question6" class="question">
-            <div class="input-field col s12 m12 l8">
-              <h1 class="form_h1">How old are you?</h1>
-              <input id="age" type="text" name="age" style="margin-top:30px;">
-              <br>
-              <div></div><br>
-              <div class="form_button nextButton">Next</div><br>
-              <div class="form_button backButtonType1">Back</div>
-            </div>
+          <div id="question6" class="input-field col s12 m12 l8 question">
+            <h1 class="form_h1">How old are you?</h1>
+            <input id="age" type="text" name="age" style="margin-top:30px;">
+            <br>
+            <div></div><br>
+            <div class="form_button nextButton">Next</div><br>
+            <div class="form_button backButtonType2">Back</div>
           </div>
           <div id="question7" class="input-field col s12 m12 l8">
             <input id="diagnosis" type="hidden" name="diagnosis" value="" />
@@ -72,7 +64,7 @@
              </p>
              <p>
                <input name="group1" class="with-gap" type="radio" id="wont_disclose" value="wont_disclose" />
-               <label for="wont_disclose">Choose not to disclose</label>
+               <label for="wont_disclose">Prefer not to disclose</label>
              </p>
              <br><br>
              <div class="form_button backButtonType2">Back</div>
@@ -110,12 +102,12 @@
             <div class="form_button" id="messageBackButton">Back</div>
           </div>
           <div id="sorry_message_div" class="input-field col s12">
-            <h1 class="form_h1">Sorry. Right now, our products are only available through a healthcare provider or people in clinical studies.</h1>
+            <h1 class="form_h1">Sorry. Right now, our products are only available through a healthcare provider or to people in clinical studies.</h1>
             <br>
            <div class="form_button" id="start_over">Start over</div>
 
          </div>
-           <h1 id="thank_you_message" class="form_h1">Thank you for your message, we got it!</h1>
+           <h1 id="thank_you_message" class="form_h1">Thanks for your message. Someone will be in touch soon.</h1>
           <br>
           <div class="white-text left-align col s12" id="progress_counter" style="margin-top:50px;">
             <span id="count" style="font-weight:bold;">1</span>/7
