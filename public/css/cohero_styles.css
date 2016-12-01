@@ -7,29 +7,31 @@ src: url('../fonts/museo/MuseoSansRounded-500.otf');
 
 
 /*hash anchor offsets*/
-a#how_we_integrate {
-    display: block;
-    position: relative;
-    top: 75px;
-    visibility: hidden;
-}
-a#our_products {
-    display: block;
-    position: relative;
-    top: -175px;
-    visibility: hidden;
-}
-a#our_team {
-    display: block;
-    position: relative;
-    top: -175px;
-    visibility: hidden;
-}
-a#what_patients_say {
+.footer_link {
   display: block;
   position: relative;
-  top: -75px;
   visibility: hidden;
+}
+a#our_platform {
+  top: 75px;
+}
+a#our_products {
+    top: -175px;
+}
+a#our_team {
+    top: -175px;
+}
+a#what_people_say{
+  top: -175px;
+}
+a#what_patients_say {
+  top: -75px;
+}
+a#home_press {
+  top: -175px;
+}
+a#home_try_our_products {
+  top: -175px;
 }
 
 /*SPACING BREAKS FOR DIFFERENT SIZE DEVICES*/
