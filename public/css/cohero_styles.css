@@ -34,6 +34,39 @@ a#home_try_our_products {
   top: -175px;
 }
 
+a#breathesmart {
+  top: 465px;
+}
+a#mspirometer {
+  top: 0px;
+}
+a#products_try_our_products {
+  top: -175px;
+}
+
+a#founders {
+  top: 250px;
+}
+a#team {
+  top: -200px;
+}
+a#partners {
+  top: 100px;
+}
+a#about_try_our_products {
+  top: -175px;
+}
+
+a#what_patients_say{
+  top: -175px;
+}
+a#press_try_our_products {
+  top: -275px;
+}
+
+a#send_message {
+  top: -275px;
+}
 /*SPACING BREAKS FOR DIFFERENT SIZE DEVICES*/
 .min-space {
   height:80px;
