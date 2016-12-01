@@ -364,6 +364,10 @@ h2 {
   border-radius:8px;
   color: #75787B;
 }
+#loadMoreButton:hover {
+  border:solid #435663 1px;
+  color: #435663;
+}
 .whiteButton {
   margin-top:-20px;
   font-size:15px;

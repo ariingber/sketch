@@ -60,7 +60,7 @@ $(document).ready(function(){
       $('#div1').attr( "id", "" ).hide().next().attr( "id", "div1" );
       $('#div6').attr( "id", "div5" ).next().show().attr( "id", "div6" );
       if ($('#div6').hasClass('last')) {
-        $('#loadMoreButton').css({"cursor":"not-allowed","pointer-events":"none", "color": "#c0c0c0", "background-color": "#ffffff"});
+        $('#loadMoreButton').css({"cursor":"not-allowed","pointer-events":"none", "color": "#c0c0c0", "background-color": "#ffffff", "border":"solid #c0c0c0 1px"});
       }
       $('#div1').show();
       $('#div2').show();
@@ -204,31 +204,23 @@ $(document).ready(function(){
 
 
 // SAFARI FORM ERROR MESSAGES****************************
-     $("form").submit(function(e) {
-
-        var ref = $(this).find("[required]");
-
-        $(ref).each(function(){
-            if ( $(this).val() == '' )
-            {
-                alert("Required field should not be blank.");
-
-                $(this).focus();
-
-                e.preventDefault();
-                return false;
-            }
-        });  return true;
-    });
+    //  $("form").submit(function(e) {
+    //
+    //     var ref = $(this).find("[required]");
+    //
+    //     $(ref).each(function(){
+    //         if ( $(this).val() == '' )
+    //         {
+    //             alert("Required field should not be blank.");
+    //
+    //             $(this).focus();
+    //
+    //             e.preventDefault();
+    //             return false;
+    //         }
+    //     });  return true;
+    // });
     // *************************************************
-
-    // SUCCESFULL FORM FILLED OUT
-    // $('#sucess_message').hide();
-    // if (window.location.hash == '#sucess') {
-    //   $('#modal1').openModal();
-    //   window.location.hash = ""
-    // };
-    // ******************************************
 
 
     // CUSTOM FORM METHODS
