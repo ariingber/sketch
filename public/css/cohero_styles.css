@@ -95,6 +95,7 @@ h2 {
   color: #004DA8;
   -webkit-font-smoothing: antialiased;
 }
+
 .line24 {
   line-height: 24px;
 }
@@ -171,7 +172,10 @@ h2 {
 
 /*PRODUTCS PAGE*/
 #breathsmart_carousel_ipad {
-  height:240px !important;
+  height:175px !important;
+}
+#breathsmart_carousel_iphone {
+  height:150px !important;
 }
 
 
