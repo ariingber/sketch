@@ -1,3 +1,6 @@
+@font-face {font-family: 'museo-rounded-100';
+src: url('../fonts/museo/MuseoSansRounded-100.otf');
+}
 @font-face {font-family: 'museo-rounded-300';
 src: url('../fonts/museo/MuseoSansRounded-300.otf');
 }
@@ -54,6 +57,17 @@ src: url('../fonts/museo/MuseoSansRounded-500.otf');
 #navbar a:hover {
   color:#1F2930;
 }
+
+#mobile-demo{
+  background: #004DA8;
+}
+#mobile-demo a{
+  background: #004DA8;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 15px;
+  color: #FFFFFF;
+}
 /*///////////////////*/
 
 
@@ -101,6 +115,7 @@ h2 {
   color: #0350AA;
   -webkit-font-smoothing: antialiased;
 }
+/*//////////////////////////////*/
 #atCoheroMobile {
   font-family: 'museoSansrounded-500';
   font-size: 24px;
@@ -108,6 +123,14 @@ h2 {
   line-height: 31px;
   -webkit-font-smoothing: antialiased;
 }
+.slide_text {
+  font-family: 'Open Sans' !important;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+  color: #435663 !important;
+  line-height: 19px !important;
+}
+/*////////////////////////////////*/
 #build_better_habbits_carousel_ipad {
   height:460px !important;
 }
@@ -545,11 +568,19 @@ footer.page-footer .footer-copyright {
     line-height: 31px;
   }
   body {
-  font-family: 'Open Sans';
-  font-weight: 300;
-  font-size: 14px;
-  color: #435663;
-  line-height: 19px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 14px;
+    color: #435663;
+    line-height: 19px;
+  }
+  .text-align-center {
+    text-align: center !important;
+  }
+  .extra_distance{
+    margin-top: 20px;
+  }
+  .habits_mobile {
   }
 }
 
