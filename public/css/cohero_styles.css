@@ -584,7 +584,8 @@ footer.page-footer .footer-copyright {
   .extra_distance{
     margin-top: 20px;
   }
-  .habits_mobile {
+  .space_to_cards {
+    margin-top: 0px !important;
   }
 }
 

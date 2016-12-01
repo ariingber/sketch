@@ -9,6 +9,7 @@
 <body>
   <%- include ../patient/generalPatientPartials/nav %>
   <a class="footer_link" id="our_mission" ></a>
+    <!-- **************************LARGE************************ -->
     <div class="container hide-on-med-and-down" style="margin-top:209px;">
       <div class="row">
         <div class="col s12">
@@ -24,20 +25,38 @@
         </div>
       </div>
     </div>
-    <!-- Mobile -->
-    <div class="container hide-on-large-only" style="margin-top:116px;">
-      <div class="center row">
+    <!-- ******************************************************** -->
+    <!-- **************************TABLET************************ -->
+    <div class="container hide-on-small-only hide-on-large-only" >
+      <div class="row center">
+        <div class="col s12" style="margin-top:50px;">
+          <h1  class="line36">We’re passionate about respiratory <br>health and technology.</h1>
+          <div align="center">
+            <img width="450px;" src="images/team@3x.png">
+          </div>
+          <div align="center">
+            <div style="max-width:400px;">
+              Our team of technologists, doctors, designers, and clinicians is on a mission to transform respiratory disease management through mobile technology.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ******************************************************** -->
+    <!-- **************************MOBILE************************ -->
+    <div class="container hide-on-med-and-up" style="margin-top:50px;">
+      <div class="row">
         <div class="col s12">
           <h1 style="text-align:center;">We’re passionate about respiratory health and technology.</h1>
           <div id="outer">
-            <div id="inner_pic_hardware" class="pic" style="min-width:400px;" >
+            <div class="pic" id="inner_pic_team" style="min-width:300px;">
               <img width="100%" src="images/team@3x.png">
             </div>
           </div>
           <div class="col s12">
             <div id="outer">
               <div id="inner" style="margin-top:-20px;">
-                <p style="text-align:left;" class="line24">
+                <p style="text-align:left;" class="text-align-center extra_distance" >
                   Our team of technologists, doctors, designers, and clinicians is on a mission to transform respiratory disease management through mobile technology.
                 </p>
               </div>
@@ -46,8 +65,11 @@
         </div>
       </div>
     </div>
-    <!-- /////////////////////////////////////// -->
+    <!-- ******************************************************** -->
+
+
 <a class="footer_link" id="founders" ></a>
+<!-- **************************LARGE************************ -->
 <div id="ourFoundersLarge" style="margin-top:315px; height:683px; background-color:#F8F8F8; position: relative;">
   <div style="width: 775px;position: absolute; bottom: -10px;">
     <img width=100% src="images/cofounders@3x.png">
@@ -63,12 +85,14 @@
       Dan Weinstein holds an MBA in health sector management from Duke University and a BA in the biological basis of behavior from the University of Pennsylvania. He began his career commercializing new technologies at Stanford University’s Office of Technology Licensing and went on to start two successful startups. Cohero health began when Dan and Melissa met while working in digital health at Mount Sinai Hospital.
   </div>
 </div>
-<!-- MOBILE -->
+<!-- ******************************************************** -->
+
+<div style="margin-top:-75px" class="hide-on-med-and-up"></div>
 <div id="ourFoundersSmall">
-  <div style="margin-top:260px;">
+  <div style="margin-top:160px;">
     <div align="center" class="row" style="margin-left:30px; margin-right:30px;">
       <h1>Meet our founders.</h1>
-      <div style="margin-top:148px;"></div>
+      <div class="space_to_cards" style="margin-top:148px;"></div>
       <div class="col s12 m6 l6">
         <div class="card">
           <div class="card-image waves-effect waves-block waves-light" id="card_outer">
@@ -124,11 +148,12 @@
   </div>
 </div>
 
+<div style="margin-top:-200px" class="hide-on-med-and-up"></div>
 <div style="margin-top:260px;">
   <a class="footer_link" id="team" ></a>
   <div align="center" class="row" style="margin-left:30px; margin-right:30px;">
     <h1>Get to know our team.</h1>
-    <div style="margin-top:148px;"></div>
+    <div class="space_to_cards" style="margin-top:148px;"></div>
     <div class="col s12 m6 l4">
       <div class="card">
         <div class="card-image waves-effect waves-block waves-light" id="card_outer">
@@ -297,6 +322,7 @@
     </div>
 </div>
 
+<div style="margin-top:-200px" class="hide-on-med-and-up"></div>
 <div class="container" style="margin-top:270px;">
   <a class="footer_link" id="partners" ></a>
   <div class="row center">
@@ -305,7 +331,7 @@
       <div align="center">
         <div style="width:400px;">Our relationships bring together healthcare and technology for the good of people and doctors.</div>
       </div>
-
+      <div style="margin-top:-100px" class="hide-on-med-and-up"></div>
       <img src="images/partners.png" width="100%" style="margin-top:146px;">
     </div>
   </div>
@@ -314,8 +340,11 @@
   <%- include ../globalPartials/bottom_of_body %>
   <div style="margin-top:268px;">
     <a class="footer_link" id="about_try_our_products" ></a>
-    <%- include ../globalPartials/try_our_products_1.ejs %>
+    <div class="hide-on-med-and-down">
+      <%- include ../globalPartials/try_our_products_1.ejs %>
+    </div>
   </div>
+  <div style="margin-top:-200px" class="hide-on-med-and-up"></div>
   <script type="text/javascript" src="js/form.js"></script>
   <%- include ../globalPartials/footer %>
 </body>
