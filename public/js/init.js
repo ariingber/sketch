@@ -40,16 +40,34 @@ $(document).ready(function(){
     $('.hiddenQuote').hide();
   });
 
-
   // load more press release
+  $('#div7').hide();
+  $('#div8').hide();
+  $('#div9').hide();
+  $('#div10').hide();
+  $('#div11').hide();
+  $('#div12').hide();
+  $('#div13').hide();
+  $('#div14').hide();
+  $('#div15').hide();
+  $('#div16').hide();
+  $('#div17').hide();
+  $('#div18').hide();
+  $('#div19').hide();
+  $('#div20').hide();
+
   $('#loadMoreButton').click(function() {
-      $('.current').removeClass('current').fadeOut('slow')
-          .next().addClass('current');
-      $('.bottom').removeClass('bottom')
-          .fadeIn('slow').next().addClass('bottom');
-      if ($('.current').hasClass('last')) {
-          $('#loadMoreButton').attr('disabled', true);
+      $('#div1').attr( "id", "" ).hide().next().attr( "id", "div1" );
+      $('#div6').attr( "id", "div5" ).next().show().attr( "id", "div6" );
+      if ($('#div6').hasClass('last')) {
+        $('#loadMoreButton').css({"cursor":"not-allowed","pointer-events":"none", "color": "#c0c0c0", "background-color": "#ffffff"});
       }
+      $('#div1').show();
+      $('#div2').show();
+      $('#div3').show();
+      $('#div4').show();
+      $('#div5').show();
+      $('#div6').show();
   });
   // ****************************************
 

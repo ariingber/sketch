@@ -114,6 +114,9 @@ h2 {
 .line36 {
   line-height: 36px;
 }
+.line31 {
+  line-height: 31px;
+}
 /*///////////////////*/
 
 
@@ -198,6 +201,19 @@ h2 {
 }
 
 /*PRESS PAGE*/
+.loadDiv_margin {
+  margin-top:43px;
+}
+.loadDiv_link {
+  color:#004DA8;
+}
+.loadDiv_underline {
+  width:100%;
+  margin-top:10px;
+  height:1px;
+  background: #F2F2F2;
+}
+
 .tile {
   padding:30px;
   width:317.72px;
@@ -236,6 +252,7 @@ h2 {
   font-size: 14px;
   color: #0350AA;
 }
+
 .press_quote_text_box {
   height: 155px;
 }
@@ -282,6 +299,27 @@ h2 {
   font-weight: 300;
   color: #435663;
   font-size: 14px;
+}
+.error_msg{
+  font-family: 'Open Sans';
+  font-weight:400;
+  font-size: 18px;
+  color: #001999;
+
+}
+.radio_buttons {
+  margin-left: -15px;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+.radio_buttons_text {
+  margin-left: 25px;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 36px;
+  color: #FFFFFF;
 }
 
 
@@ -370,12 +408,13 @@ h2 {
   background-color: white;
 }
 .form_button {
-  font-weight: 400;
+  font-family: 'Open Sans';
+  font-weight: 600;
   margin-top:-20px;
   font-size:15px;
-  width:160px !important;
+  width:170px !important;
   text-align: center;
-  border:solid white 1px;
+  border:1px solid #FFFFFF;
   padding:13px 28px 13px 28px;
   border-radius: 8px;
   color: white;
@@ -385,6 +424,7 @@ h2 {
   color: #1FD9C7 !important;
   background-color: white;
 }
+
 
 .subButton:hover {
   color: #1FD9C7 !important;
