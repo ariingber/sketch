@@ -389,8 +389,8 @@ $(document).ready(function(){
 
     $("#message_div input, #additional_comments_div, textarea").keypress(function (event) {
        if (event.which == 13) {
-         $( "#thank_you_message" ).show().delay( 200000000 ).fadeOut( 4000000 );
-         $('form').delay( 25000000 ).unbind('submit').submit();
+         $( "#thank_you_message" ).show();
+         $('form').delay( 2000000000000000 ).delay( 2000000000000000 ).delay( 2000000000000000 ).unbind('submit').submit();
            $('#progress_counter').hide();
            $('#message_div').hide();
            $('#additional_comments_div').hide();
@@ -399,8 +399,8 @@ $(document).ready(function(){
     });
     $(".subButton").click(function (event) {
       event.preventDefault();
-       $( "#thank_you_message" ).show().delay( 20000000 ).fadeOut( 4000000 );
-       $('form').delay( 25000000 ).unbind('submit').submit();
+       $( "#thank_you_message" ).show();
+       $('form').delay( 2000000000000000 ).delay( 2000000000000000 ).delay( 2000000000000000 ).unbind('submit').submit();
          $('#progress_counter').hide();
          $('#message_div').hide();
          $('#additional_comments_div').hide();
