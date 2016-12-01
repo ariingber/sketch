@@ -101,6 +101,13 @@ h2 {
   color: #0350AA;
   -webkit-font-smoothing: antialiased;
 }
+#atCoheroMobile {
+  font-family: 'museo-rounded-300';
+  font-size: 28px;
+  line-height: 28px;
+  color: #0350AA;
+  -webkit-font-smoothing: antialiased;
+}
 #build_better_habbits_carousel_ipad {
   height:460px !important;
 }
@@ -528,6 +535,21 @@ footer.page-footer .footer-copyright {
 @media (max-width: 995px) {
   #navbar {
     height: 110px;
+  }
+}
+@media (max-width: 995px) {
+  h1 {
+    font-family: 'museo-rounded-300';
+    font-size: 25px;
+    color: #004DA8;
+    line-height: 31px;
+  }
+  body {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-size: 14px;
+  color: #435663;
+  line-height: 19px;
   }
 }
 
