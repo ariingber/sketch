@@ -587,6 +587,9 @@ footer.page-footer .footer-copyright {
   .space_to_cards {
     margin-top: 0px !important;
   }
+  .footer_move_right{
+    margin-left: 20px;
+  }
 }
 
 @media (max-width: 700px) {
