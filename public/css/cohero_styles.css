@@ -193,6 +193,10 @@ h2 {
   font-family: 'Open Sans';
   text-align:left;
 }
+.card_close_button_height{
+  height:400px;
+  overflow:scroll;
+}
 #card_outer {
   position: relative;
 }
@@ -594,6 +598,17 @@ footer.page-footer .footer-copyright {
   .footer_move_right{
     margin-left: 20px;
   }
+  .card_close_button_height{
+    height:350px;
+  }
+  @media (max-width: 320px) {
+    .card_close_button_height{
+      height:315px;
+    }
+  }
+
+}
+@media (max-width: 1024px) {
   .card-text{
     font-size: 14px !important;
     line-height: 19px !important;
