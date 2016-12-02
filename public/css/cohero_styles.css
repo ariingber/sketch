@@ -286,6 +286,28 @@ h2 {
 }
 /*///////////////*/
 
+/*CONTACT PAGE*/
+.contact_sidebar_header {
+  margin-top:36px;
+  color:#004DA8;
+  font-family: 'museo-rounded-300';
+  font-size:18px;
+  line-height:21px;
+}
+.contact_sidebar_subText {
+  margin-top:18px;
+  line-height:24px;
+  font-family: 'Open Sans';
+  color:#435663;
+  font-size:18px;
+}
+.contact_sidebar_subText_teal {
+  font-size:18px;
+  line-height:24px;
+  color:#1FD9C7
+}
+/*/////////////////////////////*/
+
 
 /*THESE ARE ON ALL PICTURES NEED TO BE RENAMED*/
 #inner {
