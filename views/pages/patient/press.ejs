@@ -2,23 +2,22 @@
 <html lang="en">
 <%- include ../globalPartials/head %>
 <body>
-
-
-
   <%- include ../patient/generalPatientPartials/nav %>
   <a class="footer_link" id="in_the_news" ></a>
+  <div style="margin-top:-100px" class="hide-on-large-only"></div>
   <div class="container" style="margin-top:176px;">
+
     <div class="row">
       <div class="col s12">
         <h1 style="line-height:9px;">Keep up with Cohero.</h1>
         <div>Take a look at what others are saying about us.</div>
       </div>
     </div>
+    <div style="margin-top:-50px" class="hide-on-large-only"></div>
     <div class="row" style="margin-top:100px;">
       <div class="col s2">
-        <div class="left-align" style="color:#1FD9C7">Featured</div>
+        <div class="left-align hide-on-med-and-down" style="color:#1FD9C7">Featured</div>
       </div>
-
       <div class="col s12 m12 l9">
         <div id="div1" class="press_load">
           <a target="_blank" class="loadDiv_link" href="https://techcrunch.com/2015/09/21/cohero-health-aims-to-improve-patient-care-for-the-26-million-american-asthma-sufferers/" >Tech Crunch</a>
@@ -137,10 +136,10 @@
 
 
 
-<div style="height:1px; margin-top:149px; background:#B4B4B4;"></div>
+<div class="hide-on-med-and-down" style="height:1px; margin-top:149px; background:#B4B4B4;"></div>
 
 <a class="footer_link" id="what_patients_say" ></a>
-<div class="container" style="margin-top:159px;">
+<div class="container hide-on-med-and-down" style="margin-top:159px;">
   <div class="center row">
     <div class="col s12 left-align">
         <h1 style="line-height:9px;">Hear from our customers.</h1>
@@ -148,7 +147,7 @@
     </div>
   </div>
 </div>
-<div class="container" style="margin-top:67px;">
+<div class="container hide-on-med-and-down" style="margin-top:67px;">
   <div class="center row">
       <div class="col s12 m12 l10">
         <div class="press_quote_box">
@@ -224,7 +223,8 @@
         </div>
       </div>
     </div>
-
+    <!-- MOBILE -->
+    <div style="margin-top:150px" class="hide-on-large-only"></div>
     <div class="container hide-on-large-only">
       <div class="center row">
         <div class="col s12">
@@ -297,7 +297,7 @@
 
     <a class="footer_link" id="press_try_our_products" ></a>
     <%- include ../globalPartials/bottom_of_body %>
-    <div style="margin-top:-145px;">
+    <div style="margin-top:-145px;" class="hide-on-med-and-down">
       <%- include ../globalPartials/try_our_products_1.ejs %>
     </div>
     <script type="text/javascript" src="js/form.js"></script>
