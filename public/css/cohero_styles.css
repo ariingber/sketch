@@ -240,6 +240,8 @@ h2 {
   text-align: left;;
   font-size: 14px;
   color: #0350AA;
+  position: absolute;
+  bottom: 15px;
 }
 .tile_mobile {
   padding:15px;
@@ -250,7 +252,7 @@ h2 {
 .tile_title_mobile {
   text-align: left;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 25px;
   font-family: 'museo-rounded-300', sans-serif;
   color: white;
 }
@@ -258,6 +260,8 @@ h2 {
   text-align: left;;
   font-size: 14px;
   color: #0350AA;
+  position: absolute;
+  bottom: 175px;
 }
 
 .press_quote_text_box {
