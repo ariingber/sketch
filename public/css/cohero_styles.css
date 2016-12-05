@@ -7,7 +7,16 @@ src: url('../fonts/museo/MuseoSansRounded-300.otf');
 @font-face {font-family: 'museo-rounded-500';
 src: url('../fonts/museo/MuseoSansRounded-500.otf');
 }
-
+/*#main {
+   position: relative;
+   width: 100%;
+}
+#main_content {
+   position: absolute;
+   top: 200px;
+   left: 0;
+   width: 100%;
+}*/
 /*SPACING BREAKS FOR DIFFERENT SIZE DEVICES*/
 .min-space {
   height:80px;
@@ -117,11 +126,19 @@ h2 {
   -webkit-font-smoothing: antialiased;
 }
 /*//////////////////////////////*/
-#atCoheroMobile {
+/*#atCoheroMobile {
   font-family: 'museoSansrounded-500';
   font-size: 24px;
   color: #0350AA;
   line-height: 31px;
+  -webkit-font-smoothing: antialiased;
+}*/
+#atCoheroForMobile {
+  font-family: 'museo-rounded-300';
+  margin-top: -20px;
+  font-size: 35px;
+  line-height: 38px;
+  color: #0350AA;
   -webkit-font-smoothing: antialiased;
 }
 .slide_text {
@@ -212,6 +229,9 @@ h2 {
 }
 
 /*PRESS PAGE*/
+.bx-controls-direction {
+  display:none;
+}
 .loadDiv_margin {
   margin-top:43px;
 }
@@ -580,9 +600,30 @@ footer.page-footer .footer-copyright {
 
 @media (max-width: 450px) {
   #atCohero  {
-    margin-top: -35px;
+    margin-top: -55px;
   }
 }
+@media (max-width: 375px) {
+  #atCoheroForMobile {
+    font-size: 30px;
+    line-height: 32px;
+  }
+  #buildMobile {
+    margin-top: -30px;
+  }
+}
+@media (max-width: 360px) {
+  #atCoheroForMobile {
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: :-20px;
+  }
+  #buildMobile {
+    margin-top: -100px;
+  }
+}
+
+
 @media (max-width: 995px) {
   .testimonial_slider ul.indicators {
     display: none;
@@ -600,6 +641,10 @@ footer.page-footer .footer-copyright {
     font-size: 25px;
     color: #004DA8;
     line-height: 31px;
+  }
+  #atCohero {
+    font-size: 35px;
+    line-height: 38px;
   }
   body {
     font-family: 'Open Sans';
