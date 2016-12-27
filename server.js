@@ -51,6 +51,10 @@ app.get('/contact', function(req, res){
   res.render('./pages/patient/contact')
 })
 
+app.get('/screener', function(req, res){
+  res.render('./pages/patient/screener')
+})
+
 app.get('/health_care', function(req, res){
   res.render('./pages/client/health_care')
 })

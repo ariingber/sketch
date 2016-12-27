@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include ../globalPartials/head %>
+<body>
+  <div id="turquoise_try_our_products_container" style="height:700px; background-color:#1FD9C7;">
+    <div class="container">
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/screen.js"></script>
+      <form id="input-form" action="" method="POST" target="no-target">
+        <div style="margin-bottom:70px; color:#1FD9C7">.</div>
+        <div id="question1" class="input-field col s12 m12 l8">
+          <h1 id="looking_to_h2" style="font-size:18px;">Interested in our products? Let’s get started.</h1>
+          <h1 class="form_h1" style="line-height:57px; margin-top:-17px;">What can we help you with?</h1>
+           <div class="form_button" id="choice_try_products" style="margin-top:50px;"> Try products </div><br>
+           <div class="form_button" id="choice_send_message" >Send message</div>
+         </div>
+         <div id="question2" class="input-field col s12 m12 l8">
+          <h1 class="form_h1" style="margin-top:74px;">Great. Would you be okay to try products as part of a clinical study?</h1>
+          <div style="margin-top:50px;" class="form_button" id="will_try_clinical_study">Yes</div><br>
+          <div class="form_button" id="wont_try_clinical_study">No</div><br>
+          <div class="form_button backButtonType2">Back</div>
+        </div>
+        <div id="question3" class="input-field col s12 m12 l8 question">
+          <h1 class="form_h1" style="margin-top:74px;">Of Age?</h1>
+          <input id="input-q1" name="q1">
+          <div id="first_name_error" class="error_msg">Please fill out this field</div><br>
+          <div style="margin-top:1px;" class="form_button nextButton">Next</div><br>
+          <div class="form_button backButtonType2">Back</div>
+
+        </div>
+        <div id="question4" class="input-field col s12 m12 l8 question">
+          <h1 class="form_h1" style="margin-top:74px;">Name?</h1>
+          <input id="input-q2" name="q2">
+          <div style="margin-top:1px;" class="form_button nextButton">Next</div><br>
+          <div class="form_button backButtonType2">Back</div>
+          <button id="form-submit" type="submit">SUBMIT</button>
+
+        </div>
+
+      </form>
+
+      <p id="input-feedback"></p>
+
+      <iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>
+
+      <script>
+          $('#input-form').one('submit',function(){
+              var inputq1 = encodeURIComponent($('#input-q1').val());
+              var inputq2 = encodeURIComponent($('#input-q2').val());
+              var q1ID = "entry.631814308";
+              var q2ID = "entry.1397721169";
+              var baseURL = 'https://docs.google.com/forms/d/10_hhoF8phJjX3ufiTAXeZ-M0EfJ97FEuIu1lqFyrhSQ/formResponse?';
+              var submitRef = '&submit=Submit';
+              var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + q2ID + "=" + inputq2 + submitRef);
+              $(this)[0].action=submitURL;
+              $('#input-feedback').text('Thank You!');
+          });
+      </script>
+
+    </div>
+  </div>
+</body>
+</html>
