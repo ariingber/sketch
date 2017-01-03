@@ -229,6 +229,12 @@ h2 {
 }
 
 /*PRESS PAGE*/
+.pressRightDate {
+  font-size:14px;
+  float:right;
+  color:#1FD9C7;
+}
+
 .bx-controls-direction {
   display:none;
 }
