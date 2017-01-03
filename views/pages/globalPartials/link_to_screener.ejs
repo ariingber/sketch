@@ -1,34 +1,35 @@
 <div id="turquoise_try_our_products_container" style="height:700px; background-color:#1FD9C7;">
-  <div id="try_our_products" class="container section scrollspy" >
+  <div id="try_our_products" class="container" >
     <div class="row">
-      <form action="https://formspree.io/ari@coherohealth.com"
+      <form action="https://formspree.io/anne@coherohealth.com"
           method="POST" enctype="multipart/form-data">
           <input type="hidden" name="_next" value="/#home_try_our_products" />
           <div style="margin-bottom:70px; color:#1FD9C7">.</div>
-          <div id="question1" class="input-field col s12 m12 l8">
+          <div id="screenerQuestion1" class="input-field col s12 m12 l8">
             <h1 id="looking_to_h2" style="font-size:18px;">Interested in our products? Let’s get started.</h1>
             <h1 class="form_h1" style="line-height:57px; margin-top:-17px;">What can we help you with?</h1>
-             <div class="form_button" id="choice_try_products" style="margin-top:50px;"> Try products </div><br>
-             <div class="form_button" id="choice_send_message" >Send message</div>
+             <div class="form_button" id="screenerChoiceTryProducts" style="margin-top:50px;"> Try products </div><br>
+             <div class="form_button" id="screenerChoiceSendMessage" >Send message</div>
            </div>
-           <div id="question2" class="input-field col s12 m12 l8">
+           <div id="screenerQuestion2" class="input-field col s12 m12 l8">
             <h1 class="form_h1" style="margin-top:74px;">Great. Would you be okay to try products as part of a clinical study?</h1>
             <a href="https://coherohealth.typeform.com/to/Bat26r" target="_blank"><div style="margin-top:50px;" class="form_button" id="will_try_clinical_study">Yes</div></a><br>
             <div class="form_button" id="wont_try_clinical_study">No</div><br>
             <div class="form_button backButtonType2">Back</div>
           </div>
-           <div id="message_div" class="input-field col s12">
+           <div id="screenerMessage_div" class="input-field col s12">
             <h1 class="form_h1" style="margin-top:74px;">What's your message.</h1>
-            <input id="message" name="message"  type="text" class="materialize-textarea" style="margin-top:30px;"></input>
+            <input id="screenerMessage" name="message"  type="text" class="materialize-textarea" style="margin-top:30px;"></input>
             <button class="form_button subButton" style="background-color:#1FD9C7; margin-top:35px;" type="submit">Send</button><br><br>
-            <div class="form_button" id="messageBackButton">Back</div>
+            <div class="form_button" id="screenerMessageBackButton">Back</div>
           </div>
-          <div id="sorry_message_div" class="input-field col s12">
+          <div id="screenerSorry_message_div" class="input-field col s12">
             <h1 class="form_h1" style="margin-top:74px;">Sorry. Right now, our products are only available through a healthcare provider or to people in clinical studies.</h1>
             <br>
-           <div class="form_button" id="start_over">Start over</div>
+           <div class="form_button" id="screenerStart_over">Start over</div>
          </div>
       </form>
     </div>
   </div>
 </div>
+<script src="js/patientJS/screener.js" type="text/javascript" defer="defer"></script>

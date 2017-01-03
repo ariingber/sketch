@@ -1,5 +1,4 @@
 // Quote Hover jQuery
-(function () {
   $('.hiddenQuote').hide();
   $('.hiddenArrow').hide();
   $('.pressIcon').hover(function(event) {
@@ -35,4 +34,3 @@
     $('.hiddenArrow').hide();
     $('.hiddenQuote').hide();
   });
-})();
