@@ -55,8 +55,8 @@ app.get('/screener', function(req, res){
   res.render('./pages/patient/screener')
 })
 
-app.get('/videos', function(req, res){
-  res.render('./videos')
+app.get('/video', function(req,res) {
+  res.render('./pages/patient/video')
 })
 
 app.get('/health_care', function(req, res){
