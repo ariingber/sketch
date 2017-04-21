@@ -77,6 +77,9 @@ $(document).ready(function(){
       slider.goToPrevSlide();
       pressReleaseClicker -= 1
       switch (pressReleaseClicker){
+        case 5:
+          $('#press_release_arrow_right').show();
+          break;
         case 4:
           $('#press_release_arrow_right').show();
           break;
@@ -111,6 +114,9 @@ $(document).ready(function(){
           $('#press_release_arrow_left').show();
           break;
         case 5:
+          $('#press_release_arrow_left').show();
+          break;
+        case 6:
           $('#press_release_arrow_right').hide();
           break;
       }
