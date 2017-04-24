@@ -212,7 +212,7 @@ h2 {
 }
 .card_close_button_height{
   height:400px;
-  overflow:scroll;
+  overflow:hidden;
 }
 #card_outer {
   position: relative;
