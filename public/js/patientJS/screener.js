@@ -10,7 +10,7 @@ $("#screenerChoiceSendMessage").click(function (event) {
   $('#screenerQuestion1').animate({left: '150px'}, 'fast').fadeOut(300);
   $('#screenerMessage_div').delay(800).fadeIn(300);
   setTimeout(function () {
-    $('#screenerMessage').focus();
+    $('#name').focus();
     $('#screenerQuestion1').css({'left':'0'})
   }, 1000);
 });
